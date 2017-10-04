@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+amijardin.iml
+bin/wwwdebug
+domainData
+./public/json/gardensDB.json
+public/images/upload
+public/images/postfinance.png
+test/

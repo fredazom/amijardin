@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/build/cultivonsnousprod.css">
+        <script src="/javascripts/build/cultivonsnousprod.js"></script>
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/carrousel.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/cultivonsnous.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/carrousel.js"></script>
+    <script src="/javascripts/cultivonsnous/menu.js"></script>
+    <script src="/javascripts/cultivonsnous/main.js"></script>
+    <% }%>
+    <title>Genève Cultive - Festival Alternatiba Léman</title>
+</head>
+<body>
+<%var selected = "none";%>
+
+<% include header.ejs %>
+
+<% var templateContent = "alternatiba-15-content.ejs" %>
+
+<% include main-template.ejs %>
+</body>
+</html>

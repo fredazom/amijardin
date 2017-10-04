@@ -1,0 +1,28 @@
+
+.experts-in-section {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.experts-in-section .expert h1 {
+    color: #41b7b3;
+}
+
+.experts-in-section .expert {
+    width: 35em;
+    padding: 0em 2em 1em 0em;
+}
+
+.experts-in-section .expert img {
+    width: 33em;
+}
+
+.experts-in-section .expert .description {
+    text-align: justify;
+}
+
+.experts-in-section .expert .font-icon {
+    width: 2em;
+}

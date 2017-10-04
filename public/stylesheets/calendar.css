@@ -1,0 +1,161 @@
+#calendarhook {
+    /*position: relative;*/
+    /*z-index: 1;*/
+}
+
+.absolute-calendar-container {
+    position: absolute;
+    right: 0em;
+    left: 0em;
+    background-color: #ffffff;
+    top: -50em;
+    /*transition: 1s ease-in-out;*/
+}
+
+
+#calendarhook.show .absolute-calendar-container {
+    top: 10em;
+    transition: 1s ease-in-out;
+}
+
+.centered-calendar-container {
+    margin : 0 auto;
+}
+
+.fixed-calendar-container {
+    position: relative;
+}
+
+.calendar-button {
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: #939393;
+    line-height: 2;
+    background-color: #ffffff;
+}
+
+.calendar-button-close {
+    position: relative;
+    height: 4em; /*here font-size 62.5% = 10 px, total height 40px; aligned with .calendar button height (font-size: 2em, line-height: 2 => 40px)*/
+    z-index: 1;
+}
+
+.calendar-button-close > .button-back {
+    position: absolute;
+    right: 0em;
+    cursor: pointer;
+    width: 2em;
+    top: 0em;
+    text-align: center;
+    color: #939393;
+    font-size: 3em;
+}
+
+#calendarhook table td {
+    text-align: center;
+    width: 2em;
+}
+
+#calendarhook .ui-datepicker-header {
+    font-size: 1.2em;
+}
+
+#calendarhook table thead span {
+    font-size: 1.8em;
+}
+
+#calendarhook table td .ui-state-default {
+    font-size: 2em;
+    color: black;
+}
+
+#calendarhook table td .ui-state-default {
+    cursor: default;
+}
+#calendarhook table td.calendar-event .ui-state-default {
+    cursor: pointer;
+}
+
+#calendarhook .calendar-event {
+    background-color: #41b7b3;
+    border-radius: 0.2em;
+}
+
+#calendarhook .nouvelle-calendar-container {
+    margin-top: 2em;
+}
+
+#calendarhook .nouvelle-calendar-container a {
+    font-size: 1.6em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -moz-binding: url('ellipsis.xml#ellipsis');
+    display: block;
+    color: #41b7b3;
+}
+
+#calendarhook .nouvelle-calendar-container .nouvelle-calendar {
+    font-weight: inherit;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#calendarhook .nouvelle-calendar-container .nouvelle-calendar.bubble {
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 71em) {
+
+    #calendarhook {
+        display: block;
+        margin-top: 2em;
+        position: relative;
+        background-color: inherit;
+        opacity: 1;
+    }
+
+    .absolute-calendar-container {
+        position: relative;
+        background-color: inherit;
+        top: 0em;
+    }
+
+    #calendarhook.show .absolute-calendar-container {
+        top: 0em;
+        transition: 0s;
+    }
+
+    .fixed-calendar-container {
+        position: fixed;
+    }
+
+    .calendar-button,
+    .calendar-button-close{
+        display: none;
+    }
+
+    #calendarhook .ui-datepicker-header {
+        font-size: 1em;
+    }
+
+    #calendarhook table thead span {
+        font-size: 1.4em;
+    }
+
+
+    #calendarhook table td .ui-state-default {
+        font-size: 1.6em;
+    }
+
+    .calendar-button {
+        display: none;
+    }
+}

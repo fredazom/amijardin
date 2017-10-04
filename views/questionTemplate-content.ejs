@@ -1,0 +1,204 @@
+<h1 class="subject<%if(typeof edition != 'undefined') { %> hide<%}%>"><%= question.s %></h1>
+
+<div id="close-response-confirmation" class="modalDialog">
+    <div>
+        <div>
+            <h1>Information</h1>
+            <p>Voulez-vous interrompre la création de votre réponse/commentaire?</p>
+            <div class="footer">
+                <button class="btn btn-xs btn-primary cancel" type="button">Non</button>
+                <button class="btn btn-xs btn-success ok" type="button">Oui</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="validate"class="success-message">
+    <div class="success-icon"></div>
+    <div class="message vertical-center">
+        <p>Votre réponse/commentaire a été validée avec succès.</p>
+    </div>
+</div>
+
+<div id="unsubscribe" class="success-message">
+    <div class="success-icon"></div>
+    <div>
+        <p>Les notifications pour cette question ont été désactivées avec succès.</p>
+    </div>
+</div>
+
+<%if(typeof edition != 'undefined') { %>
+    <div id="question-update-container" style="position: relative">
+        <h1>Actualisation de question</h1>
+
+
+        <%include ../public/html/submission-indicator.html%>
+
+
+        <div class="error-message hide">
+            <div class="error-icon"></div>
+            <div>
+                <p>Un imprévu est arrivé lors du chargement des questions.</p>
+                <p>Si ce comportement persiste merci de nous l'annoncer à <i>postmaster@genevecultive.ch</i>.</p>
+                <p>Nous ferons le nécessaire pour fixer le problème au plus vite.</p>
+            </div>
+        </div>
+
+        <form id="question-update-form">
+
+            <span for="s" class="control-label required">Sujet</span>
+            <input name="s" type="text" class="form-control" id="s" maxlength="250" value="<%=question.s%>" required>
+
+            <span for="t" class="control-label">Détails</span>
+            <div>
+                <textarea id="t" name="t" placeholder="Écrivez ici..."><%= question.t %></textarea>
+            </div>
+            <span class='ps'><%= question.ps %></span>
+            <div class="d">
+                <div><span class="dateFormatted"></span></div>
+                <div><span class="editDateFormatted"></span></div>
+            </div>
+
+
+            <input id="qid" type="hidden"  value="<%= question._id %>" name="qid" required>
+            <input id="uid" type="hidden"  value="<%= question.u %>" name="uid" required>
+
+            <div class="buttons-container">
+                <button class="btn btn-xs btn-primary cancel" type="button">Annuler</button>
+                <button class="btn btn-xs btn-success submit" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+<%}%>
+
+
+<div id="question-details-container" <%if(typeof edition != 'undefined') { %> class="hide"<%}%>>
+
+<%if(typeof edition != 'undefined') { %>
+    <span class="font-icon edition-icon" title="Modifier">&#xf044</span>
+<%}%>
+
+    <div id="textFormatted" disabled="true"></div>
+    <span class='ps'><%= question.ps %></span>
+    <div class="d">
+        <div><span class="dateFormatted"></span></div>
+        <div><span class="editDateFormatted"></span></div>
+    </div>
+</div>
+
+<div id="response-section">
+
+    <% for(var i=0; i<question.r.length; i++) {%>
+        <%if (question.r[i].v || ((typeof editionResponse != 'undefined') && (responseToUpdateId == question.r[i]._id))) {%>
+
+            <%if((typeof editionResponse != 'undefined') && (responseToUpdateId == question.r[i]._id)) {%>
+
+            <div id="response-comment-update-container">
+
+                <%include ../public/html/submission-indicator.html%>
+
+                <%include ../public/html/error-message-response.html%>
+
+                <form id="response-comment-update-form">
+
+                    <span for="t" class="control-label required">Réponse / commentaire</span>
+                    <div>
+                        <textarea id="t" name="t" placeholder="Écrivez ici..." required><%=question.r[i].t %></textarea>
+                    </div>
+                    <label style="display: none;" for="t" class="" id="t-error"></label>
+
+                    <!-- denormalized-->
+                    <span class='ps'><%=question.r[i].ps %></span>
+                    <div class='d'>
+                        <div><span><%=question.r[i].d%></span></div>
+                        <div><span class="editDateFormatted"><%=question.r[i].ed%></span></div>
+                    </div>
+                    <!-- end denormalized-->
+
+                    <div class="buttons-container">
+                        <button class="btn btn-xs btn-primary cancel" type="button">Annuler</button>
+                        <button class="btn btn-xs btn-success submit" type="submit">Sauver</button>
+                    </div>
+                    <input id="qid" type="hidden"  value="<%= question._id %>" name="qid" required>
+                    <input id="rid" type="hidden"  value="<%= question.r[i]._id %>" name="rid" required>
+                    <input id="uid" type="hidden"  value="<%= question.r[i].u %>" name="uid" required>
+                </form>
+
+            </div>
+
+
+
+            <div id="response-comment-update-view" class="hide" style="position: relative; margin-top: 7em">
+                <span class="font-icon edition-icon" style="top: -3em; margin-right: -1em" title="Modifier">&#xf044</span>
+                <div class="text"><%=question.r[i].t %></div>
+                <span class='ps'><%=question.r[i].ps %></span>
+                <div class='d'>
+                    <div><span><%=question.r[i].d%></span></div>
+                    <div><span class="editDateFormatted"><%=question.r[i].ed%></span></div>
+                </div>
+            </div>
+
+
+
+            <%} else {%>
+                <div>
+                    <div class="text"><%=question.r[i].t %></div>
+                    <span class='ps'><%=question.r[i].ps %></span>
+                    <div class='d'>
+                        <div><span><%=question.r[i].d%></span></div>
+                        <div><span class="editDateFormatted"><%=question.r[i].ed%></span></div>
+                    </div>
+                </div>
+            <%}%>
+
+        <% } %>
+
+    <% } %>
+
+</div>
+
+<%if((typeof edition === 'undefined') && (typeof editionResponse === 'undefined')) { %>
+    <div id="response-comment-section">
+
+        <%include ../public/html/submission-indicator.html%>
+
+        <%include ../public/html/error-message-response.html%>
+
+        <div class="success-message hide">
+            <div class="success-icon"></div>
+            <div class="message">
+                <p>Votre réponse/commentaire a été enregistré avec succès. Vous avez reçu un email pour valider l'enregistrement.</p>
+                <p>Nous vous remercions pour votre participation.</p>
+                <p><b>NOTE:</b> Dans le cas où vous n'avez pas reçu d'e-mail dans votre boîte de réception, regardez dans celle de courrier indésirable (spams).</p>
+            </div>
+        </div>
+
+        <form id="response-comment-form">
+
+            <span for="t" class="control-label required" style="margin-top: 5em">Réponse / commentaire</span>
+            <div>
+                <textarea id="t" name="t" placeholder="Écrivez ici..." required></textarea>
+            </div>
+            <label style="display: none;" for="t" class="" id="t-error"></label>
+
+            <span for="ps" class="control-label required">Pseudo</span>
+            <input name="ps" type="text" class="form-control" id="ps" maxlength="100" required>
+
+            <span for="e" class="control-label required">Email</span>
+            <input name="e" type="text" class="form-control" id="e" maxlength="100" required>
+
+            <span for="n" class="control-label">Recevoir une notification lors d'une interaction avec cette question<input name="n" type="checkbox" id="n"></span>
+
+            <div class="buttons-container">
+                <button class="btn btn-xs btn-primary cancel" type="button">Annuler (Retour au Forum)</button>
+                <button class="btn btn-xs btn-success submit" type="submit">Sauver</button>
+            </div>
+            <input id="qid" type="hidden"  value="<%= question._id %>" name="qid" required>
+        </form>
+
+    </div>
+<% } %>
+
+<div id="rawText" class="hide"><%= question.t %></div>
+<div id="rawDate" class="hide"><%= question.d %></div>
+<div id="rawEditDate" class="hide"><%= question.ed %></div>

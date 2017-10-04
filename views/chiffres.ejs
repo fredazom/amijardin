@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/build/chiffresprod.css">
+        <script src="/javascripts/build/chiffresprod.js"></script>
+    <% } else { %>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/map-icons.css">
+        <script src="/javascripts/jquery-1.11.3.js"></script>
+        <script src="/javascripts/utils.js"></script>
+        <script src="/javascripts/chiffres/chiffres.js"></script>
+    <% }%>
+    <style>
+        .column-center p span {
+            font-size: 1em;
+        }
+
+        svg .st0 {
+            fill: #ffffff;
+        }
+
+        #individual.active .st1, #individual.active:hover .st1,
+        #share.active .st0, #share.active:hover .st0,
+        #divided.active .st6,#divided.active:hover .st6,
+        #family.active .st2,#family.active:hover .st2,
+        #roof.active .st1,#roof.active:hover .st1,
+        #vertical.active .st1,#vertical.active:hover .st1,
+        #institution.active .st0,#institution.active:hover .st0,
+        #enterprise.active .st3,#enterprise.active:hover .st3,
+        #farm.active .st2,#farm.active:hover .st2,
+        #henhouse.active .st1,#henhouse.active:hover .st1,
+        #hive.active .st2,#hive.active:hover .st2,
+        #aquaponics.active .st0,#aquaponics.active:hover .st0,
+        #producer.active .st3,#producer.active:hover .st3,
+        #market.active .st5,#market.active:hover .st5,
+        #undefined.active .st0, #undefined.active:hover .st0 {
+            fill: #ffffff;
+        }
+
+        p.classification-count {
+            display: table;
+            margin-left: -178px;
+            background-color: #ffffff;
+        }
+
+        span.logo {
+            width: 2.5em;
+            vertical-align: middle;
+        }
+
+        span.classification-total {
+            display: table-cell;
+            padding: 0 1em;
+            width: 2em;
+            vertical-align: middle;
+        }
+
+        span.label {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+    <title>Genève Cultive - En Chiffres</title>
+</head>
+<body>
+<%var selected = "numbers";%>
+
+<% include header.ejs %>
+
+<% var templateContent = "chiffres-content.ejs" %>
+
+<% include main-template.ejs %>
+
+</body>
+</html>

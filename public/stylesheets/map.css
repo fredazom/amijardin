@@ -1,0 +1,715 @@
+html, body {
+    margin: 0px;
+    padding: 0px
+}
+
+.mobile-garden-info-window {
+    overflow-y: scroll;
+    display: none;
+    font-size: 62.5%;
+}
+
+.mobile-garden-info-window.show {
+    display: block;
+}
+
+.mobile-garden-info-window .close {
+    top: 4em;
+    right: 0.7em;
+    position: fixed;
+    cursor: pointer;
+    background-color: white;
+    width: 2em;
+    text-align: center;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    z-index: 1;
+}
+
+.body {
+    position: fixed;
+    top: 6.35em;
+    left: 0em;
+    bottom: 0em;
+    right: 0em;
+    z-index: 0;
+}
+
+#map-canvas {
+    padding: 0px;
+    height: 100%;
+}
+
+a {
+    color: #00B7FF;
+}
+
+span.error {
+    color: red;
+}
+
+span.control-label {
+    font-weight: 700;
+    margin: 0em;
+}
+
+label.error{
+    font-size: 13px;
+    font-weight: bold;
+    display: inline;
+}
+
+div > h2 {
+    text-align: center;
+}
+
+button.btn {
+    min-width: 60px;
+}
+/*overwrite header.css */
+
+.menu {
+    margin-bottom: 0;
+    font-size: 62.5%; /*only in mobile mode*/
+    background-color: white;
+    position: absolute;
+    top: 0em;
+    right:0em;
+    left: 0em;
+    z-index: 2;
+}
+
+.menu-spacer {
+    display: none;
+}
+
+.mobile-menu-button {
+    top: 1.6em;
+}
+
+/*end overwrite header.css */
+
+#addressFormContainer {
+    min-width: 450px;
+}
+
+#addressFormContainer table {
+    width: 100%;
+}
+
+#addressFormContainer td.error-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 54px;
+    overflow: hidden;
+}
+
+#addressFormContainer td.error-overflow:hover {
+    /*z-index: 2;*/
+    overflow: visible;
+}
+
+#addressFormContainer input.error,
+#addressFormContainer textarea.error,
+#addressFormContainer select.error {
+    border:1px solid red !important;
+}
+
+#addressFormContainer input.form-control {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#addressFormContainer .control-label {
+    padding-top: 0px;
+}
+
+#addressFormContainer td:first-child,
+#addressFormContainer td:nth-child(3) {
+    text-align: right;
+}
+
+#addressFormContainer td:nth-child(2),
+#addressFormContainer td:nth-child(4) {
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#addressFormContainer td {
+    padding-bottom: 3px;
+    /*border: solid 1px black;*/
+}
+
+#addressFormContainer td.narrow {
+    width: 54px;
+}
+
+#addressFormContainer tr.error td {
+    padding-bottom: 0px;
+}
+
+#addressFormContainer [name=comment] {
+    height: inherit;
+}
+
+#addressFormContainer #gardenname::-webkit-input-placeholder {
+    color:gray;
+    font-style:italic;
+}
+#addressFormContainer #gardenname::-moz-placeholder {
+    color:gray;
+    font-style:italic;
+}
+#addressFormContainer #gardenname:-ms-input-placeholder {
+    color:gray;
+    font-style:italic;
+}
+
+#addressFormContainer td.icon-plus-minus {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0.3em;
+}
+
+#addressFormContainer .icon-plus-minus span {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 0.7em;
+
+}
+
+#addressFormContainer .icon-plus {
+    color: #449d44;
+}
+
+#addressFormContainer .icon-plus:hover {
+    color: #398439;
+}
+
+#addressFormContainer .icon-plus-minus span.icon-minus {
+    color: red;
+}
+
+#addressFormContainer input[type="file"]::-webkit-file-upload-button {
+}
+
+
+#successContainer,
+#confirmationContainer {
+    max-width: 450px;
+}
+
+#confirmationContainer .controls {
+    text-align: right;
+    padding: 6px;
+}
+
+#confirmationContainer .controls a {
+    margin: 10px 0px 0px 25px;
+}
+
+#confirmationContainer .table-decorator{
+    /*width: 100%;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+#confirmationContainer table{
+    width: 100%;
+}
+
+#confirmationContainer .control-label {
+    padding-top: 0px;
+}
+
+#confirmationContainer td:first-child,
+#confirmationContainer td:nth-child(3) {
+    text-align: right;
+}
+
+#confirmationContainer td:nth-child(2),
+#confirmationContainer td:nth-child(4) {
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#confirmationContainer td {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /*border: solid 1px black;*/
+}
+
+#confirmationContainer td.narrow {
+    width: 54px;
+}
+
+#confirmationContainer #comment-read {
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+#gardenDetails span {
+    font-size: 1.5em;
+}
+
+#gardenDetails .labelColumn {
+    /*font-size 13px set by gm-style*/
+    min-width: 9em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1em;
+    vertical-align: top;
+    float: left;
+    display: block;
+    clear: left;
+}
+
+#gardenDetails .valueColumn {
+    display: block;
+    /*font-size 13px set by gm-style*/
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+#gardenDetails [name=comment-detail] {
+    text-align: justify;
+}
+
+#gardenDetails .imagesContainer {
+    min-height: 5em;
+}
+
+#gardenDetails .imagesContainer img {
+    width: auto;
+    height: 4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+/*#gardenDetails {*/
+/*z-index: 0;*/
+/*height: 180px;*/
+/*max-width: 450px;*/
+/*background-color: rgba(255,255,255,0.8);*/
+/*margin: 0 auto;*/
+/*transform: translate(0, 180px);*/
+/*transition: transform 0.5s ease-out;*/
+/*border-top-left-radius: 8px;*/
+/*border-top-right-radius: 8px;*/
+/*}*/
+
+/*#gardenDetails.display {*/
+/*transform: translate(0, 0);*/
+/*transition: transform 0.5s ease-in;*/
+/*pointer-events: auto;*/
+/*}*/
+
+#openModal {
+    font-size: 10px;
+}
+
+#openModal li {
+    font-size: 1.6em;
+}
+
+#openModal:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+#openModal > div > div > div {
+    margin: 0 15px 0 0;
+}
+
+#openModal h1 {
+    margin-bottom: 10px;
+}
+
+#openModal > div li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#gardenDetails {
+    margin: 0em 1em;
+}
+
+.mobile-garden-info-window .close {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    width: 100%;
+    top: 3.8em;
+    text-align: right;
+    margin-right: 0.2em;
+}
+
+.close {
+    text-decoration: none;
+    position: absolute;
+    font-size: 2rem;
+    color: #939393;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    font-family: "LatoWebLight", "DejaVu Serif", "Arial" ,"sans-serif";
+    right: 0.5rem;
+    top: 0rem;
+}
+
+.close:hover { opacity: 1; filter: alpha(opacity=100); }
+
+#gardenFilterAnchor {
+    position: absolute;
+    top:70px;
+    left:0;
+    right: 0;
+    z-index: 1;
+}
+
+#gardenFilterButton {
+    text-align: center;
+    cursor: pointer;
+    color: #939393;
+    line-height: 2em;
+}
+
+#gardenFilterButtonBack {
+    position: relative;
+}
+
+#gardenFilterButtonBack > .button-back {
+    position: absolute;
+    right: 0em;
+    cursor: pointer;
+    width: 2.5em;
+    top: 0em;
+    text-align: center;
+    color: #939393;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#gardenFilterButtonBack > .button-back.white {
+    color: white;
+}
+
+#gardenFilter {
+    display: none;
+}
+
+#gardenFilter.show {
+    display: block;
+    width: 100%;
+}
+
+#gardenFilter > div {
+    cursor: pointer;
+}
+
+#gardenFilterButtonBack > label,
+#gardenFilter span {
+    font-size: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+    padding-left: 1em;
+}
+
+#gardenFilterButtonBack > label {
+    padding-left: 1.3em;
+}
+
+#gardenFilterButtonBack:before,
+#gardenFilter > div:before {
+    content: '';
+    vertical-align: middle;
+    height: 2em;
+    display: inline-block;
+}
+
+#gardenFilter > div > svg {
+    display: none;
+}
+
+#individual {
+    background-color: #006699;
+}
+
+#share {
+    background-color: #99CCCC;
+}
+
+#divided {
+    background-color: #0A8F85;
+}
+
+#family {
+    background-color: #DECAE0;
+}
+
+#roof {
+    background-color: #AB84AF;
+}
+
+#vertical {
+    background-color: #EAD09D;
+}
+
+#institution {
+    background-color: #BF0000;
+}
+
+#enterprise {
+    background-color: #FF8500;
+}
+
+#farm {
+    background-color: #B1CE1C;
+}
+
+#henhouse {
+    background-color: #AA8D00;
+}
+
+#hive {
+    background-color: #FFE000;
+}
+
+#aquaponics {
+    background-color: #A34200;
+}
+
+#producer {
+    background-color: #6B2B00;
+}
+
+#market {
+    background-color: #E8AA0F;
+}
+
+#undefined {
+    background-color: #819DC6;
+}
+
+/*bootstrap*/
+/*bootstrap*/
+/*bootstrap*/
+/*bootstrap*/
+/*bootstrap*/
+
+td, th {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#subscribeGarden {
+    display: none;
+}
+
+@media screen and (min-width: 73.8em) {
+
+    html, body {
+        height: 100%;
+    }
+
+    #subscribeGarden {
+        /*display: block;*/
+    }
+    #subscribeGarden .st0{fill:#7C6949;}
+    #subscribeGarden .st1{fill:#AFC82B;}
+    #subscribeGarden .st2{fill:none;stroke:#FFFFFF;stroke-width:0.685;}
+    #subscribeGarden .st3{fill:#FCD244;stroke:#FFFFFF;stroke-width:1.127;}
+    #subscribeGarden .st4{fill:#A371A6;stroke:#FFFFFF;stroke-width:1.127;}
+    #subscribeGarden .st5{fill:#FCD244;stroke:#FFFFFF;stroke-width:1.1634;}
+    #subscribeGarden .st6{fill:#A371A6;stroke:#FFFFFF;stroke-width:1.1634;}
+    #subscribeGarden .st7{fill:none;stroke:#AFC82B;stroke-width:1.1634;}
+    #subscribeGarden .st8{fill:none;stroke:#AFC82B;stroke-width:1.127;}
+    #subscribeGarden .st9{fill:none;stroke:#AFC82B;stroke-width:1.195;}
+    #subscribeGarden .st10{fill:#FFFFFF;}
+    #subscribeGarden .st11{fill:#A371A6;}
+
+
+
+    .modalDialog {
+        display: block;
+    }
+
+    .menu, .menu-logo {
+        display: none;
+    }
+
+    .menu {
+        font-size: 10px;
+        position: static;
+        z-index: inherit;
+        background-color: transparent;
+    }
+
+    .body {
+        position: static;
+        z-index: inherit;
+        height: 100%;
+    }
+
+    #map-canvas {
+        margin-top: 0;
+    }
+
+    .gm-style-iw > div {
+        overflow-x: hidden !important;
+    }
+
+    #gardenDetails {
+        margin: 0em;
+        min-width: 450px;
+        padding-left: 26px;
+        padding-bottom: 20px;
+    }
+
+    #gardenDetails > div {
+        margin-bottom: 5px;
+    }
+
+    #gardenDetails .labelColumn {
+        min-width: 8em;
+    }
+
+    #gardenFilterAnchor {
+        display: none;
+    }
+
+    #gardenFilter {
+        margin-right: 0.5em;
+        margin-top: 6em;
+        overflow-y: scroll;
+        height: 90%;
+        display: block;
+    }
+
+    #gardenFilter.show {
+        width: auto;
+    }
+
+    #gardenFilter > div {
+        position: relative;
+        background-color: inherit;
+        padding: 0em;
+    }
+
+    #gardenFilterButtonBack:before,
+    #gardenFilter > div:before {
+        display: none;
+    }
+
+    #gardenFilter span {
+        position: absolute;
+        top: 19px;
+        left: 26px;
+    }
+
+    #gardenFilter.no-hover > div:hover > span,
+    #gardenFilter > div > span {
+        color: #A6A49E;
+    }
+
+    #gardenFilter > div.active:hover > span,
+    #gardenFilter > div:hover > span,
+    #gardenFilter > div.active > span{
+        color: white;
+    }
+
+    #gardenFilter > div > svg {
+        height: 60px;
+        width: 300px;
+        display: block;
+    }
+
+
+    /*override font-size from gm-style*/
+    .gm-style .gm-style-iw,
+    .menu-links {
+        font-family: "LatoWebLight" !important;
+        font-size: 10px;
+    }
+
+    #gardenFilter span {
+        font-family: "LatoWebLight";
+        font-weight: 600;
+    }
+    /*end override font-size from gm-style*/
+}
+
+@media screen and (min-width: 73.8em)  and (min-height: 56em) {
+    #gardenFilter {
+        margin-right: 1.5em;
+        margin-top: 6em;
+        overflow: inherit;
+        height: auto;
+        /*display: block;*/
+    }
+}
+/*on mouse over label shows with transition opening to the right*/
+
+/*#gardenFilter {*/
+/*padding-left: 13px;*/
+/*}*/
+
+/*#gardenFilter ul {*/
+/*margin: 0px;*/
+/*padding: 0px;*/
+/*width: 32px;*/
+/*transition: width 1s ease-out;*/
+/*}*/
+
+/*#gardenFilter ul:hover {*/
+/*cursor: pointer;*/
+/*width: 160px;*/
+/*transition: width 0.5s ease-in;*/
+/*}*/
+
+/*#gardenFilter ul li {*/
+/*list-style-type: none;*/
+/*overflow: hidden;*/
+/*white-space: nowrap;*/
+/*}*/
+
+/*#gardenFilter ul li i {*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*}*/
+
+/*#gardenFilter ul li span {*/
+/*/!*background-color: white;*!/*/
+/*padding: 5px;*/
+/*}*/
+
+/*#gardenFilter ul li span:after {*/
+/*content: "";*/
+/*background-color: #ffffff;*/
+/*opacity: 0.4;*/
+/*top: 0;*/
+/*left: 13px;/!*same as gardenFilter padding-left*!/*/
+/*bottom: 0;*/
+/*right: 0px;*/
+/*position: absolute;*/
+/*z-index: -1;*/
+/*}*/

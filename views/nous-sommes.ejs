@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/communprod.css">
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <% }%>
+    <style>
+        #contactezNous .st0{fill:#7C6949;}
+        #contactezNous .st1{fill:#B0CE23;}
+        #contactezNous .st2{fill:none;stroke:#FFFFFF;stroke-width:0.75;}
+        #contactezNous {
+            margin-left: 3em;
+            margin-top: 3em;
+        }
+    </style>
+    <title>Genève Cultive - Nous sommes</title>
+</head>
+<body>
+<%var selected = "we_are";%>
+
+<% include header.ejs %>
+
+<% var templateContent = "nous-sommes-content.ejs" %>
+
+<% include main-template.ejs %>
+
+</body>
+
+</html>

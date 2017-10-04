@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="noindex, nofollow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/nouvellesprod.css">
+    <script src="/javascripts/build/adminprod.js"></script>
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css"> <!--only to give style to font in body-->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editor/wysiwyg-editor.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editor/custom_editor.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/nouvelles_commun.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/jquery.validate-1.14.0.js"></script>
+    <script src="/javascripts/jquery-ui-1_11_4.js"></script>
+    <script src="/javascripts/lodash_4_3_0.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/editor/wysiwyg.js"></script>
+    <script src="/javascripts/editor/wysiwyg-editor.js"></script>
+    <script src="/javascripts/editor/custom_editor.js"></script>
+    <script src="/javascripts/admin/nouvellesFormFields.js"></script>
+    <script src="/javascripts/admin/nouvelles.js"></script>
+    <script src="/javascripts/admin/gardens.js"></script>
+    <% }%>
+    <style>
+
+        div.error-message {
+            margin-top: 3em;
+        }
+
+        h1 {
+            color: #41b7b3;
+        }
+
+        .single-nouvelle-container {
+            position: relative;
+        }
+
+        .edition-icon {
+            position:absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .visible-icon:hover {
+            color: #999999;
+            background-color: #ffffff;
+            cursor: default;
+        }
+
+        table {
+            border:none;
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
+
+        table td {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+
+        table td:first-child {
+            border-left: none;
+        }
+
+        table td:last-child {
+            border-right: none;
+        }
+    </style>
+    <title>Genève Cultive - Admin</title>
+</head>
+<body>
+<input type="radio" id="info-link" name="tabs" checked/>
+<input type="radio" id="nouvelles-link" name="tabs"/>
+<input type="radio" id="garden-link" name="tabs"/>
+<ul class="page_menu">
+    <li><label for="info-link">Info</label></li>
+    <li><label for="nouvelles-link">Nouvelles</label></li>
+    <li><label for="garden-link">Jardins</label></li>
+</ul>
+
+<div id="info-tab" class="page_menu_tab">
+    <p>Bienvenue <%=username%>,</p>
+    <p>Actuellement nous ne pouvons modifier que les <i>Nouvelles</i>. En fonction des besoins nous implémenterons d'autres onglets pour avoir un meilleur
+    contrôle de notre plate-forme.</p>
+    <p>Bonne édition.</p>
+    <p>L'équipe de <b>Genève Cultive</b></p>
+</div>
+
+
+<div id="nouvelles-tab" class="page_menu_tab">
+
+    <div id="nouvelles-tab-content">
+
+        <%include ../public/html/submission-indicator.html%>
+
+        <div class="error-message error-message-form hide">
+            <div class="error-icon"></div>
+            <div>
+                <p>Ooops! Huston we got a problem! Share with Fredy the issue!!!</p>
+            </div>
+        </div>
+
+        <div class="close-question-confirmation modalDialog">
+            <div>
+                <div>
+                    <h1>Information</h1>
+                    <p>Une fois le formulaire nettoyé, le texte écrit ne pourra plus être récupéré. T'es vraiment sûr(e) de vouloir réinitialiser le formulaire?</p>
+                    <div class="footer">
+                        <button class="btn btn-xs btn-primary cancel" type="button" class="cancel">Non</button>
+                        <button class="btn btn-xs btn-success ok" type="button" class="ok">Oui</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: relative; height: 4.5em; margin-top: 1em;"><!--margin-top = distance in forum, but this is given by p tag-->
+            <a href='#' class='btn btn-xs btn-success create-button'><span>Créer une nouvelle</span></a>
+        </div>
+
+        <div class="nouvelles-form-container hide">
+            <form id="nouvelles-form">
+                <span for="s" class="control-label required">Sujet</span>
+                <input name="s" type="text" class="form-control" id="s" maxlength="250" required>
+
+                <span for="t" class="control-label">Texte</span>
+                <div>
+                    <textarea id="t" name="t" placeholder="Écrivez ici..." required></textarea>
+                </div>
+                <label style="display: none;" for="t" class="" id="t-error"></label>
+
+                <span for="v" class="control-label">Rendre visible<input name="v" type="checkbox" id="v" value=""></span>
+
+
+                <span for="f" class="control-label">Événement à partir de (à saisir uniquement si on veut le voir sur l'agenda)</span>
+                <input id="f" class="form-control" name="f">
+                <span for="to" class="control-label">jusqu'à (à saisir uniquement si on veut le voir sur l'agenda)</span>
+                <input id="to" class="form-control" name="to">
+
+                <span for="url" class="control-label">URL</span>
+                <input id="url" class="form-control" name="url">
+
+                <input type="hidden" id="nid" name="nid">
+
+                <div class="buttons-container">
+                    <button class="btn btn-xs btn-primary cancel" type="button">Annuler</button>
+                    <button class="btn btn-xs btn-success submit" type="submit">Sauver</button>
+                    <button class="btn btn-xs btn-primary cancelUpdate" type="button">Annuler</button>
+                    <button class="btn btn-xs btn-success update" type="submit">Actualiser</button>
+                </div>
+            </form>
+        </div>
+
+        <%include nouvelles-section-and-template%>
+
+
+    </div>
+</div>
+
+<div id="garden-tab" class="page_menu_tab">
+    <table>
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Canton</th>
+            <th>Rue</th>
+            <th>Numéro</th>
+            <th>Téléphone</th>
+            <th>Responsable</th>
+            <th>Organisation</th>
+            <th>Longitude</th>
+            <th>Latitude</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<input type="hidden" id="token" value="<%=token%>">
+
+</body>
+</html>

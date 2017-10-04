@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/cultivonsnousprod.css">
+    <script src="/javascripts/build/cultivonsnousprod.js"></script>
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/carrousel.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/cultivonsnous.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/carrousel.js"></script>
+    <script src="/javascripts/cultivonsnous/menu.js"></script>
+    <script src="/javascripts/cultivonsnous/main.js"></script>
+    <% }%>
+    <title>Genève Cultive - Apéros-découvertes de jardins urbains et péri-urbains de Genève</title>
+    <style>
+        .column-center > div > p {
+            text-align: center;
+        }
+        #apero-decouverte .st0{display:inline;fill:#E5F3F4;}
+        #apero-decouverte .st1{fill:none;stroke:#939393;stroke-width:0.3647;}
+        #apero-decouverte .st2{fill:none;stroke:#939393;stroke-width:0.4808;}
+        #apero-decouverte .st3{fill:none;stroke:#939393;stroke-width:0.4992;}
+        #apero-decouverte .st4{fill:#7C6949;}
+        #apero-decouverte .st5{fill:#B0CE23;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st6{fill:none;stroke:#D3E9EA;stroke-width:3;stroke-dasharray:2.6741,0.8914;}
+        #apero-decouverte .st7{display:inline;fill:#FFFFFF;stroke:#D3E9EA;}
+        #apero-decouverte .st8{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.621;}
+        #apero-decouverte .st9{display:inline;fill:#B1CE1C;}
+        #apero-decouverte .st10{fill:none;stroke:#B1CE1C;stroke-width:60;stroke-linejoin:round;stroke-dasharray:3.0606,3.0606;}
+        #apero-decouverte .st11{fill:#E5F3F4;}
+        #apero-decouverte .st12{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.5845;}
+        #apero-decouverte .st13{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6116;}
+        #apero-decouverte .st14{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6121;}
+        #apero-decouverte .st15{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6262;}
+        #apero-decouverte .st16{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6461;}
+        #apero-decouverte .st17{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6555;}
+        #apero-decouverte .st18{fill:#B0CE23;}
+        #apero-decouverte .st19{fill:#B1CE1C;}
+        #apero-decouverte .st20{fill:#85488C;}
+        #apero-decouverte .st21{fill:none;stroke:#91A613;stroke-width:0.9857;}
+        #apero-decouverte .st22{fill:none;stroke:#CCE5E2;stroke-width:0.6173;stroke-dasharray:1.6857,1.6857;}
+        #apero-decouverte .st23{fill:#FCD243;stroke:#FFFFFF;stroke-width:0.4521;}
+        #apero-decouverte .st24{fill:none;stroke:#B0CE23;stroke-width:1.3584;}
+        #apero-decouverte .st25{fill:none;stroke:#B0CE23;stroke-width:1.6913;}
+        #apero-decouverte .st26{fill:none;stroke:#D3E9EA;}
+        #apero-decouverte .st27{display:inline;fill:none;stroke:#D3E9EA;stroke-width:1.0017;}
+        #apero-decouverte .st28{display:inline;fill:none;stroke:#D3E9EA;}
+        #apero-decouverte .st29{display:inline;fill:none;stroke:#FFFFFF;stroke-width:1.2063;stroke-linecap:round;}
+        #apero-decouverte .st30{fill:#91A613;}
+        #apero-decouverte .st31{display:none;fill:#7A8818;}
+        #apero-decouverte .st32{fill:none;stroke:#909090;stroke-width:0.4928;stroke-miterlimit:10;}
+        #apero-decouverte .st33{fill:#FAEC18;}
+        #apero-decouverte .st34{fill:#FCD243;}
+        #apero-decouverte .st35{fill:#FD0011;}
+        #apero-decouverte .st36{fill:#FF1300;}
+        #apero-decouverte .st37{fill:none;stroke:#CCE5E2;stroke-dasharray:5,5;}
+        #apero-decouverte .st38{fill:#FFFFFF;}
+        #apero-decouverte .st39{fill:none;}
+        #apero-decouverte .st40{fill:#FF1300;stroke:#FFFFFF;stroke-width:0.4928;}
+        #apero-decouverte .st41{fill:none;stroke:#D3E9EA;stroke-width:3;stroke-dasharray:1.0468,1.0468;}
+        #apero-decouverte .st42{display:inline;}
+        #apero-decouverte .st43{fill:#D1E51E;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st44{fill:none;stroke:#939393;stroke-width:0.484;}
+        #apero-decouverte .st45{display:inline;fill:#D3E9EA;}
+        #apero-decouverte .st46{fill:#FFFFFF;stroke:#939393;stroke-width:0.4992;}
+        #apero-decouverte .st47{fill:none;stroke:#D3E9EA;stroke-width:2.3237;stroke-dasharray:1.2163,1.8245;}
+        #apero-decouverte .st48{display:inline;fill:none;stroke:#D3E9EA;stroke-width:1.006;}
+        #apero-decouverte .st49{fill:#A371A7;stroke:#FFFFFF;stroke-width:0.4521;}
+        #apero-decouverte .st50{fill:#A371A7;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st51{display:inline;fill:#A1D3D6;}
+        #apero-decouverte .st52{fill:#D3D3D3;}
+        #apero-decouverte .st53{fill:#D3E9EA;}
+        #apero-decouverte .st54{fill:#91A613;stroke:#FFFFFF;stroke-width:0.4019;}
+        #apero-decouverte .st55{fill:#91A613;stroke:#FFFFFF;stroke-width:0.4928;}
+        #apero-decouverte .st56{fill:#D6B215;}
+        #apero-decouverte .st57{fill:none;stroke:#F7D61F;stroke-width:0.6116;}
+        #apero-decouverte .st58{fill:none;stroke:#F7D61F;stroke-width:0.6121;}
+        #apero-decouverte .st59{fill:none;stroke:#F7D61F;stroke-width:0.6262;}
+        #apero-decouverte .st60{fill:none;stroke:#F7D61F;stroke-width:0.6461;}
+        #apero-decouverte .st61{fill:none;stroke:#F7D61F;stroke-width:0.6555;}
+        #apero-decouverte .st62{fill:none;stroke:#D3E9EA;stroke-width:3;}
+        #apero-decouverte .st63{display:none;}
+        #apero-decouverte .st64{fill:#FFFFFF;stroke:#91A613;stroke-width:0.3374;}
+        #apero-decouverte .st65{fill:#FFFFFF;stroke:#91A613;stroke-width:0.4635;}
+        #apero-decouverte .st66{fill:#A371A7;}
+        #apero-decouverte .st67{fill:#777777;}
+        #apero-decouverte .st68{fill:none;stroke:#000000;stroke-width:0.2669;}
+        #apero-decouverte .st69{fill:none;stroke:#000000;stroke-width:0.7917;}
+        #apero-decouverte .st70{fill:none;stroke:#B1CE1C;stroke-width:20;stroke-linejoin:round;stroke-dasharray:3.0606,3.0606;}
+        #apero-decouverte .st71{fill:none;stroke:#B0CE23;stroke-width:0.4521;}
+        #apero-decouverte .st72{fill:none;stroke:#B0CE23;stroke-width:0.6539;}
+        #apero-decouverte .st73{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.4019;}
+        #apero-decouverte .st74{fill:#F6F9DE;stroke:#FFFFFF;stroke-width:0.6555;}
+        #apero-decouverte .st75{fill:#7A8818;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte > svg {
+            width: 100%;
+        }
+        .column-center > div.left > p {
+            text-align: left;
+        }
+        .separator {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+<%var selected = "none";%>
+
+<% include header.ejs %>
+
+<div class="content-container">
+    <div class="column-right">
+        <div id="calendarhook"></div>
+    </div><div class="column-left">
+</div><div class="column-center">
+
+
+    <div style="margin-bottom: 1rem">
+        <h1 style="color: #41b7b3;">Apéros-découvertes de jardins urbains et péri-urbains de Genève</h1>
+    </div>
+
+    <input type="radio" id="info-link" name="tabs" checked/>
+    <input type="radio" id="images-link" name="tabs"/>
+    <ul class="page_menu">
+        <li><label for="info-link">Info</label></li>
+        <li><label for="images-link">En images</label></li>
+    </ul>
+
+
+    <div id="info-tab" class="page_menu_tab">
+
+        <div style="text-align: center">
+
+            <p>Avec le printemps <b>Genève cultive</b> vous convie aux</p>
+            <p><b>Apéros-découvertes de jardins urbains et péri-urbains de Genève</b>,</p>
+            <p>1 samedi par mois de 11h à 13h dès le 29 avril</p>
+            <p><b>Autour d’un apéritif garni, les jardiniers vous dévoileront leurs jardins et quelques-uns de leurs secrets</b></p>
+            <span id="apero-decouverte"><%- include ../public/images/carte_aperos-decouvertes.svg %></span>
+        </div>
+
+        <div class="left">
+            <p><b>Prochain Apéro-découverte :</b></p>
+            <p><b>Où ?</b>Jardin laboratoire à Troinex</p>
+            <p>4 ch. des moulins de Drize , 1256 Troinex.<br>
+                Bus 44 arrêt "Moulins de Drize" ou Bus 45 arrêt "Rivolette", pour l'accès en voiture il n'y a malheureusement pas de parking à proximité, seulement quelques places aux alentours.</p>
+            <p><b>Quand ?</b> 27 mai  2017 de 11h à 13h</p>
+            <p><b>Qui ?</b> Ouvert à tous, min 10 personnes, max 20 personnes sur inscription</p>
+            <p><b>Thème :</b> En 5 ans, le jardin familial purement ornemental a été transformé en laboratoire agroécologique. On y trouve aujourd'hui:</p>
+
+            <ul>
+                <li>différents composts et lombricomposts</li>
+                <li>des surfaces légumières sous forme de buttes (inspirées par la permaculture=> Sepp Holzer) et sous formes de planches permanentes (rotations culturales avec serres inspirées par la culture bio-intensive => Eliot Coleman)</li>
+                <li>des cultures de pleurotes et Shitaké</li>
+                <li>des tables à semis chauffées au fumier de cheval</li>
+                <li>des murs végétaux construits à partir de matériaux de construction détournés.</li>
+            </ul>
+
+            <p>Sylvain se fera un plaisir de vous accueillir dans son Jardin laboratoire.</p>
+
+            <p class="separator" style="text-align: center">--------------------------------</p>
+
+            <p>Le but de ces <b>Apéros-découvertes</b> est de visiter un jardin en découvrant ses secrets et sa personnalité, accompagnés par les jardiniers  !</p>
+
+            <p>Les <b>Apéros-découvertes</b> se dérouleront  de 11h à 12h ensuite, de 12h à 13h : <b>apéro garni</b> agrémenté de quelques légumes des jardins (quand ce sera possible), des herbes (même et surtout les « mauvaises » !) et les questions que le public posera aux jardiniers.</p>
+
+            <p class="separator" style="text-align: center;"><b>POUR VOUS INSCRIRE, ENVOYEZ UN MAIL info@genevecultive.ch JUSQU'AU 22 MAI EN INDIQUANT VOS COORDONNÉES ET NO DE TÉLÉPHONE !</b></p>
+
+            <p><b>Le prix de l’Apéro-découverte</b> : membres de Genève cultive 7.- / non-membres 12.-</p>
+
+            <p class="separator" style="text-align: center">--------------------------------</p>
+
+            <p><b>Prochaine date : à définir en septembre 2017.</b></p>
+            <p>Dans la perspective de vous rencontrer très bientôt, nous adressons à tous nos meilleures salutations.</p>
+
+            <p><b>L'équipe de Genève cultive</b></p>
+
+        </div>
+    </div>
+
+    <div id="images-tab" class="page_menu_tab">
+
+        <div class="content">
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_110907-e1496823702200.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_111259-e1496823741757.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_111307-e1496823754110.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_111538-e1496823763829.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_111633-e1496823772174.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_112504-e1496823781336.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_112527-e1496823795624.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_112949-e1496823804397.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_112958-e1496823814828.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113027-e1496823824474.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113704-e1496823843154.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113711-e1496823851629.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113728-e1496823862471.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113753-e1496823871742.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114152-e1496823881366.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114228-e1496823888734.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114246-e1496823899680.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114325-e1496823909426.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114434-e1496823917808.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114544-e1496823925449.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_114602-e1496823933841.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115051-e1496823949957.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115529-e1496823957778.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115539-e1496823964135.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115550-e1496823972375.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115734-e1496823980854.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_115815-e1496823987100.jpg"/>
+                <span>Letizia</span>
+            </div>
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113103-e1496823834343.jpg"/>
+                <span>Letizia</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="carrousel" class="overlay">
+        <div class="content"></div>
+        <div class="close">x</div>
+        <div class="previous vertical-center next-previous"><span><</span></div>
+        <div class="next vertical-center next-previous"><span>></span></div>
+    </div>
+
+</div>
+
+
+    <div class="bottom">
+        <div class="column-right">
+
+        </div>
+        <div class="column-left">
+
+        </div>
+        <div class="column-center">
+
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom">
+    <div class="column-right">
+
+    </div>
+    <div class="column-left">
+
+    </div>
+    <div class="column-center">
+
+    </div>
+</div>
+
+
+
+<div class="licence">
+    <span class="mail">hc.evitluceveneg@ofni</span>
+    <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+        <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ch/80x15.png" />
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<%
+var indexPages = [
+{class: 'we_are', label: 'Nous sommes', svg: '../public/images/menu_1.svg', http:'/nous-sommes'},
+{class: 'goals', label: 'But et Objectifs', svg: '../public/images/menu_2.svg', http:'/buts'},
+{class: 'map', label: 'Carte', svg: '../public/images/menu_3.svg', http:'/map'},
+{class: 'classification', label: 'Classification', svg: '../public/images/menu_4.svg', http:'/classification'},
+{class: 'consulting', label: 'Spécialistes', svg: '../public/images/menu_5.svg', http:'/experts'},
+{class: 'news', label: 'Nouvelles', svg: '../public/images/menu_6.svg', http:'/nouvelles'},
+{class: 'forum', label: 'Forum', svg: '../public/images/menu_7.svg', http:'/forum'},
+{class: 'numbers', label: 'En Chiffres', svg: '../public/images/menu_8.svg', http:'/chiffres'},
+{class: 'contact', label: 'Cultivons-nous', svg: '../public/images/menu_9_cultivons_nous_vert.svg', http:'/galerie'},
+{class: 'sponsor', label: 'Devenez membre', svg: '../public/images/menu_10.svg', http:'/soutenez-nous'}
+];
+%>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <title>Genève Cultive</title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+</head>
+<body>
+
+    <div class="logo"></div>
+    <div id="navigation-container">
+        <ul id="navigation">
+            <% for(var i=0; i<indexPages.length; i++) {%>
+            <li id=<%=indexPages[i].class%>>
+                <a href=<%=indexPages[i].http%>>
+                    <%- include(indexPages[i].svg) %>
+                    <span><%=indexPages[i].label%></span>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <a href="/login/llggaa" class="l">invisible</a>
+
+    <div class="licence">
+        <span class="mail">hc.evitluceveneg@ofni</span>
+        <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+            <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ch/80x15.png" />
+        </a>
+        Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 2.5 Suisse</a>
+    </div>
+</body>
+</html>

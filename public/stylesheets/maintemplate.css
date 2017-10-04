@@ -1,0 +1,104 @@
+body {
+    font-size:62.5%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.content-container {
+    margin-top: 7em; /*space necessary to not be hidden by menu, it's now position: absolute*/
+}
+
+.bottom {
+    display: none;
+}
+
+.column-left {
+    display: none;
+}
+
+.column-right * {
+    /*max-height: 6em;*/
+}
+
+.column-center {
+    padding-top: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.column-center p,
+.column-center li,
+.column-center span {
+    font-size: 1.6em;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.column-center li li {
+    font-size: 1em;
+}
+
+
+@media screen and (min-width: 71em) {
+
+    .content-container {
+        height: 100%;
+        position: relative;
+        margin-top: inherit;
+    }
+
+    .content-container .bottom {
+        right: 0em;
+        left: 0em;
+        top:0em;
+    }
+
+    .bottom {
+        position: absolute;
+        display: block;
+        bottom: 0em;
+        top: 11em;
+        right: 1em;
+        left: 1em;
+        z-index: -1;
+    }
+
+    .bottom > div {
+        height: 100%;
+    }
+
+    .column-center {
+        padding-left: 3em;
+        padding-right: 3em;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        padding-top: 0em;
+    }
+
+    .column-left, .column-center, .cgulolumn-right {
+        margin: 0em;
+    }
+
+    .column-left, .column-right {
+        width: 19%;
+        background-color: #F0F0F0;
+        min-height: 1em;
+    }
+
+    .column-right {
+        float: right;
+    }
+
+    /*commented cause created a wrong layout with calendar; if min,max width set to force publicity to occupy all space, review this method*/
+    .column-right  * {
+        /*max-width: 100%;*/
+        /*min-width: 100%;*/
+        max-height: inherit;
+    }
+
+    .column-left {
+        float: left;
+        display: block;
+    }
+}

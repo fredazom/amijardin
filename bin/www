@@ -1,0 +1,125 @@
+#!/usr/bin/env node
+var app = require('../app');
+var debug = require('debug')('amijardin:server');
+var http = require('http');
+var domain = require('domain');
+var cluster = require('cluster');
+
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || '3000');
+app.set('port', port);
+app.set('ip', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
+
+if (cluster.isMaster) {
+  cluster.fork();
+
+  cluster.on('disconnect', function(worker) {
+    console.log('disconnecting a worker after error; ready to fork!');
+    cluster.fork();
+  });
+} else {
+  console.log("forking a node");
+  var server;
+  var serverDomain = domain.create();
+
+  serverDomain.on('error', function(error){
+    console.log("error caught at serverDomain level: ", error.stack);
+
+    try {
+      var killtimer = setTimeout(function() {
+        debug('exiting the process NOW, after disconnecting worker and waiting 5 sec to finish all pending calls!');
+        process.exit(1);
+      }, 5000);
+      killtimer.unref();
+      unmountServer(server);
+      cluster.worker.disconnect();
+    } catch (er2) {
+      console.error('Error sending 500!', er2.stack);
+    }
+  });
+
+  serverDomain.run(server = createServerAndLaunch);
+}
+
+function createServerAndLaunch() {
+  server = http.createServer(app);
+  server.listen(port, app.get('ip'));
+  server.on('error', onError);
+  server.on('listening', onListening(server));
+  return server;
+}
+
+function unmountServer(server) {
+  // stop taking new requests.
+  server.close();
+  server.removeListener('error', onError);
+  server.removeListener('listening', onListening(server));
+  server = null;
+}
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  console.error("PASSING BY server error handler");
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+      ? 'Pipe ' + port
+      : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening(server) {
+  return function() {
+    var addr = server.address();
+    var bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+  }
+}

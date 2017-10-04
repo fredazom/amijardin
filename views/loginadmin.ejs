@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="noindex, nofollow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/communprod.css">
+    <script src="/javascripts/build/loginadminprod.js"></script>
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/jquery.validate-1.14.0.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/login/loginFormFields.js"></script>
+    <script src="/javascripts/login/loginadmin.js"></script>
+    <% }%>
+    <title>Login</title>
+    <style>
+        .buttons-container {
+            margin-top: 3em;
+            text-align: right;
+        }
+        #login-add-form-container {
+            width: 80%;
+            margin: auto;
+            padding: 2em;
+            border-radius: 1em;
+        }
+
+        #login-add-form-container.shake {
+            border: 2px solid red;
+        }
+
+        .shake {
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+        @keyframes shake {
+            10%, 90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%, 80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%, 50%, 70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%, 60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="login-add-form-container">
+
+    <form id="login-add-form">
+
+        <span for="l" class="control-label required">Login</span>
+        <input name="l" type="text" class="form-control" id="l" maxlength="250" required>
+
+        <span for="p" class="control-label required">Password 1</span>
+        <input name="p" type="text" class="form-control" id="p" maxlength="250" required>
+
+        <span for="p2" class="control-label required">Password 2</span>
+        <input name="p2" type="text" class="form-control" id="p2" maxlength="250" required>
+
+        <span for="p3" class="control-label required">Password 3</span>
+        <input name="p3" type="text" class="form-control" id="p3" maxlength="250" required>
+
+        <div class="buttons-container">
+            <button class="btn btn-xs btn-success submit" type="submit">Log-moi-in!</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

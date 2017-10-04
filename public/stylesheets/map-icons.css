@@ -1,0 +1,211 @@
+#individual .st0{fill:none;stroke:#006699;}
+.no-hover #individual:hover .st1, #individual .st1{fill:#E9E5DB;}
+#individual .st2{fill:white;}
+#individual .st3{fill:#006699;}
+#individual:hover .st1 {
+    fill: #6095BD;
+}
+#individual.active:hover .st1, #individual.active .st1 {
+    fill: #006699;
+}
+
+.no-hover #share:hover .st0, #share .st0{fill:#E9E5DB;}
+#share .st1{fill:#99CCCC;}
+#share .st2{fill:white;}
+#share .st3{fill:#99CCCC;}
+#share:hover .st0 {
+    fill:#C4E4E5;
+}
+#share.active:hover .st0,
+#share.active .st0 {
+    fill: #99CCCC;
+}
+
+/*#family .st0{fill:#DECAE0;}*/
+/*.no-hover #family:hover .st1, #family .st1{fill:#E9E5DB;}*/
+/*#family .st2{fill:white;}*/
+/*#family .st3{fill:#DECAE0;}*/
+/*#family:hover .st1 {*/
+/*fill:#EADEEC;*/
+/*}*/
+/*#family.active:hover .st1,*/
+/*#family.active .st1 {*/
+/*fill: #DECAE0;*/
+/*}*/
+
+#family .st0{fill:#FFFFFF;stroke:#DECAE0;stroke-linejoin:round;}
+#family .st1{fill:#FFFFFF;stroke:#DECAE0;stroke-width:1.0017;}
+.no-hover #family:hover .st2, #family .st2{fill:#E9E5DB;}
+#family .st3{fill:#FFFFFF;}
+#family .st4{fill:#DECAE0;stroke:#DECAE0;stroke-linejoin:round;}
+#family .st5{fill:none;stroke:#DECAE0;stroke-linejoin:round;}
+#family .st6{fill:#DECAE0;}
+#family:hover .st2 {
+    fill:#EADEEC;
+}
+#family.active:hover .st2,
+#family.active .st2 {
+    fill: #DECAE0;
+}
+
+#roof .st0{fill:#AB84AF;}
+.no-hover #roof:hover .st1, #roof .st1{fill:#E9E5DB;}
+#roof .st2{fill:white;stroke:#AB84AF;stroke-width:1.0017;}
+#roof .st3{fill:white;}
+#roof:hover .st1 {
+    fill:#CBB2CD;
+}
+#roof.active:hover .st1,
+#roof.active .st1 {
+    fill: #AB84AF;
+}
+
+#vertical .st0{fill:#EAD09D;}
+.no-hover #vertical:hover .st1, #vertical .st1{fill:#E9E5DB;}
+#vertical .st2{fill:white;}
+#vertical:hover .st1 {
+    fill:#F2E2C2;
+}
+#vertical.active:hover .st1,
+#vertical.active .st1 {
+    fill: #EAD09D;
+}
+
+.no-hover #institution:hover .st0, #institution .st0{fill:#E9E5DB;}
+#institution .st1{fill:#BF0000;}
+#institution .st2{fill:white;}
+#institution:hover .st0 {
+    fill:#D76060;
+}
+#institution.active:hover .st0,
+#institution.active .st0 {
+    fill: #BF0000;
+}
+
+#enterprise .st0{fill:#FFFFFF;stroke:#FF8500;stroke-linejoin:round;}
+#enterprise .st1{fill:none;stroke:#FF8500;}
+#enterprise .st2{fill:#FF8500;}
+.no-hover #enterprise:hover .st3,#enterprise .st3{fill:#E9E5DB;}
+#enterprise .st4{fill:#FFFFFF;}
+#enterprise:hover .st3 {
+    fill:#FFB360;
+}
+#enterprise.active:hover .st3,
+#enterprise.active .st3 {
+    fill: #FF8500;
+}
+
+
+#farm .st0{fill:none;stroke:#B1CE1C;stroke-width:0.75;}
+#farm .st1{fill:#B1CE1C;}
+.no-hover #farm:hover .st2, #farm .st2{fill:#E9E5DB;}
+#farm .st3{fill:#FFFFFF;stroke:#B1CE1C;stroke-width:0.75;}
+#farm .st4{fill:#FFFFFF;stroke:#B1CE1C;stroke-width:0.75;stroke-linejoin:round;}
+#farm .st5{fill:#FFFFFF;}
+#farm:hover .st2 {
+    fill:#CEE071;
+}
+#farm.active:hover .st2,
+#farm.active .st2 {
+    fill: #B1CE1C;
+}
+
+
+#henhouse .st0{fill:#AA8D00;}
+.no-hover #henhouse:hover .st1, #henhouse .st1{fill:#E9E5DB;}
+#henhouse .st2{fill:white;}
+#henhouse:hover .st1 {
+    fill:#CAB860;
+}
+#henhouse.active:hover .st1,
+#henhouse.active .st1 {
+    fill: #AA8D00;
+}
+
+
+#hive .st0{fill:#FAEC18;}
+#hive .st1{fill:#FFE000;}
+.no-hover #hive:hover .st2, #hive .st2{fill:#E9E5DB;}
+#hive .st3{fill:#FFFFFF;}
+#hive:hover .st2 {
+    fill:#FFEC60;
+}
+#hive.active:hover .st2,
+#hive.active .st2 {
+    fill: #FFE000;
+}
+
+
+.no-hover #aquaponics:hover .st0, #aquaponics .st0{fill:#E9E5DB;}
+#aquaponics .st1{fill:none;stroke:#A34200;stroke-dasharray:0.5,0.5;}
+#aquaponics .st2{fill:none;stroke:#FFFFFF;stroke-width:0.1986;}
+#aquaponics .st3{fill:none;stroke:#A34200;}
+#aquaponics .st4{fill:#FFFFFF;}
+#aquaponics .st5{fill:#A34200;stroke:#A34200;stroke-width:0.9081;}
+#aquaponics .st6{fill:#A34200;}
+#aquaponics:hover .st0 {
+    fill:#C68960;
+}
+#aquaponics.active:hover .st0,
+#aquaponics.active .st0 {
+    fill: #A34200;
+}
+
+
+#producer .st0{fill:none;stroke:#6B2B00;}
+#producer .st1{fill:#FFFFFF;}
+#producer .st2{fill:#6B2B00;}
+.no-hover #producer:hover .st3, #producer .st3{fill:#E9E5DB;}
+#producer:hover .st3 {
+    fill:#A37B60;
+}
+#producer.active:hover .st3,
+#producer.active .st3 {
+    fill: #6B2B00;
+}
+
+
+#market .st0{fill:#E8AA0F;stroke:#E8AA0F;stroke-width:0.815;stroke-linejoin:round;}
+#market .st1{fill:none;stroke:#E8AA0F;stroke-width:0.6485;}
+#market .st2{fill:#E8AA0F;}
+#market .st3{fill:#FFFFFF;stroke:#E8AA0F;stroke-width:0.6485;stroke-linejoin:round;}
+#market .st4{fill:#E8AA0F;stroke:#E8AA0F;stroke-width:0.811;}
+.no-hover #market:hover .st5, #market .st5{fill:#E9E5DB;}
+#market .st6{fill:#FFFFFF;}
+#market .st7{fill:none;stroke:#E8AA0F;stroke-width:0.6485;stroke-linejoin:round;}
+#market .st8{fill:#E8AA0F;stroke:#E8AA0F;stroke-width:0.6485;stroke-linejoin:round;}
+#market:hover .st5 {
+    fill:#F1CA69;
+}
+#market.active:hover .st5,
+#market.active .st5 {
+    fill: #E8AA0F;
+}
+
+
+.no-hover #undefined:hover .st0, #undefined .st0{fill:#E9E5DB;}
+#undefined .st1{fill:#FFFFFF;}
+#undefined .st2{fill:#819DC6;}
+#undefined:hover .st0 {
+    fill: #B0C2DB;
+}
+#undefined.active:hover .st0,
+#undefined.active .st0 {
+    fill: #819DC6;
+}
+
+#divided .st0{fill:none;stroke:#0A8F85;stroke-width:1.0017;}
+#divided .st1{fill:#0A8F85;stroke:#0A8F85;stroke-width:0.8138;stroke-linejoin:round;}
+#divided .st2{fill:none;stroke:#0A8F85;stroke-width:0.8138;stroke-linejoin:round;}
+#divided .st3{fill:#FFFFFF;}
+#divided .st4{fill:none;stroke:#0A8F85;stroke-width:0.5586;}
+#divided .st5{fill:#0A8F85;}
+/*class created in order to separate zone sensible to mouse position*/
+.no-hover #divided:hover .st6, #divided .st6{fill:#E9E5DB;}
+#divided:hover .st6 {
+    fill: #66B9B3;
+}
+#divided.active:hover .st6,
+#divided.active .st6 {
+    fill: #0A8F85;
+}

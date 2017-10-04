@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<%
+var gardenHtmlTypes = [
+{class: 'undefined', label: 'Surfaces disponibles', svg: '../public/images/carte/carte_14_undefined.svg', def: 'Jardin à partager ou surface résiduelle qui attend de revêtir une identité.'},
+{class: 'individual', label: 'Jardins individuels', svg: '../public/images/carte/carte_1_individual.svg', def: 'Jardin domestique avec petite production maraîchère.'},
+{class: 'share', label: 'Jardins en commun', svg: '../public/images/carte/carte_2_commun.svg', def: 'Jardin convivial sur parcelle unique où les personnes travaillent ensemble.'},
+{class: 'divided', label: 'Jardins partagés', svg: '../public/images/carte/carte_15_divided.svg', def: 'Surface à cultiver divisée en parcelles. Infrastructures, outils et savoir faire sont partagés.'},
+{class: 'family', label: 'Jardins familiaux', svg: '../public/images/carte/carte_3_family.svg', def: 'Surface à cultiver divisée en petits lotissements. Chaque parcelle est jardinée individuellement.'},
+{class: 'roof', label: 'Jardins sur les toits', svg: '../public/images/carte/carte_4_roof.svg', def: 'Installation d’un jardin sur une toiture.'},
+{class: 'vertical', label: 'Jardins verticaux', svg: '../public/images/carte/carte_5_vertical.svg', def: 'Surface  verticale végétalisée, ornementales ou productives.'},
+{class: 'institution', label: 'Jardins institutionnels', svg: '../public/images/carte/carte_6_institution.svg', def: 'Jardin appartenant à une institution publique ouvert à toute forme de culture.'},
+{class: 'enterprise', label: 'Jardins d\'entreprise', svg: '../public/images/carte/carte_7_enterprise.svg', def: 'Jardin réalisé par une entreprise ouvert à toute forme de culture.'},
+{class: 'farm', label: 'Fermes urbaines', svg: '../public/images/carte/carte_8_farm.svg', def: 'Fermes dans le milieu urbain, nouvelle identité et ressource de quartier.'},
+{class: 'henhouse', label: 'Poulaillers urbains', svg: '../public/images/carte/carte_9_henhouse.svg', def: 'Petits poulaillers domestiques,  avec des poules de race indigène.'},
+{class: 'hive', label: 'Ruches', svg: '../public/images/carte/carte_10_hive.svg', def: 'Ruche à miel ou maisonnette pour abeilles sauvages.'},
+{class: 'aquaponics', label: 'Acquaponie', svg: '../public/images/carte/carte_11_aquaponics.svg', def: 'Production végétal intégrée à l’élevage de poissons, inspirée de la nature.'},
+{class: 'producer', label: 'Producteurs', svg: '../public/images/carte/carte_12_producer.svg', def: 'Production agricole, pêche et élevage de qualité et de proximité.'},
+{class: 'market', label: 'Marchés', svg: '../public/images/carte/carte_13_market.svg', def: 'Marchés de fruits et légumes, de produits bio ou sous forme de panier.'}
+];
+%>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <% if (process.env.NODE_ENV === 'production') { %>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/build/mapprod.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAeKHxQBUeleSxkLpBKjEP3oZ1EH9tsFQ&v=3.exp&libraries=places"></script>
+        <script src="../javascripts/build/mapprod.js"></script>
+    <% } else { %>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/carrousel.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/map.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/map-icons.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/fontawesome.css">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+        <script src="../javascripts/jquery-1.11.3.js"></script>
+        <script src="../javascripts/jquery.validate-1.14.0.js"></script>
+        <script src="/javascripts/utils.js"></script>
+        <script src="../javascripts/q.js"></script>
+        <script src="../javascripts/formFields.js"></script>
+        <script src="../javascripts/carrousel.js"></script>
+        <script src="../javascripts/amijardin.js"></script>
+    <% }%>
+</head>
+<body>
+
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <div>
+            <h1>Comment inscrire un jardin</h1>
+            <ul>
+                <li>Pour inscrire votre jardin, cliquez 2 fois de suite sur le point où votre jardin se trouve. Complétez ensuite le formulaire.</li>
+                <li>Pour voir les détails d'un jardin, cliquez sur un des points sur la carte.</li>
+                <li>Pour voir uniquement des jardins d'un seul type, cliquez sur le bouton correspondant à droite de votre écran.</li>
+            </ul>
+            <p style="text-align: right; padding-top: 20px;">L'équipe de <i>Genève Cultive</i></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="carrousel" class="overlay">
+    <div class="content"></div>
+    <div class="close"><b>X</b></div>
+    <div class="previous vertical-center next-previous"><span><</span></div>
+    <div class="next vertical-center next-previous"><span>></span></div>
+</div>
+
+<%
+var selected = "map";
+%>
+
+<div class="body">
+    <div class="mobile-garden-info-window overlay">
+        <div class="close">x</div>
+        <div class="content"></div>
+    </div>
+    <div id="map-canvas"></div>
+</div>
+
+<div id="gardenFilterAnchor">
+    <div id="gardenFilterButton">Classification</div>
+    <div id="gardenFilterButtonBack" class="hide"><label></label><div class="button-back"><</div></div>
+
+    <div id="gardenFilter">
+        <% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+        <div id=<%=gardenHtmlTypes[i].class%> class="active">
+            <span><%=gardenHtmlTypes[i].label%></span>
+            <%- include(gardenHtmlTypes[i].svg) %>
+        </div>
+        <% } %>
+    </div>
+
+</div>
+
+<div id="gardenSearch">
+    <div class="control">
+        <a class="font-icon" href="#" title="Recherche">&#xf002</a>
+        <input type="text" class="hide formControl" id="searchGardenInput" maxlength="100">
+    </div>
+    <div class="gardenList">
+
+    </div>
+
+</div>
+
+<div id="subscribeGarden">
+    <a href='#openModal'>
+    <% include ../public/images/carte/comment_inscrire_jardin.svg%>
+    </a>
+</div>
+
+<div class="hide">
+    <div id="successContainer">
+        <h2>Inscription de votre Jardin</h2>
+        <p>Votre jardin a été enregistré avec succès!</p>
+        <p>Il apparaîtra sur notre plateforme dès que l'on vérifiera l'exactitude des données.</p>
+        <p>Nous vous remercions de votre participation!</p>
+        <p style="text-align: right">L'équipe de <i>Genève Cultive</i></p>
+        <div style="text-align: right;font-size: 1.6em">
+            <a class="btn btn-xs btn-success" id="notification">Ok</a>
+        </div>
+    </div>
+    <div id="confirmationContainer">
+        <h2>Inscription de votre Jardin</h2>
+        <div class="error-message hide">
+            <div class="error-icon"></div>
+            <div>
+                <p>Un imprévu est arrivé lors de l'enregistrement de votre jardin.</p>
+                <p>Nous avons reçu le message et travaillons dessus.</p>
+                <p>Si vous pensez qu'il s'agit d'un problème de données, appuyez sur "Retour" pour les modifier.</p>
+            </div>
+        </div>
+        <p>Voici les données de votre jardin. Appuyez sur "Retour" si vous désirez corriger.</p>
+        <div class="table-decorator">
+            <table>
+                <tr>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="street" class="control-label">Rue</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="street-read"></span>
+                    </td>
+                    <td>
+                        <span for="number-read" class="control-label">No</span>
+                    </td>
+                    <td>
+                        <span name="number-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="city" class="control-label">Ville</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="city-read"></span>
+                    </td>
+                    <td>
+                        <span for="state" class="control-label">Canton</span>
+                    </td>
+                    <td>
+                        <span name="state-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="zip" class="control-label">NPA</span>
+                    </td>
+                    <td>
+                        <span name="zip-read"></span>
+                    </td>
+                    <td>
+                        <span for="country" class="control-label">Pays</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="country-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="control-label">Classification</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="classifications-read"></span>
+                    </td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td>-->
+                        <!--<span for="subtype" class="control-label">Type</span>-->
+                    <!--</td>-->
+                    <!--<td colspan="3">-->
+                        <!--<span name="subtype-read"></span>-->
+                    <!--</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>
+                        <span for="images" class="control-label">Images</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="images-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="gardenname" class="control-label">Nom</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="gardenname-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="area" class="control-label">Surface</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="area-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="status" class="control-label">Status</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="status-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="comment" class="control-label">Description</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="comment-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="organisme" class="control-label">Organisme</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="organisme-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="responsible" class="control-label">Responsable</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="responsible-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="email" class="control-label">Email</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="email-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="tel" class="control-label">Tel.</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="tel-read"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="website" class="control-label">Website</span>
+                    </td>
+                    <td colspan="3">
+                        <span name="website-read"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="controls">
+            <button class="btn btn-xs btn-primary" id="formpage">Retour</button>
+            <button class="btn btn-xs btn-success" id="confirm">Sauver</button>
+        </div>
+    </div>
+    <div id="addressFormContainer">
+        <h2> Inscription de votre jardin</h2>
+        <form id="addressForm" class="form-horizontal">
+            <table>
+                <tr>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="narrow"></td>
+                    <td class="narrow"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="street" class="control-label required">Rue</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="street" type="text" class="form-control" id="street" maxlength="100" required>
+                    </td>
+                    <td>
+                        <span for="number" class="control-label">No</span>
+                    </td>
+                    <td>
+                        <input name="number" type="text" class="form-control" id="number" maxlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="error-overflow">
+                        <label for="number" style="display:none"></label>
+                    </td>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="street" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="city" class="control-label required">Ville</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="city" type="text" class="form-control" id="city" maxlength="30" required>
+                    </td>
+                    <td>
+                        <span for="state" class="control-label required">Canton</span>
+                    </td>
+                    <td>
+                        <input name="state" type="text" class="form-control" id="state" maxlength="2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="city" style="display:none"></label>
+                    </td>
+                    <td></td>
+                    <td class="error-overflow">
+                        <label class="error" for="state" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="zip" class="control-label required">NPA</span>
+                    </td>
+                    <td>
+                        <input name="zip" type="text" class="form-control" id="zip" maxlength="8" required>
+                    </td>
+                    <td>
+                        <span for="country" class="control-label required">Pays</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="country" type="text" class="form-control" id="country" maxlength="12" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="error-overflow">
+                        <label class="error" for="zip" style="display:none"></label>
+                    </td>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="country" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="classification1" class="control-label required">Classification</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="classifications" id="classification1" class="form-control" required>
+                            <option value="">Select ...</option>
+                            <% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+                                <option title="<%=gardenHtmlTypes[i].def%>" class="tooltips" value=<%=gardenHtmlTypes[i].class%>><%=gardenHtmlTypes[i].label%>
+                            <% } %>
+                        </select>
+                    </td>
+                    <td class="icon-plus-minus">
+                        <span class="icon-plus" data-next="2">+</span>
+                    </td>
+                </tr>
+                <tr class="hide">
+                    <td>
+                        <span for="classification2" class="control-label">Class. 1</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="classifications" id="classification2" class="form-control">
+                            <option value="">Select ...</option>
+                            <% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+                            <option value=<%=gardenHtmlTypes[i].class%>><%=gardenHtmlTypes[i].label%></option>
+                            <% } %>
+                        </select>
+                    </td>
+                    <td class="icon-plus-minus">
+                        <span class="icon-plus">+</span><span class="icon-minus">-</span>
+                    </td>
+                </tr>
+                <!--ERROR MESSAGE PRODUCED BY JQUERY VALIDATOR, OPPOSITE TO STRATEGY TAKEN BEFORE WITH EXPLICIT TR HOLDING ERROR-->
+                <tr class="hide">
+                    <td>
+                        <span for="classification3" class="control-label">Class. 2</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="classifications" id="classification3" class="form-control">
+                            <option value="">Select ...</option>
+                            <% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+                            <option value=<%=gardenHtmlTypes[i].class%>><%=gardenHtmlTypes[i].label%></option>
+                            <% } %>
+                        </select>
+                    </td>
+                    <td class="icon-plus-minus">
+                        <span class="icon-plus">+</span><span class="icon-minus">-</span>
+                    </td>
+                </tr>
+                <tr class="hide">
+                    <td>
+                        <span for="classification4" class="control-label">Class. 3</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="classifications" id="classification4" class="form-control">
+                            <option value="">Select ...</option>
+                            <% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+                            <option value=<%=gardenHtmlTypes[i].class%>><%=gardenHtmlTypes[i].label%></option>
+                            <% } %>
+                        </select>
+                    </td>
+                    <td class="icon-plus-minus">
+                        <span class="icon-minus">-</span>
+                    </td>
+                </tr>
+                <tr id="subtypeEntry" style="display: none">
+                    <td>
+                        <span for="subtype" class="control-label">Type</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="subtype" id="subtype" class="form-control">
+                            <option value="">Select ...</option>
+                            <option value="val1">val 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="images" class="control-label">Images</span>
+                    </td>
+                    <td colspan="3">
+                        <input type="file" id="images" name="images" size="40" accept="image/*" multiple="multiple">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="images" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="gardenname" class="control-label">Nom</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="gardenname" type="text" class="form-control" id="gardenname" maxlength="100"  placeholder="Nom du jardin">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="gardenname" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="area" class="control-label">Surface</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="area" type="text" class="form-control" id="area" maxlength="8">
+                    </td>
+                    <td style="text-align: left;font-size: 1.6em;">
+                        m2
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="area" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="status" class="control-label">Status</span>
+                    </td>
+                    <td colspan="3">
+                        <select name="status" id="status" class="form-control">
+                            <option value="">Select ...</option>
+                            <option value="project">Idée</option>
+                            <option value="in_progress">En cours</option>
+                            <option value="done">Réalisé</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="comment" class="control-label">Description</span>
+                    </td>
+                    <td colspan="5">
+                        <textarea name="comment" type="text" class="form-control" id="comment" maxlength="2000" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="5" style="text-align:left">
+                        <label class="error" for="comment" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="organism" class="control-label">Organisme</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="organism" type="text" class="form-control" id="organism" maxlength="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="organism" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="manager" class="control-label">Responsable</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="manager" type="text" class="form-control" id="manager" maxlength="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="manager" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="email" class="control-label required">Email</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="email" type="text" class="form-control" id="email" maxlength="50" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="email" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="tel" class="control-label">Tel.</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="tel" type="text" class="form-control" id="tel" maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="tel" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span for="website" class="control-label">Site Web</span>
+                    </td>
+                    <td colspan="3">
+                        <input name="website" type="text" class="form-control" id="website" maxlength="100" placeholder="http://www.monsite.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <label class="error" for="website" style="display:none"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                    <td>
+                        <button class="btn btn-xs btn-success" id="byajax">Sauver</button>
+                    </td>
+                </tr>
+            </table>
+            <input name="lat" id="lat" hidden>
+            <input name="lng" id="lng" hidden>
+        </form>
+    </div>
+    <div id="gardenDetails">
+        <h2 name="gardenname-detail">Anonyme</h2>
+        <div>
+            <span class="labelColumn">Rue</span><span class="valueColumn" name="street-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Ville/Canton</span><span name="zip-detail"></span>, <span name="city-detail"></span>, <span name="state-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Pays</span><span class="valueColumn" name="country-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Classification</span><span class="valueColumn" name="classification-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Autres Classif.</span><span class="valueColumn" name="autres-classifications-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Surface</span><span class="valueColumn" name="area-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Status</span><span class="valueColumn" name="status-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Description</span><span class="valueColumn" name="comment-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Organisme</span><span class="valueColumn" name="organism-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Responsable</span><span class="valueColumn" name="manager-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Email</span><span class="valueColumn" name="email-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Tel.</span><span class="valueColumn" name="tel-detail"></span>
+        </div>
+        <div>
+            <span class="labelColumn">Site Web</span><span class="valueColumn" name="website-detail"></span>
+        </div>
+        <div style="margin-bottom: 0em;">
+            <span class="labelColumn">Images</span><div class="valueColumn imagesContainer"></div>
+        </div>
+    </div>
+</div>
+
+<% include header.ejs %>
+
+</body>
+</html>

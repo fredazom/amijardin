@@ -1,0 +1,1 @@
+window.utils.URL_PREFIX= "http://amijardin-genevecultive.rhcloud.com";

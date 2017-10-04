@@ -1,0 +1,20 @@
+<svg version="1.1" 
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="42px"
+	 viewBox="0 0 200 42" style="enable-background:new 0 0 200 42;" xml:space="preserve">
+<g id="rirquadri_pas_selectionne">
+</g>
+<g id="accueil_x5F_riquadri">
+	<g>
+		<path class="st0" d="M179.2,1c10.9,0,19.8,9,19.8,20s-8.9,20-19.8,20H20.8C9.9,41,1,32,1,21C1,10,9.9,1,20.8,1L179.2,1 M179.2,2
+			L20.8,2C10.4,2,2,10.5,2,21c0,10.5,8.4,19,18.8,19h158.4c10.4,0,18.8-8.5,18.8-19S189.6,2,179.2,2L179.2,2z"/>
+	</g>
+</g>
+<g id="accueil_x5F_icone">
+	<g>
+		<path class="st0" d="M179,1c11,0,20,9,20,20s-9,20-20,20s-20-9-20-20S168,1,179,1 M179,2c-10.5,0-19,8.5-19,19s8.5,19,19,19
+			s19-8.5,19-19S189.5,2,179,2L179,2z"/>
+	</g>
+	<path class="st0" d="M177.6,34.2c0,0-12.7-20.2-8-22.4c4.7-2.2,11.4,4.2,11.4,4.2s6.2-5.7,10.7-4.1
+		C196.1,13.4,177.6,34.2,177.6,34.2z"/>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/communprod.css">
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <% }%>
+    <title>Genève Cultive - Contact</title>
+    <style type="text/css">
+        .title {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<%var selected = "contact";%>
+
+<% include header.ejs %>
+
+<% var templateContent = "contact-content.ejs" %>
+
+<% include main-template.ejs %>
+
+</body>
+</html>

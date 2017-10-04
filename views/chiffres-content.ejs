@@ -1,0 +1,35 @@
+<%
+var gardenHtmlTypes = [
+{class: 'undefined', label: 'surfaces disponibles', svg: '../public/images/carte/carte_14_undefined.svg', def: 'Jardin à partager ou surface résiduelle qui attend de revêtir une identité.'},
+{class: 'individual', label: 'jardins individuels', svg: '../public/images/carte/carte_1_individual.svg', def: 'Jardin domestique avec petite production maraîchère.'},
+{class: 'share', label: 'jardins en commun', svg: '../public/images/carte/carte_2_commun.svg', def: 'Jardin convivial sur parcelle unique où les personnes travaillent ensemble.'},
+{class: 'divided', label: 'jardins partagés', svg: '../public/images/carte/carte_15_divided.svg', def: 'Surface à cultiver divisée en parcelles. Infrastructures, outils et savoir faire sont partagés.'},
+{class: 'family', label: 'jardins familiaux', svg: '../public/images/carte/carte_3_family.svg', def: 'Surface à cultiver divisée en petits lotissements. Chaque parcelle est jardinée individuellement.'},
+{class: 'roof', label: 'jardins sur les toits', svg: '../public/images/carte/carte_4_roof.svg', def: 'Installation d’un jardin sur une toiture.'},
+{class: 'vertical', label: 'jardins verticaux', svg: '../public/images/carte/carte_5_vertical.svg', def: 'Surface  verticale végétalisée, ornementales ou productives.'},
+{class: 'institution', label: 'jardins institutionnels', svg: '../public/images/carte/carte_6_institution.svg', def: 'Jardin appartenant à une institution publique ouvert à toute forme de culture.'},
+{class: 'enterprise', label: 'jardins d\'entreprise', svg: '../public/images/carte/carte_7_enterprise.svg', def: 'Jardin réalisé par une entreprise ouvert à toute forme de culture.'},
+{class: 'farm', label: 'fermes urbaines', svg: '../public/images/carte/carte_8_farm.svg', def: 'Fermes dans le milieu urbain, nouvelle identité et ressource de quartier.'},
+{class: 'henhouse', label: 'poulaillers urbains', svg: '../public/images/carte/carte_9_henhouse.svg', def: 'Petits poulaillers domestiques,  avec des poules de race indigène.'},
+{class: 'hive', label: 'ruches', svg: '../public/images/carte/carte_10_hive.svg', def: 'Ruche à miel ou maisonnette pour abeilles sauvages.'},
+{class: 'aquaponics', label: 'acquaponie', svg: '../public/images/carte/carte_11_aquaponics.svg', def: 'Production végétal intégrée à l’élevage de poissons, inspirée de la nature.'},
+{class: 'producer', label: 'producteurs', svg: '../public/images/carte/carte_12_producer.svg', def: 'Production agricole, pêche et élevage de qualité et de proximité.'},
+{class: 'market', label: 'marchés', svg: '../public/images/carte/carte_13_market.svg', def: 'Marchés de fruits et légumes, de produits bio ou sous forme de panier.'}
+];
+%>
+
+<h1>En Chiffres</h1>
+
+<p>Pour les personnes plus analytiques, nous préparons nos données pour montrer combien de ruches existent à Genève, quels quartiers et quelles communes sont les plus actives au sujet des jardins urbains, etc.</p>
+
+<p>Projets inscrits: <span id="total"></span></p>
+
+<% for(var i=0; i<gardenHtmlTypes.length; i++) {%>
+<p class="classification-count">
+    <span id=<%=gardenHtmlTypes[i].class%> class="active logo">
+        <%- include(gardenHtmlTypes[i].svg) %>
+    </span>
+    <span id=<%=gardenHtmlTypes[i].class+"_total"%> class="classification-total">0</span>
+    <span class="label"><%=gardenHtmlTypes[i].label%></span>
+</p>
+<% } %>

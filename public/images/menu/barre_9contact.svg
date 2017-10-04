@@ -1,0 +1,15 @@
+<svg version="1.1" id="icone"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+	 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<path class="st0" d="M9,17.8c-4.8,0-8.8-3.9-8.8-8.8S4.2,0.2,9,0.2c4.8,0,8.8,3.9,8.8,8.8S13.9,17.8,9,17.8L9,17.8z"/>
+<g>
+	<rect x="3.6" y="5.5" class="st2" width="11.3" height="7.6"/>
+	<polyline class="st2" points="14.9,6.8 9.2,10.5 3.6,6.8 	"/>
+	<line class="st2" x1="3.6" y1="13.1" x2="7.9" y2="9.5"/>
+	<line class="st2" x1="14.9" y1="13.1" x2="10.6" y2="9.5"/>
+</g>
+<g>
+	<path class="st1" d="M9,0c5,0,9,4,9,9s-4,9-9,9s-9-4-9-9S4.1,0,9,0 M9,0.5C4.3,0.5,0.5,4.3,0.5,9s3.8,8.5,8.5,8.5s8.5-3.8,8.5-8.5
+		S13.7,0.5,9,0.5L9,0.5z"/>
+</g>
+</svg>

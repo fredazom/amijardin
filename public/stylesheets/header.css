@@ -1,0 +1,334 @@
+body {
+    font-family: "LatoWebLight", "DejaVu Serif";
+}
+
+.inline {
+    display: inline-block;
+}
+
+.menu-logo {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.menu-logo .st0{fill:#B0CE23;}
+.menu-logo .st1{fill:#B1CE1C;}
+.menu-logo .st2{display:none;fill:#7A8818;}
+.menu-logo .st3{fill:#FFFFFF;}
+.menu-logo .st4{fill:none;}
+.menu-logo .st5{display:inline;}
+.menu-logo .st6{display:none;}
+.menu-logo  svg {
+    width: 7em;
+    height: 7em;
+}
+
+.menu {
+    background-color: white;
+    position: absolute;
+    top: 0em;
+    right:0em;
+    left: 0em;
+    z-index: 2;
+}
+
+
+.menu a:active, .menu a:hover, .menu a:visited, .menu a,
+.menu-logo-logo a:active, .menu-logo a:hover, .menu-logo a:visited, .menu-logo a {
+    text-decoration: none;
+    color: #939393;
+}
+
+#we_are .st0{fill:#FFFFFF;}
+#we_are .st1{fill:#B1DDDD;}
+#goals .st0{fill:#FFFFFF;}
+#goals .st1{fill:#B1DDDD;}
+#map .st0{fill:#FFFFFF;}
+#map .st1{fill:#B1DDDD;}
+#map .st2{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#classification .st0{fill:#FFFFFF;}
+#classification .st1{fill:#B1DDDD;}
+#classification .st2{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#consulting .st0{fill:#FFFFFF;}
+#consulting .st1{fill:#B1DDDD;}
+#consulting .st2{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#news .st0{fill:#FFFFFF;}
+#news .st1{fill:#B1DDDD;}
+#news .st2{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#forum .st0{fill:#FFFFFF;stroke:#B1DDDD;stroke-width:0.45;}
+#forum .st1{fill:#FFFFFF;}
+#forum .st2{fill:#B1DDDD;}
+#forum .st3{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#numbers .st0{fill:#FFFFFF;}
+#numbers .st1{fill:none;stroke:#B1DDDD;stroke-width:1.35;stroke-dasharray:0.4711,0.4711;}
+#numbers .st2{fill:none;stroke:#B1DDDD;stroke-width:1.35;stroke-dasharray:1.2033,0.4011;}
+#numbers .st3{fill:#B1DDDD;}
+#numbers .st4{fill:none;stroke:#B1DDDD;stroke-width:1.0457;stroke-dasharray:0.5473,0.821;}
+#numbers .st5{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#numbers .st6{fill:none;stroke:#B1DDDD;stroke-width:1.35;}
+#contact .st0{fill:#FFFFFF;}
+#contact .st1{fill:#B1DDDD;}
+#contact .st2{fill:none;stroke:#B1DDDD;stroke-width:0.45;}
+#cultivons-nous .st0{display:inline;fill:#B1CE1C;}
+#cultivons-nous .st1{fill:#B0CE23;}
+#cultivons-nous .st2{fill:#B1CE1C;}
+#cultivons-nous .st3{fill:#FFFFFF;}
+#cultivons-nous .st4{display:none;}
+#sponsor .st0{fill:#FFFFFF;stroke:#B1DDDD;stroke-width:0.45;}
+#sponsor .st1{fill:#FFFFFF;}
+#sponsor .st2{fill:#B1DDDD;}
+#sponsor .st3{fill:none;stroke:#B1DDDD;stroke-width:0.25;}
+
+.menu-links {
+    margin: 0em;
+    height: 0em;
+    display: none;
+}
+
+.menu-links ul {
+    margin: 0em 0em;
+    padding: 0em;
+}
+
+.menu-links li {
+    margin: 0 1em 0 0;
+    padding: 0px;
+    list-style-type: none;
+    color: #D3D3D3;
+}
+
+.menu-links  .separator {
+    display: none;
+}
+
+.menu-links li svg {
+    height: 0em;
+    width: 4.8em;
+    vertical-align: middle;
+    margin-left: 3em;
+}
+
+.menu-links  li svg > g:last-child {
+    display: none;
+}
+
+.menu-links li span {
+    font-size: 0em;
+}
+
+.menu-links li:hover span,
+.menu-links li.selected span {
+    color: #000000;
+}
+
+.menu-logo {
+    display: none;
+}
+
+.menu-spacer {
+    height: 7em;
+    width: 100%;
+    display: none;
+    margin-bottom: 3em;
+}
+
+.vertical-center:before {
+    content: '';
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+}
+
+.mobile-logo {
+    padding-left: 1em;
+    background-color: #B1CE1C;
+    height: 7em;
+}
+
+.mobile-logo  svg {
+    height: 5em;
+    vertical-align: middle;
+}
+
+.mobile-logo .st0{fill:white;}
+.mobile-logo .st1{fill:none;}
+
+.menu input[type=checkbox] {
+    display: none;
+}
+
+.menu input[type=checkbox]:checked + .menu-links {
+    display: block;
+    height: inherit;
+}
+
+.menu input[type=checkbox]:checked + .menu-links li {
+    border-bottom: 0.1em solid #D3D3D3;
+}
+
+.menu input[type=checkbox]:checked + .menu-links li svg {
+    height: 6.4em;
+}
+
+.menu input[type=checkbox]:checked + .menu-links li span {
+    font-size: 1.8em;
+    margin-left: 1em;
+    vertical-align: middle;
+}
+
+.menu input[type=checkbox]:checked ~ label {
+    background-color: #D8E78E;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    right: 2em;
+    top: 1.5em;
+    cursor: pointer;
+    font-size: 10px; /*overwrite default font-size in communs.css*/
+}
+
+.mobile-menu-button > div {
+    background-color: white;
+    height: 0.3em;
+    margin: 0.7em;
+    width: 3em;
+}
+
+@media screen and (min-width: 73.8em) {
+
+    .menu-logo {
+        display: inherit;
+    }
+
+    .menu {
+        position: absolute;
+        left: 8em;
+        right: 0;
+        margin: 1.5em 1.5em 0em 1.5em;
+        top: inherit;
+    }
+
+    .menu-links {
+        background-color: #ffffff;
+        border-radius: 3em;
+        display: inherit;
+        height: inherit;
+    }
+
+    .menu-links ul:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+
+    .menu-links ul {
+        text-align: justify;
+        height: 3em;
+    }
+
+    .menu-links li {
+        display: inline-block;
+        width: inherit;
+        border-bottom: none !important;
+        line-height: 3em;
+        margin: 0em;
+    }
+
+    .menu-links li:first-child {
+        margin-left: 2em;
+    }
+
+    .menu-links li:last-child {
+        margin-right: 2em;
+    }
+
+    .menu-links  .separator {
+        color: #41b7b3;
+        font-weight: bolder;
+        font-size: 1.6em;
+        vertical-align: middle;
+        display:inline-block;
+    }
+
+    #sponsor + .separator {
+        display: none;
+    }
+
+    .menu-links li svg {
+        display: none;
+    }
+
+
+    .menu-links  li svg g:last-child {
+        display: inherit;
+    }
+
+    .menu-links li span {
+        display: inherit;
+        vertical-align: middle;
+        font-size: 1.8em !important;
+        margin-left: 0em !important;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .menu-spacer {
+        display: block;
+    }
+
+    .mobile-menu-button {
+        display: none;
+    }
+
+    .menu-links {
+        display: inherit;
+    }
+
+}
+
+@media screen and (min-width: 96em) {
+
+    .menu-links li:first-child {
+        margin-left: 0em;
+    }
+
+    .menu-links li:last-child {
+        margin-right: 2em;
+    }
+
+    .menu-links  .separator {
+        display: none;
+    }
+
+    .menu-links li svg {
+        display: inherit;
+        height: 3em !important;
+        width: 3em;
+        margin-left: 0em;
+    }
+
+}
+
+@media screen and (min-width: 116em) {
+
+
+    .menu-links ul:after {
+        display:none;
+    }
+
+    .menu-links ul {
+        text-align: inherit;
+        height: 3em;
+    }
+
+    .menu-links li {
+        margin-right: 4em;
+    }
+}

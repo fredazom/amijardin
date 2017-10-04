@@ -1,0 +1,41 @@
+.image-container {
+/*#images-tab > div {*/
+    width: 98%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image-container img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.image-container span {
+    font-size: 0.8rem;
+}
+
+.link {
+    color: #41b7b3;
+    font-size: 1.25em;
+}
+
+@media screen and (min-width: 73.8em) {
+    .image-container {
+    /*#images-tab > div {*/
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 96em) {
+    .image-container {
+    /*#images-tab > div {*/
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 116em) {
+    .image-container {
+    /*#images-tab > div {*/
+        width: 24%;
+    }
+}

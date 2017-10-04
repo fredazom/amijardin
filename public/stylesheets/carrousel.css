@@ -1,0 +1,77 @@
+#carrousel {
+    display: none;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#carrousel .content {
+    width: 100%;
+    height: 100%;
+}
+
+#carrousel ul {
+    /*width: 100%; width = images.length*100%*/
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#carrousel li {
+    float: left;
+    height: 100%;
+    /*width: 100%; width = 100%/images.length*/
+    text-align: center;
+}
+
+#carrousel li > div {
+    max-width: 70%;
+    max-height: 70%;
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block; /*besides li.vertical-center:before*/
+}
+
+#carrousel.show {
+    display: block;
+}
+
+#carrousel .next-previous {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: #939393;
+}
+
+#carrousel .next-previous span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#carrousel .next {
+    right: 20px;
+}
+
+#carrousel .previous {
+    left: 20px;
+}
+
+#carrousel .close {
+    top: 0.5rem;
+    right: 0.7rem;
+    position: fixed;
+    cursor: pointer;
+    background-color: white;
+    width: 2rem;
+    text-align: center;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    z-index: 1;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 73.8em) {
+    #carrousel .next-previous span {
+        font-size: 2rem;
+    }
+}

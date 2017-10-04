@@ -1,0 +1,111 @@
+<h1>Forum</h1>
+<div id="close-question-confirmation" class="modalDialog">
+    <div>
+        <div>
+            <h1>Information</h1>
+            <p>Voulez-vous interrompre la création de votre question?</p>
+            <div class="footer">
+                <button class="btn btn-xs btn-primary cancel" type="button">Non</button>
+                <button class="btn btn-xs btn-success ok" type="button">Oui</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="forum-question-section" class="hide">
+
+    <div class='submission-indicator overlay hide'>
+        <div class='bee-animation'>
+            <div class='bee'></div>
+        </div>
+        <div class="text-animation">
+            <div class='text-animated'></div>
+            <div class='text-animated'></div>
+            <div class='text-animated'></div>
+            <div class='text-animated'></div>
+        </div>
+    </div>
+
+    <div class="error-message hide">
+        <div class="error-icon"></div>
+        <div>
+            <p>Un imprévu est arrivé lors de l'enregistrement de votre question.</p>
+            <p>Si vous pensez que c'est un problème avec nos serveurs, merci de nous le faire savoir à <i>postmaster@genevecultive.ch</i>.</p>
+            <p>Nous ferons le nécessaire pour fixer le problème au plus vite.</p>
+        </div>
+    </div>
+
+    <p>Vous receverez une confirmation par email afin de valider votre question (votre email n'est jamais dévoilé).</p>
+
+    <form id="question-form">
+
+        <span for="s" class="control-label required">Sujet</span>
+        <input name="s" type="text" class="form-control" id="s" maxlength="250" required>
+
+        <span for="t" class="control-label">Détails</span>
+        <div>
+          <textarea id="t" name="t" placeholder="Écrivez ici..."></textarea>
+        </div>
+
+        <span for="ps" class="control-label required">Pseudo</span>
+        <input name="ps" type="text" class="form-control" id="ps" maxlength="100" required>
+
+        <span for="e" class="control-label required">Email</span>
+        <input name="e" type="text" class="form-control" id="e" maxlength="100" required>
+
+        <span for="n" class="control-label">Recevoir une notification lors d'une interaction avec cette question<input name="n" type="checkbox" id="n"></span>
+
+
+
+        <div class="buttons-container">
+            <button class="btn btn-xs btn-primary" type="button" id="cancel">Annuler</button>
+            <button class="btn btn-xs btn-success" type="submit" id="submit">Sauver</button>
+        </div>
+    </form>
+</div>
+
+<div id="forum-content-section">
+    <p>Le Forum permet d’échanger des tips, conseils et informations avec d’autres membres de la plate-forme. Le Forum offre
+        la possibilité de créer un groupe de discussion sur un sujet relié au thème jardin urbain / agriculture urbaine.</p>
+
+    <p><b>Note:</b> tout texte n’engage que la responsabilité de son auteur. Aucun propos diffamatoire ou calomnieux n’est accepté.</p>
+
+    <div class="success-message hide">
+        <div class="success-icon"></div>
+        <div class="message">
+            <p>Votre question a été enregistrée avec succès. Vous avez reçu un email pour valider l'enregistrement.</p>
+            <p>Nous vous remercions pour votre participation.</p>
+            <p><b>NOTE:</b> Dans le cas où vous n'avez pas reçu d'e-mail dans votre boîte de réception, regardez dans celle de courrier indésirable (spams).</p>
+        </div>
+    </div>
+
+    <div id="validate" class="success-message">
+        <div class="success-icon"></div>
+        <div>
+            <p>Votre question a été validée avec succès.</p>
+        </div>
+    </div>
+
+    <div id="unsubscribe" class="warning-message">
+        <div class="warning-icon"></div>
+        <div class="message">
+            <p>Aucune notification a été désactivée.</p>
+        </div>
+    </div>
+
+    <div style="position: relative; height: 4.5em">
+        <a href='#' class='btn btn-xs btn-success create-button'><span>Créer une question</span></a>
+    </div>
+
+    <div class="questions">
+        <div class="error-message hide">
+            <div class="error-icon"></div>
+            <div>
+                <p>Un imprévu est arrivé lors du chargement des questions.</p>
+                <p>Si ce comportement persiste merci de nous l'annoncer à <i>postmaster@genevecultive.ch</i>.</p>
+                <p>Nous ferons le nécessaire pour fixer le problème au plus vite.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

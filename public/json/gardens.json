@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.142296100000067,
+          46.1983922
+        ]
+      },
+      "properties": {
+        "email": "lolo@toto.com",
+        "type": "share",
+        "comment": "this is a long comment which is composed at the most of two hundred words, with many strange characters like à$éè¨&%/\"+*ç{}[]'.Voyons voir les répercussion de ceci.",
+        "number": "12A",
+        "street": "rue Action",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1206",
+        "country": "Suisse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.242297000000090,
+          46.1983922
+        ]
+      },
+      "properties": {
+        "email": "otot@toto.com",
+        "type": "individual",
+        "comment": "this is a long comment which is composed at the most of two hundred words, with many strange characters like à$éè¨&%/\"+*ç{}[]'.Voyons voir les répercussion de ceci.",
+        "number": "12A",
+        "street": "rue Guillon",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse"
+      }
+    }
+  ]
+}

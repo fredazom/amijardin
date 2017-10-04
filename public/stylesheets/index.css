@@ -1,0 +1,317 @@
+html {
+    cursor:  url(../images/pointer.png), auto;
+    background-color: white;
+    font-family: "LatoWebLight", "DejaVu Serif";
+    /*force cursor to appear everywhere*/
+    height: 100%;
+}
+
+/* Webfont: Lato-Light */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('../fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Lato-Light.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Webfont: Lato-LightItalic */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('../fonts/Lato-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Lato-LightItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('../fonts/Lato-LightItalic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Lato-LightItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+#navigation-container {
+    text-align: inherit;
+}
+
+#navigation {
+    margin: 0em;
+    padding: 0em;
+    display: block;
+}
+
+
+#navigation > li {
+    position: relative;
+    display: block;
+    border-top: 0.1em solid #D3D3D3;
+}
+
+#navigation > li:active span {
+    color: #000000;
+}
+
+#navigation > li > a > span {
+    font-size: 1.125em;
+    color: #939393;
+    vertical-align: middle;
+}
+
+#navigation > li > a {
+    cursor:  url(../images/pointer.png), auto;
+}
+
+#navigation > li > a > svg {
+    margin-left: -14em;
+    vertical-align: middle;
+    height: 4em;
+    width: 19em;
+    margin-right: 1em;
+}
+
+#navigation > li > a > svg > g:nth-child(2) {
+    display: none;
+}
+
+#navigation > li > a > svg > g:last-child > g:first-child {
+    display: none;
+}
+
+#navigation > li > a:visited,
+#navigation > li > a:active,
+#navigation > li > a {
+    color: transparent;
+    text-decoration: none;
+}
+
+#we_are .st0{fill:#D2E8E9;}
+#goals .st0{fill:#D2E8E9;}
+#map .st0{fill:none;stroke:#D2E8E9;}
+#map .st1{fill:#D2E8E9;}
+#classification .st0{fill:none;stroke:#D2E8E9;}
+#classification .st1{fill:#D2E8E9;}
+#consulting .st0{fill:none;stroke:#D2E8E9;}
+#consulting .st1{fill:#D2E8E9;}
+#news .st0{fill:none;stroke:#D2E8E9;}
+#news .st1{fill:#D2E8E9;}
+#forum .st0{fill:none;stroke:#D2E8E9;}
+#forum .st1{fill:#FFFFFF;stroke:#D2E8E9;}
+#forum .st2{fill:#D2E8E9;}
+#numbers .st0{fill:none;stroke:#D2E8E9;stroke-width:3;}
+#numbers .st1{fill:none;stroke:#D2E8E9;}
+#numbers .st2{fill:none;stroke:#D2E8E9;stroke-width:3;stroke-dasharray:1.0468,1.0468;}
+#numbers .st3{fill:none;stroke:#D2E8E9;stroke-width:2.3237;stroke-dasharray:1.2163,1.8245;}
+#numbers .st4{fill:#D2E8E9;}
+#numbers .st5{fill:none;stroke:#D2E8E9;stroke-width:3;stroke-dasharray:2.6741,0.8914;}
+/*#contact .st0{fill:none;stroke:#D2E8E9;}*/
+/*#contact .st1{fill:#D2E8E9;}*/
+#contact .st0{display:inline;fill:#B1CE1C;}
+#contact .st1{fill:#B0CE23;}
+#contact .st2{fill:#FFFFFF;} /*#contact .st2{fill:#B1CE1C;}*/
+#contact .st3{fill:#FFFFFF;}
+#contact .st4{display:none;}
+#cultivons-nous .st0{display:inline;fill:#B1CE1C;}
+#cultivons-nous .st1{fill:#B0CE23;}
+#cultivons-nous .st2{fill:#B1CE1C;}
+#cultivons-nous .st3{fill:#FFFFFF;}
+#cultivons-nous .st4{display:none;}
+#sponsor .st0{fill:none;stroke:#D3E9EA;stroke-width:0.5556;}
+#sponsor .st1{fill:#FFFFFF;}
+#sponsor .st2{fill:#FFFFFF;stroke:#D3E9EA;}
+#sponsor .st3{fill:#D2E8E9;}
+#sponsor .st4{fill:#D3E9EA;}
+
+
+#we_are:hover .st0{fill:#B1DDDD;}
+#goals:hover .st0{fill:#B1DDDD;}
+#map:hover .st0{fill:none;stroke:#B1DDDD;}
+#map:hover .st1{fill:#B1DDDD;}
+#classification:hover .st0{fill:none;stroke:#B1DDDD;}
+#classification:hover .st1{fill:#B1DDDD;}
+#consulting:hover .st0{fill:none;stroke:#B1DDDD;}
+#consulting:hover .st1{fill:#B1DDDD;}
+#news:hover .st0{fill:none;stroke:#B1DDDD;}
+#news:hover .st1{fill:#B1DDDD;}
+#forum:hover .st0{fill:none;stroke:#B1DDDD;}
+#forum:hover .st1{fill:#FFFFFF;stroke:#B1DDDD;}
+#forum:hover .st2{fill:#B1DDDD;}
+#numbers:hover .st0{fill:none;stroke:#B1DDDD;stroke-width:3;}
+#numbers:hover .st1{fill:none;stroke:#B1DDDD;}
+#numbers:hover .st2{fill:none;stroke:#B1DDDD;stroke-width:3;stroke-dasharray:1.0468,1.0468;}
+#numbers:hover .st3{fill:none;stroke:#B1DDDD;stroke-width:2.3237;stroke-dasharray:1.2163,1.8245;}
+#numbers:hover .st4{fill:#B1DDDD;}
+#numbers:hover .st5{fill:none;stroke:#B1DDDD;stroke-width:3;stroke-dasharray:2.6741,0.8914;}
+/*#contact:hover .st0{fill:none;stroke:#7e9314;}*/
+/*#contact:hover .st1{fill:#7e9314;}*/
+#contact:hover .st1{fill:#7e9314;}
+#sponsor:hover .st0{stroke:#B1DDDD;}
+#sponsor:hover .st2{stroke:#B1DDDD;}
+#sponsor:hover .st3{fill:#B1DDDD;}
+#sponsor:hover .st4{fill:#B1DDDD;}
+
+.logo {
+    position: static;
+    background: url(../images/accueil_sigle_sanstexte.svg) no-repeat;
+    width: 272px;
+    height: 200px;
+    margin: 1em auto;
+    background-size: 272px 200px;
+}
+
+.l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    cursor: inherit;
+}
+
+.licence {
+    bottom: 0em;
+    left: 0em;
+    font-size: 1em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.licence a:first-child {
+    display: block;
+}
+
+.licence img {
+    width: 120px;
+    height: 23px;
+}
+
+.licence .mail {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    display: block;
+}
+
+
+@media screen and (min-width: 65.5em) {
+
+    .licence {
+        position: fixed;
+        margin-top: 0em;
+        text-align: center;
+        margin-left: 1em;
+        width: 100%;
+    }
+
+    .licence a:first-child {
+        display: inline-block;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 408px;
+        height: 300px;
+        margin: -150px -204px ;
+        background-size: 408px 300px;
+    }
+
+    #navigation-container {
+        text-align: center;
+    }
+
+    #navigation {
+        display: inline-block;
+    }
+
+    #navigation > li {
+        display: inline-block;
+        margin: 0em;
+        padding: 0em;
+        border-top: none;
+    }
+
+    #navigation > li > a:before {
+        content: "|";
+        width: 0.5em;
+        color: #D3E9EA;
+    }
+
+    #navigation > li:hover span {
+        color: #000000;
+    }
+
+    #navigation > li:hover > a:before {
+        color: #B1DDDD;
+    }
+
+    #navigation > li > a > svg {
+        display: none;
+    }
+
+
+    #navigation > #contact > a > span {border: 1px solid #B1CE1C; background-color: #B1CE1C; color: #FFFFFF;}
+
+    #navigation > #contact:hover > a > span {background-color: #7e9314; color: #FFFFFF;}
+
+}
+
+
+@media screen and (min-width: 65.5em) and (min-height: 43em) {
+
+    #navigation {
+        position: absolute;
+        right: 1.5em;
+        top: 50%;
+        display: block;
+        height: 37.5em;
+        margin: -18.5em 0;
+    }
+
+    #navigation > li {
+        position: relative;
+        display: block;
+    }
+
+    #navigation > li > a:before {
+        display: none;
+    }
+
+    #navigation > li > a > span {
+        position: absolute;
+        top: 0.9em;
+        right: 3.5em;
+        font-size: 1.3em;
+        color: #939393;
+    }
+
+
+    #navigation > #contact > a > span {border: 1px; background-color: #FFFFFF; color: #939393;}
+
+    #navigation > #contact:hover > a > span {background-color: #FFFFFF; color: #000000;}
+
+    #navigation > li > a > svg {
+        height: 3.75em;
+        width: 18.75em;
+        margin: 0em;
+        display: block;
+    }
+
+    #navigation > li > a > svg > g:nth-child(2) {
+        display: none;
+    }
+
+    #navigation > li > a > svg > g:last-child > g:first-child {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 106em) and (min-height: 43em) {
+
+    .logo {
+        background: url(../images/accueil_sigle.svg) no-repeat;
+        width: 1344px;
+        height: 720px;
+        margin: -360px -672px;
+        background-size: 1344px 720px;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, nofollow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/forumprod.css">
+    <script src="/javascripts/build/forumprod.js"></script>
+    <script src="/javascripts/build/questionTemplate.js"></script>
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editor/wysiwyg-editor.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editor/custom_editor.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/jquery.validate-1.14.0.js"></script>
+    <script src="/javascripts/lodash_4_3_0.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/editor/wysiwyg.js"></script>
+    <script src="/javascripts/editor/wysiwyg-editor.js"></script>
+    <script src="/javascripts/editor/custom_editor.js"></script>
+    <script src="/javascripts/responseFormFields.js"></script>
+    <script src="/javascripts/questionFormFields.js"></script>
+    <script src="/javascripts/forum/questionTemplate.js"></script>
+    <% }%>
+    <style>
+
+        h1 {
+            color: #41b7b3;
+        }
+
+        #close-response-confirmation p {
+            text-align: center;
+        }
+
+        #textFormatted {
+            font-size: 1.8em;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            min-height: 5em;
+            background-color: #e9f4f5;
+        }
+
+        .ps, .d span {
+            font-size: 1.5em;
+        }
+
+        .d {
+            float: right;
+            text-align: right;
+        }
+
+        #question-details-container {
+            margin-top: 1.6em;
+            position: relative;
+        }
+
+        #response-comment-section {
+            margin-top: 3em;
+            margin-left: 0em;
+            position: relative;
+        }
+
+        #response-section .text {
+            font-size: 1.6em;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            min-height: 5em;
+            border: 1px solid #CCC;
+        }
+
+        #question-details-container p,
+        #question-details-container li,
+        #response-section .text p,
+        #response-section .text li {
+            font-size: 1em;
+        }
+
+        #response-section > div {
+            margin-left: 0em;
+            margin-top: 3em;
+            clear: right;
+        }
+
+        .editDateFormatted:before {
+            content: 'Modifié ';
+            font-style: italic;
+        }
+
+        .editDateFormatted {
+            font-style: italic;
+        }
+
+        #response-comment-update-view .highlight-in, /*necessary to have priority over other style*/
+        .highlight-in {
+            border-color: #ccc;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(163, 113, 167, 0.6);
+        }
+
+        #response-comment-update-view .highlight-out, /*necessary to have priority over other style*/
+        .highlight-out {
+            box-shadow: none;
+            border-color: #dddddd;
+            transition: box-shadow 5s,  border-color 5s;
+        }
+        .edition-icon {
+            position: absolute;
+            right: 0em;
+            color: #999999;
+            font-size: 1.6em;
+            top: -3.5em;
+            margin-right: -1em;
+        }
+
+        @media screen and (min-width: 71em) {
+
+            #response-section > div {
+                margin-left: 8em;
+            }
+
+            #response-comment-section {
+                margin-left: 8em;
+            }
+
+            #question-details-container {
+                position: static;
+            }
+
+            .edition-icon {
+                top: 0em;
+                margin-right: 1em;
+            }
+        }
+    </style>
+    <title>Genève Cultive - <%= question.s %></title>
+</head>
+<body>
+
+<%
+var selected = "none";
+%>
+
+<% include header.ejs %>
+
+<% var templateContent = "questionTemplate-content.ejs" %>
+
+<% include main-template.ejs %>
+
+</body>
+</html>

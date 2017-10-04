@@ -1,0 +1,3826 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "_id": "56d2be1ed887cf284376ce26",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Hermance",
+        "comment": "Production de légumes et herbes aromatiques selon les principes de l'agriculture bio-dynamique.\r\nPaniers hebdomadaires de légumes de saison, vente directe à la ferme\r\nVisitez notre site web!",
+        "country": "Suisse",
+        "email": "info@potagersdegaia.ch",
+        "gardenname": "Les Potagers de Gaia",
+        "manager": "",
+        "number": "",
+        "organism": "",
+        "state": "GE",
+        "status": "done",
+        "street": "Route de Chevrens",
+        "subtype": "",
+        "tel": "0787402539",
+        "website": "http://www.potagersdegaia.ch",
+        "zip": "1248",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "tsKfr9VXG0Z2KP8R4mDhe7KU",
+            "_id": "56d2be1ed887cf284376ce27"
+          }
+        ],
+        "area": 15000,
+        "classifications": [
+          "producer",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.245877742767334,
+          46.29697349504195
+        ]
+      }
+    },
+    {
+      "_id": "56e07d1f72a832d935902d29",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genf",
+        "comment": "16 parcelles sont attribuées tous les deux ans aux habitants du quartier  désirant s’adonner au plaisir du jardinage et de susciter un attachement particulier avec son environnement direct.",
+        "country": "Schweiz",
+        "email": "mq.champel@fase.ch",
+        "gardenname": "Jardins partagés de Champel",
+        "manager": "",
+        "number": "32 ",
+        "organism": "Maison de quartier de Champel",
+        "state": "GE",
+        "status": "done",
+        "street": "avenue Peschier",
+        "subtype": "",
+        "tel": "",
+        "website": "http://mq-champel.ch/jardins-partages/",
+        "zip": "1206",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "GYah4x0LyG2ZkVUHQL2poPrg",
+            "_id": "56e07d1f72a832d935902d2a"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.159430146217346,
+          46.1906509792322
+        ]
+      }
+    },
+    {
+      "_id": "56e6b8a2fc864e8fc5eb7c87",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Suite à la demande de la population l'AHQC  (l'Association des Habitants du Quartier de la Concorde) a mis à disposition, selon les incroyables comestibles, un potager partagé.",
+        "country": "Suisse",
+        "email": "info@ahqc.ch",
+        "gardenname": "De la Cité-Jardin aux jardins dans la cité",
+        "manager": "Sabine Nagl",
+        "number": "",
+        "organism": "AHQC, contacte: info@ahqc.ch",
+        "state": "GE",
+        "status": "done",
+        "street": "Ecole des Ouches",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.ahqc.ch",
+        "zip": "1203",
+        "images": [
+          {
+            "imageDisplayName": "zGnthg.jpeg",
+            "imageName": "0l1pcvLMSShBszpyFm3d_iQK.jpeg",
+            "_id": "56e6b8a2fc864e8fc5eb7c88"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1135053634643555,
+          46.20806675226435
+        ]
+      }
+    },
+    {
+      "_id": "56f0568afc864e8fc5eb7c98",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Quai Ernest-Ansermet",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1205",
+        "country": "Schweiz",
+        "subtype": "",
+        "gardenname": "Toit et moi",
+        "status": "project",
+        "comment": "La ferme urbaine “Toit et moi” présente le premier projet d’agriculture urbaine sur les toits dans le centre-ville de Genève. Une production agricole sous serre et un jardin en pleine sur le toit.",
+        "organism": "Genève cultive",
+        "manager": "",
+        "email": "info@genevecultive.ch",
+        "tel": "",
+        "website": "http://www.genevecultive.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "-zQEmRWly9mC0uBHFJ8w9qgm",
+            "_id": "56f0568afc864e8fc5eb7c99"
+          }
+        ],
+        "area": 500,
+        "classifications": [
+          "roof",
+          "farm",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1395978927612305,
+          46.194314300893666
+        ]
+      }
+    },
+    {
+      "_id": "56f96b0dfc864e8fc5eb7ca1",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Limites",
+        "number": "22",
+        "city": "Genthod",
+        "state": "GE",
+        "zip": "1294",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Les Jardins de Cristina",
+        "status": "in_progress",
+        "comment": "Groupe de personnes motivés en permaculture, initiés par Marco Leschot, Cristina met à disposition un potager à partager par tout intéressé : https://www.loomio.org/invitations/192fc28bfb84a71585b6",
+        "organism": "",
+        "manager": "Cristina",
+        "email": "marc.eric.soult@gmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "AC-190320162742.jpg",
+            "imageName": "8m9mLKsfRDJExr4fGr20XRf_.jpg",
+            "_id": "56f96b0dfc864e8fc5eb7ca2"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.144281029701233,
+          46.265427967367415
+        ]
+      }
+    },
+    {
+      "_id": "572325593e53b91ace95dc3d",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "des Noirettes",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher de l'UBS",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "imoHgc9xaBXtDNB8IVNXaJkI",
+            "_id": "572325593e53b91ace95dc3e"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.130070686340332,
+          46.18713967998614
+        ]
+      }
+    },
+    {
+      "_id": "572326023e53b91ace95dc41",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Mouilles",
+        "number": "",
+        "city": "Lancy",
+        "state": "GE",
+        "zip": "1213",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher des EMS de Lancy Les Mouilles",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "q8K3kuNaciqbsw9ySKmLtQQV",
+            "_id": "572326023e53b91ace95dc42"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.109707355499268,
+          46.18651575564668
+        ]
+      }
+    },
+    {
+      "_id": "572327e53e53b91ace95dc43",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Blandonnet",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1214",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher du TCS",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "IkB1KQHW9QVT5BcYi7oHroUo",
+            "_id": "572327e53e53b91ace95dc44"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0970258712768555,
+          46.22007876551427
+        ]
+      }
+    },
+    {
+      "_id": "57284e8ae3f3c8738d87457a",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Borges / Charles Giron",
+        "number": "",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1203",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "jardin de l'école Charles Giron",
+        "status": "in_progress",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "ape.ccg@gmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "G3ymCkyRuPMGc6LnHQBuWZJO",
+            "_id": "57284e8ae3f3c8738d87457b"
+          }
+        ],
+        "area": 25,
+        "classifications": [
+          "institution",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.126841306686401,
+          46.207164631616486
+        ]
+      }
+    },
+    {
+      "_id": "5730e7ade3f3c8738d87457e",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rte de Julien",
+        "number": "164",
+        "city": "Plan-les-Ouates",
+        "state": "GE",
+        "zip": "1228",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "PLOtager",
+        "status": "done",
+        "comment": "Potager urbain de Plan-les-Ouates. L’inauguration a eu lieu le 24 mai 2014.",
+        "organism": "Association Le PLOtager",
+        "manager": "Nathalie Farriol",
+        "email": "nathalie.farriol@gmail.com",
+        "tel": "",
+        "website": "http://www.potagersurbains.ch/sortie-de-terre/plan-les-ouates/",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "fr_u6dBNw7FXSoQ6sGGJC4pt",
+            "_id": "5730e7ade3f3c8738d87457f"
+          }
+        ],
+        "area": 400,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.114916205406189,
+          46.16865510916384
+        ]
+      }
+    },
+    {
+      "_id": "573b370fd9fff0aa64f34ae8",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin Jacques Philibert-de-Sauvage",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1214",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Parc de l'Étang",
+        "status": "done",
+        "comment": "Sauvegarde de races anciennes menacées d'extinction\r\nPoulailler d'élevage: poules appenzelloises huppées",
+        "organism": "Ville de Vernir - service des espaces verts",
+        "manager": "Jean-Marc BEFFA",
+        "email": "sevv@vernier.ch",
+        "tel": "022.306.07.00",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "DSC00036.jpg",
+            "imageName": "A6zgL7s-1IijUXqnUpXchzaT.jpg",
+            "_id": "573b370fd9fff0aa64f34ae9"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "henhouse",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.106459200382233,
+          46.217551115738026
+        ]
+      }
+    },
+    {
+      "_id": "573b3825d9fff0aa64f34aea",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Route de Montfleury",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1214",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Plantage de Montfleury",
+        "status": "done",
+        "comment": "Parcelle de 20 à 40 m2 à disposition des habitants demeurant à moins de 5 minutes à pied",
+        "organism": "Commune de Vernier - service des espaces verts",
+        "manager": "Jean-Marc BEFFA",
+        "email": "sevv@vernier.ch",
+        "tel": "022.306.07.00",
+        "website": "",
+        "images": [],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.080514192581177,
+          46.21708714388894
+        ]
+      }
+    },
+    {
+      "_id": "573b38d2d9fff0aa64f34aeb",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Ch. Château-Bloch",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1214",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Plantage des Libellules",
+        "status": "done",
+        "comment": "Parcelle de 20 à 40 m2 mis à la disposition des habitants demeurant à moins de 5 minutes à pied",
+        "organism": "Ville de Vernier - service des espaces verts",
+        "manager": "Jean-Marc BEFFA",
+        "email": "sevv@vernier.ch",
+        "tel": "022.306.07.00",
+        "website": "",
+        "images": [],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.106692552566528,
+          46.206158545435734
+        ]
+      }
+    },
+    {
+      "_id": "573b3f71d9fff0aa64f34aec",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Via Monnet ",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1214",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Marché de printemps de la ville de Vernier",
+        "status": "done",
+        "comment": "Marché annuel ProSpecieRara à lieu début mai\r\nPlantons et graines de variétés anciennes\r\nStands d'artisans\r\nExposition d'animaux de races anciennes en voie de disparition\r\nBuvette - assiette ProSpecieRara",
+        "organism": "Ville de Vernier - service des espaces verts",
+        "manager": "Jean-Marc BEFFA",
+        "email": "sevv@vernier.ch",
+        "tel": "022.306.07.00",
+        "website": "http://www.vernier.ch",
+        "images": [
+          {
+            "imageDisplayName": "logo Marché.jpg",
+            "imageName": "MaEUlpIQB2mmmOYFRABnu39S.jpg",
+            "_id": "573b3f71d9fff0aa64f34aed"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.081812381744385,
+          46.2173555022964
+        ]
+      }
+    },
+    {
+      "_id": "573dbd51d79d8d211abcb97b",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "avenue du Devin-du-Village",
+        "number": "8",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1203",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Brasserie Glouglou",
+        "status": "done",
+        "comment": "Bières artisanales brassées entièrement à la main et vins de fleurs et de fruits sauvages.\r\nExiste depuis 2012 à Genève",
+        "organism": "",
+        "manager": "Christian ANDERSEN",
+        "email": "christian@glouglou.ch",
+        "tel": "076 336 22 44",
+        "website": "http://glouglou.ch",
+        "images": [
+          {
+            "imageDisplayName": "glouglou.png",
+            "imageName": "rWj9E3WQzRaouONNNj2Yn766.png",
+            "_id": "573dbd51d79d8d211abcb97c"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "producer",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1225926876068115,
+          46.20377505002785
+        ]
+      }
+    },
+    {
+      "_id": "573eea97489fa815358fe04b",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Moraines",
+        "number": "3",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Les Vergers d'Epicure",
+        "status": "done",
+        "comment": "Société coopérative exploitant 3 parcelles de vergers et vigne à Bardonnex, Lancy et Lully, Les Vergers d’Epicure sont spécialisés dans la culture et la récolte de fruits ainsi que dans la production de leurs dérivés: jus, confiture, vin, etc.",
+        "organism": "Coopérative",
+        "manager": "Julie Barbey Horvath",
+        "email": "info@vergers-epicure.ch",
+        "tel": "",
+        "website": "http://www.vergers-epicure.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "rCnuh5PhokyTIwOyZDnTCwX9",
+            "_id": "573eea97489fa815358fe04c"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "producer",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.105673313140869,
+          46.14662933250937
+        ]
+      }
+    },
+    {
+      "_id": "573f177c489fa815358fe04d",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "ch. des moulins de Drize",
+        "number": "4",
+        "city": "Troinex",
+        "state": "GE",
+        "zip": "1256",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "VG Garden test à Troinex",
+        "status": "done",
+        "comment": "Jardin vertical test divisé en 5 parties (plantes ornementales persistantes, plantes pour infusions, fraisiers, plantes condimentaires, plantes potagères annuelles)",
+        "organism": "ecaVert Sàrl",
+        "manager": "Sylvain Melis",
+        "email": "s.melis@ecavert.ch",
+        "tel": "078 841 91 83",
+        "website": "http://www.ecavert.ch",
+        "images": [
+          {
+            "imageDisplayName": "IMG_4257_2.jpg",
+            "imageName": "hQQBzyoFAKrxIf8CxOYTZYxd.jpg",
+            "_id": "573f177c489fa815358fe04e"
+          }
+        ],
+        "area": 16,
+        "classifications": [
+          "vertical",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.141920685768127,
+          46.16723003113897
+        ]
+      }
+    },
+    {
+      "_id": "57469ce5489fa815358fe04f",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Zurich",
+        "number": "",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "",
+        "status": "done",
+        "comment": "Petit potager urbain crée sur mon balcon avec tomates, salades, radis, fenouille, concombres et plusieurs herbes aromatiques",
+        "organism": "",
+        "manager": "",
+        "email": "gva.morgan@gmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "rsz_img_0120.jpg",
+            "imageName": "9bF2j9gYbqMlWKLhNwX9xNMl.jpg",
+            "_id": "57469ce5489fa815358fe052"
+          },
+          {
+            "imageDisplayName": "rsz_img_0324.jpg",
+            "imageName": "XYIzoZv1YGnClKXto03ZERiP.jpg",
+            "_id": "57469ce5489fa815358fe051"
+          },
+          {
+            "imageDisplayName": "rsz_img_0399.jpg",
+            "imageName": "wSlMnM8I5THi2KbecRyegcsx.jpg",
+            "_id": "57469ce5489fa815358fe050"
+          }
+        ],
+        "area": 3,
+        "classifications": [
+          "roof",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.148795187473297,
+          46.21104216040623
+        ]
+      }
+    },
+    {
+      "_id": "57744c405c620fdf7d64e01f",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue Alexandre-Calame",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1204",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Jardin mobile du Grütli",
+        "status": "done",
+        "comment": "Ce petit jardin mobile du Grütli, se trouve sur la plate bande herbeuse entre le café et l'église du Sacré-coeur, dans le but d'offrir des interventions sensibles, réintégrant une dimension naturelle, conviviale, poétique et inattendue au coeur de la ville.",
+        "organism": "collectif Végétalis",
+        "manager": "Anne et Monica",
+        "email": "lespiedsverts@bluewin.ch",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "jardin Grütli.jpeg",
+            "imageName": "UUhWn7jnXcpnf7E15V1ewgYr.jpeg",
+            "_id": "57744c405c620fdf7d64e020"
+          }
+        ],
+        "area": 9,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.141759753227234,
+          46.20088278822445
+        ]
+      }
+    },
+    {
+      "_id": "57d479035c620fdf7d64e03d",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin du 23-Août",
+        "number": "1-3-5-7",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1205",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "A définir (potager CODHA)",
+        "status": "in_progress",
+        "comment": "Projet en cours - aménagement d'un potager ~500m2 au 3ème étage sur la partie galette du bâtiment de la CODHA.",
+        "organism": "Groupe Potager Codha Eco-quartier Jonction",
+        "manager": "Groupe Potager",
+        "email": "p.leverington@infomaniak.ch",
+        "tel": "0788582877",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "5Ch82cPfxN8q2l8YZBE_I-aJ",
+            "_id": "57d479035c620fdf7d64e03e"
+          }
+        ],
+        "area": 500,
+        "classifications": [
+          "roof",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.134759187698364,
+          46.20272063588972
+        ]
+      }
+    },
+    {
+      "_id": "589343d2fa49896892b38991",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "rue du Général-Dufour ",
+        "number": "24",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1211",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "potager BeeOtop",
+        "status": "in_progress",
+        "comment": "Réalisation de bacs potagers en permaculture géré par les étudiants de l'UNIGE. Réalisation en cours",
+        "organism": "Association BeeOtop.ch",
+        "manager": "Marie_Caroline",
+        "email": "contact@beeotop.ch",
+        "tel": "",
+        "website": "http://www.beeotop.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "_WNqvezfXr9cnLEbzDJw4FEa",
+            "_id": "589343d2fa49896892b38992"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "roof",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.141915321350098,
+          46.19948301249815
+        ]
+      }
+    },
+    {
+      "_id": "58934454fa49896892b38993",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Quai Ernest-Ansermet",
+        "number": "30",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1205",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "BeeOtop",
+        "status": "done",
+        "comment": "Installation de ruches appartenant à l'UNIGE et entretenues par l'Association BeeOtop",
+        "organism": "Association BeeOtop.ch",
+        "manager": "Victorine",
+        "email": "contact@beeotop.ch",
+        "tel": "",
+        "website": "http://www.beeotop.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "zQbVASLq3ivcTisNBoo8c-Cc",
+            "_id": "58934454fa49896892b38994"
+          }
+        ],
+        "area": 3,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.132302284240723,
+          46.19804235727218
+        ]
+      }
+    },
+    {
+      "_id": "58934506fa49896892b38995",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin de Pinchat",
+        "number": "22",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Rucher pédagogique UNIGE",
+        "status": "in_progress",
+        "comment": "Réalisation d'un rucher pédagogique destiné aux activités développement durable de l'UNIGE et au public lors des animations proposées sur notre site, dès l'été 2017.",
+        "organism": "Association BeeOtop.ch",
+        "manager": "Victorine",
+        "email": "contact@beeotop.ch",
+        "tel": "",
+        "website": "http://www.beeotop.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "NzvxqCbXxcvAMRmtPPpcCodw",
+            "_id": "58934506fa49896892b38996"
+          }
+        ],
+        "area": 3,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.144039630889893,
+          46.17728976217678
+        ]
+      }
+    },
+    {
+      "_id": "589345a9fa49896892b38997",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin de Pinchat",
+        "number": "22",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potager permaculture",
+        "status": "in_progress",
+        "comment": "Réalisation d'un potager en permaculture et d'un sentier saveurs senteurs destiné aux membres de l'association et aux étudiants UNIGE bénévoles. Animations et ateliers seront organisés en été 2017. à suivre sur notre site...",
+        "organism": "Association BeeOtop.ch",
+        "manager": "Marie_Caroline",
+        "email": "contact@beeotop.ch",
+        "tel": "",
+        "website": "http://www.beeotop.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "viFypDMyoTNTlxILHW9pUSjJ",
+            "_id": "589345a9fa49896892b38998"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.144275665283203,
+          46.177126324827185
+        ]
+      }
+    },
+    {
+      "_id": "563b7179b6881a467f00e9cd",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "",
+        "country": "Suisse",
+        "email": "labandeverte@gmail.com",
+        "gardenname": "La Bande Verte",
+        "manager": "",
+        "number": "",
+        "organism": "",
+        "state": "GE",
+        "status": "done",
+        "street": "Avenue Blanc",
+        "subtype": "fly",
+        "tel": "",
+        "website": "",
+        "zip": "1202",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "DyJap_w9RQsRTEfikatxHVnH",
+            "_id": "563b7179b6881a467f00e9ce"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.147298514842987,
+          46.219356856854056
+        ]
+      }
+    },
+    {
+      "_id": "5637f18849859414a613c663",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Place de la Navigation",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Schweiz",
+        "subtype": "fly",
+        "gardenname": "Marché de la Navigation - Légumes et fruits",
+        "status": "done",
+        "comment": "Mardi et vendredi: de 6h30 à 13h45\r\nAlimentation: fruits, légumes et poulets rôtis.\r\nAutre: fleurs",
+        "organism": "Ville de Genève",
+        "manager": "Service de la sécurité et de l'espace publics",
+        "email": "guichet.seep@ville-ge.ch",
+        "tel": "+41224186100",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "QnyjbRN-CJxF95htsBttB0hS",
+            "_id": "5637f18849859414a613c664"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1499053,
+          46.2115196
+        ]
+      }
+    },
+    {
+      "_id": "56583b007c1fa3e51d5de04e",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Les Jardins des Délices sont des parcelles cultivées en commun par les habitants du quartier. Notre approche est écologique et participative. Membre du Réseau des Incroyables Comestibles. ",
+        "country": "Switzerland",
+        "email": "associationjardinsdelices@gmail.com",
+        "gardenname": "Les Jardins des Délices",
+        "manager": "Caroline Dommen",
+        "number": "25",
+        "organism": "Association Les Jardins des Délices",
+        "state": "GE",
+        "status": "in_progress",
+        "street": "Rue des Délices",
+        "subtype": "",
+        "tel": "0041794127207",
+        "website": "http://lesjardinsdesdelices.com/",
+        "zip": "1201",
+        "images": [
+          {
+            "imageDisplayName": "IMG_5519.JPG",
+            "imageName": "4e9aMOv57XfXhxG8L67AkeCW.JPG",
+            "_id": "56583b007c1fa3e51d5de04f"
+          }
+        ],
+        "area": 40,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.134153500000025,
+          46.2073765
+        ]
+      }
+    },
+    {
+      "_id": "5637f50949859414a613c665",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genf",
+        "comment": "Alimentation: fruits, légumes et poulets rôtis\r\nAutre: produits manufacturés\r\nSur les rues de Cornavin et des Corps-saints.\r\nSamedi: de 6h30 à 14h15.",
+        "country": "Schweiz",
+        "email": "guichet.seep@ville-ge.ch",
+        "gardenname": "Marché de Coutance",
+        "manager": "Service de la sécurité et de l'espace publics",
+        "number": "3-5",
+        "organism": "Ville de Genève",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue de Cornavin",
+        "subtype": "fly",
+        "tel": "",
+        "website": "http://www.ville-geneve.ch/plan-ville/marches/marche-coutance",
+        "zip": "1201",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "1nqPxHc5PmsMPf4NZQFeYyDa",
+            "_id": "5637f50949859414a613c666"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.142089599999963,
+          46.2074151
+        ]
+      }
+    },
+    {
+      "_id": "56cae8bbf383c2c798ade4be",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande chez Ayni.",
+        "country": "Suisse",
+        "email": "communication@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même chez Ayni",
+        "manager": "",
+        "number": "3",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue John-Grasset",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1205",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "3_juOHRIgDPHIxcNiGHg8q-D",
+            "_id": "56cae8bbf383c2c798ade4bf"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.144818900000018,
+          46.19116849999999
+        ]
+      }
+    },
+    {
+      "_id": "56cb2781f383c2c798ade4c4",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande chez Taoban.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même à Taoban",
+        "manager": "",
+        "number": "10",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue des Chaudronniers",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1204",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "aJBxh-OYLTyWn7kIdVlPeuku",
+            "_id": "56cb2781f383c2c798ade4c5"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.149958999999967,
+          46.2002233
+        ]
+      }
+    },
+    {
+      "_id": "56dd68e172a832d935902d20",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue de la Tambourine",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Le Tambougreen ",
+        "status": "done",
+        "comment": "Né dans le cadre du Contrat de quartier de la Tambourine, suite à la proposition d’une habitante, ce potager urbain est le fruit d’une démarche participative menée par equiterre et la Ville de Carouge",
+        "organism": "Contrat de Quartier de la Tambourine / Ville de Carouge",
+        "manager": "Pierre Orelli",
+        "email": "p.orelli@carouge.ch",
+        "tel": "022 308 15 30",
+        "website": "http://www.quartier-tambourine.ch/contrat-de-quartier/tambougreen-potager-urbain",
+        "images": [
+          {
+            "imageDisplayName": "IMG_5774.jpg",
+            "imageName": "EWdgbWt0uGZ_-i_HahE3xYCI.jpg",
+            "_id": "56dd68e172a832d935902d21"
+          }
+        ],
+        "area": 670,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.14209771156311,
+          46.175848525167105
+        ]
+      }
+    },
+    {
+      "_id": "56e98861fc864e8fc5eb7c89",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin du Croissant",
+        "number": "7",
+        "city": "CHATELAINE",
+        "state": "GE",
+        "zip": "1219",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Villa Croissant et Entre-Deux",
+        "status": "done",
+        "comment": "Le groupe jardin et  le jardiner de quartier vont animer des ateliers et activités collectifs de jardinage avec les utilisateurs de la Villa Croissant et des femmes migrantes du quartier.",
+        "organism": "AHQC, Association des habitants-es du Quartier de la Concorde",
+        "manager": "S. Nagl",
+        "email": "info@ahqc.ch",
+        "tel": "",
+        "website": "http://www.ahqc.ch",
+        "images": [
+          {
+            "imageDisplayName": "svRPIF.jpeg",
+            "imageName": "hb4agEMBucsUp4iJ6C9cAf7N.jpeg",
+            "_id": "56e98861fc864e8fc5eb7c8b"
+          },
+          {
+            "imageDisplayName": "BCpV7B.jpeg",
+            "imageName": "jn13qgmvKWzArrcZCisFIQhM.jpeg",
+            "_id": "56e98861fc864e8fc5eb7c8a"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.112303733825684,
+          46.2097298823596
+        ]
+      }
+    },
+    {
+      "_id": "56e98cadfc864e8fc5eb7c8c",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Les bacs de l'aménagement urbain sont à disposition des habitants du quartier. L'idée est de valoriser les espaces de verdures du quartier, les préserver et les multiplier...",
+        "country": "Suisse",
+        "email": "info@ahqc.ch",
+        "gardenname": "De la Cité-Jardin aux jardins dans la cité",
+        "manager": "S. Nagl",
+        "number": "",
+        "organism": "AHQC, Association des habitants-es du Quartier de la Concorde",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue Camille-Martin",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.ahqc.ch",
+        "zip": "1203",
+        "images": [
+          {
+            "imageDisplayName": "Camille-Martin- - 1.jpg",
+            "imageName": "3N0l_FC67KVL1NYrIhMwm95B.jpg",
+            "_id": "56e98cadfc864e8fc5eb7c8f"
+          },
+          {
+            "imageDisplayName": "Camille-Martin- - 3.jpg",
+            "imageName": "V13eO5eeqDXFlkiby_UF8U1c.jpg",
+            "_id": "56e98cadfc864e8fc5eb7c8e"
+          },
+          {
+            "imageDisplayName": "Camille-Martin- - 4.jpg",
+            "imageName": "MUxzVHuMmua4oKcTieZoSDGi.jpg",
+            "_id": "56e98cadfc864e8fc5eb7c8d"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.113269329071045,
+          46.20762126243806
+        ]
+      }
+    },
+    {
+      "_id": "572232363e53b91ace95dc37",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin Moïse-Duboule",
+        "number": "2",
+        "city": "Petit-Saconnex",
+        "state": "GE",
+        "zip": "1209",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Ferme de Budé",
+        "status": "done",
+        "comment": "Priorité au local, priorité au Bio! \r\n\r\nFruits et Légumes du jardin et de producteurs locaux\r\nViande de boeuf, de porc et d’agneau de producteurs de la région \r\nPoisson du lac léman\r\nProduits laitiers du grand Genève et du Pays-d’Enhaut\r\nProduits d’épicerie\r\nBières artisanales et vins genevois\r\n\r\nHoraires du marché:\r\nMardi, Mercredi, vendredi: 9h-18h\r\nSamedi: 9h-16h",
+        "organism": "Ferme de Budé",
+        "manager": "Julien Chavaz, Sacha Riondel, Léo Zulauf",
+        "email": "contact@ferme-de-bude.ch",
+        "tel": "0227771700",
+        "website": "http://www.ferme-de-bude.ch",
+        "images": [
+          {
+            "imageDisplayName": "Ferme Budé 2.jpeg",
+            "imageName": "O6eEBsfwqnbCWLyDvt6JQOn9.jpeg",
+            "_id": "572232363e53b91ace95dc38"
+          }
+        ],
+        "area": 5000,
+        "classifications": [
+          "farm",
+          "market",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.129008531570435,
+          46.22415393816978
+        ]
+      }
+    },
+    {
+      "_id": "57eccacf1755c6afbb527830",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin du Quédan",
+        "number": "",
+        "city": "Perly-Certoux",
+        "state": "GE",
+        "zip": "1258",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potatoa",
+        "status": "done",
+        "comment": "Le Potatoa est un potager expérimental qui se base sur des principes de permaculture. L'association \"Nouvelles Graines\" qui s'occupe d'entretenir le potager invite toutes personnes à venir s’émerveiller, participer et récolter gratuitement les légumes et fruits issu du Potatoa. ",
+        "organism": "",
+        "manager": "",
+        "email": "nouvellesgraines@outlook.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "Potatoa.jpg",
+            "imageName": "a7KUvZdnsHb8nHfWzg5wklK3.jpg",
+            "_id": "57eccacf1755c6afbb527831"
+          }
+        ],
+        "area": 100,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.089322566986084,
+          46.156432719077095
+        ]
+      }
+    },
+    {
+      "_id": "57f0d2d71755c6afbb527834",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Route du fer à cheval",
+        "number": "",
+        "city": "Collonges-sous-Salève",
+        "state": "FR",
+        "zip": "74160",
+        "country": "France",
+        "subtype": "",
+        "gardenname": "Salève Vivant ",
+        "status": "done",
+        "comment": "Pour l'instant, nous disposons de quelques m2 qui nous ont permis de récolter des tomates, courgettes, cotes de bette, pommes de terres, choux, courges, plantes aromatiques. Nous espérons obtenir un plus grand terrain communal bientôt !",
+        "organism": "Salève Vivant - Collectif éco-citoyen ",
+        "manager": "",
+        "email": "mady0506@yahoo.fr",
+        "tel": "",
+        "website": "http://saleve.vivant.over-blog.com",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "QgL08wEr3QtS_f4cDMpglh4x",
+            "_id": "57f0d2d71755c6afbb527835"
+          }
+        ],
+        "area": 10,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.145563125610352,
+          46.13846718303756
+        ]
+      }
+    },
+    {
+      "_id": "581876e28d7edc88dd07ebb1",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin de la Lécherette",
+        "number": "12",
+        "city": "Bernex",
+        "state": "GE",
+        "zip": "1233",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "",
+        "status": "in_progress",
+        "comment": "Première tentative de potager bio pour l'hiver, on aimerait faire des tranchées de permaculture pour préparer le printemps.",
+        "organism": "",
+        "manager": "",
+        "email": "marie.ambrym.thivoyon@gmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "6ncPFXW-fan_0bCOFv662tpq",
+            "_id": "581876e28d7edc88dd07ebb2"
+          }
+        ],
+        "area": 6,
+        "classifications": [
+          "individual",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.077971458435059,
+          46.16681393173715
+        ]
+      }
+    },
+    {
+      "_id": "58c29268c6bd20cb7fbdd6d1",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "de lausanne ",
+        "number": "112",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "la libellule-potager didactique",
+        "status": "done",
+        "comment": "Petit potager écologique à visée éducative cultivé par l'association la libellule ",
+        "organism": "la libellule",
+        "manager": "Jérôme Porchet",
+        "email": "jerome@lalibellule.ch",
+        "tel": "022 732 37 76",
+        "website": "http://lalibellule.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "qWU1_ZfZSBzZXZauo6FbKznN",
+            "_id": "58c29268c6bd20cb7fbdd6d2"
+          }
+        ],
+        "area": 25,
+        "classifications": [
+          "institution",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.151254773139954,
+          46.21767545952748
+        ]
+      }
+    },
+    {
+      "_id": "58c29dfcc6bd20cb7fbdd6d3",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "de Lausanne ",
+        "number": "112",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "la libellule-jardin-forêt",
+        "status": "in_progress",
+        "comment": "Jardin forêt de plantes comestibles, ayant pour but de sensibiliser le public à la diversité des plantes comestibles locales.",
+        "organism": "la libellule",
+        "manager": "Jérôme Porchet",
+        "email": "jerome@lalibellule.ch",
+        "tel": "022 732 37 76",
+        "website": "http://lalibellule.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "J8CrUdSVzHL41nA84vvYLLBE",
+            "_id": "58c29dfcc6bd20cb7fbdd6d4"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "institution",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.150916814804077,
+          46.21740078928825
+        ]
+      }
+    },
+    {
+      "_id": "58c7b9acc6bd20cb7fbdd6d7",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue de Frémis",
+        "number": "",
+        "city": "Puplinge",
+        "state": "GE",
+        "zip": "1241",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Le Potaluge",
+        "status": "done",
+        "comment": "Potager villageois créé au printemps 2014, réservé aux habitants de Puplinge. Il est divisé en une trentaine de parcelles sur buttes de 5m2 à 20m2. ",
+        "organism": "Association Le Potaluge",
+        "manager": "Caroline Rion Santoru",
+        "email": "potaluge@gmail.com",
+        "tel": "",
+        "website": "https://potaluge.wordpress.com/",
+        "images": [
+          {
+            "imageDisplayName": "IMG_0520 redimensionné.jpg",
+            "imageName": "oNJ8nK2Qd-nl_5PILOtLXfJH.jpg",
+            "_id": "58c7b9acc6bd20cb7fbdd6d8"
+          }
+        ],
+        "area": 400,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.232509613037109,
+          46.2122690284946
+        ]
+      }
+    },
+    {
+      "_id": "563b986c0f364d7b7f8cb965",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Des arbustes locaux, des petits-fruits, des fruitiers, des plantes aromatiques et bien plus encore. Un endroit pour se détendre, se retrouver, ouvert à tous, tout le temps!",
+        "country": "Suisse",
+        "email": "info@pavilloncayla.ch",
+        "gardenname": "Le Jardin du Pavillon Cayla",
+        "manager": "Louise Goffin",
+        "number": "2",
+        "organism": "Association Pavillon Cayla",
+        "state": "GE",
+        "status": "done",
+        "street": "Chemin William-Lescaze",
+        "subtype": "fly",
+        "tel": "076 401 74 85",
+        "website": "http://www.pavilloncayla.ch/",
+        "zip": "1203",
+        "images": [
+          {
+            "imageDisplayName": "PC.jpg",
+            "imageName": "4b7ZS5BlNh7_o3E1kJvS_zyT.jpg",
+            "_id": "563b986c0f364d7b7f8cb966"
+          }
+        ],
+        "area": 300,
+        "classifications": [
+          "share"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.121439499999951,
+          46.2059317
+        ]
+      }
+    },
+    {
+      "_id": "56c60a549965b842948e9a61",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue du Môle",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Les Fleurs du Môle",
+        "status": "project",
+        "comment": "Transformer tout ou partie d'un square à l'abandon en jardin commun",
+        "organism": "",
+        "manager": "Christian Morel",
+        "email": "cmorel@hotmail.com",
+        "tel": "078 671 96 96",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "urXqrf_zJv_nwAEKbeOY9wig",
+            "_id": "56c60a549965b842948e9a62"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.146033100000068,
+          46.2130341
+        ]
+      }
+    },
+    {
+      "_id": "56cae825f383c2c798ade4bc",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande au Club Sandwich.",
+        "country": "Suisse",
+        "email": "communication@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même au Club Sandwich",
+        "manager": "",
+        "number": "28",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue des Grottes",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1201",
+        "images": [
+          {
+            "imageDisplayName": "FullSizeRender-5.jpg",
+            "imageName": "0vfJnKRdR_d12Emrsb14JgTy.jpg",
+            "_id": "56cae825f383c2c798ade4bd"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.138476900000001,
+          46.2115589
+        ]
+      }
+    },
+    {
+      "_id": "56cb259af383c2c798ade4c0",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Carouge",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande à Carouge.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même de la Laiterie de Carouge",
+        "manager": "",
+        "number": "7",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": " Rue Saint-Victor ",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1227",
+        "images": [
+          {
+            "imageDisplayName": "dici-meme_logo_slogan_prod_jaune.png",
+            "imageName": "QzPEj2QkzAxQY-MWzuPW0b1l.png",
+            "_id": "56cb259af383c2c798ade4c1"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.139827999999966,
+          46.1869684
+        ]
+      }
+    },
+    {
+      "_id": "56cb2681f383c2c798ade4c2",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur?Commandez sur notre site internet et venez récupérer votre commande chez Ou Bien Encore.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même Ou Bien Encore",
+        "manager": "",
+        "number": "61",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue des Bains",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1205",
+        "images": [
+          {
+            "imageDisplayName": "dici-meme_logo_prod_jaune (copie).png",
+            "imageName": "mMhjIERNh6aums4urEhAAbqk.png",
+            "_id": "56cb2681f383c2c798ade4c3"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.137691200000063,
+          46.20086200000001
+        ]
+      }
+    },
+    {
+      "_id": "56cb2895f383c2c798ade4c6",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande à la Mie Artisane.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même de la Mie Artisane",
+        "manager": "",
+        "number": "62",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Boulevard Carl-Vogt",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1205",
+        "images": [
+          {
+            "imageDisplayName": "dici-meme_logo_slogan_prod_jaune.png",
+            "imageName": "mJLNc07QMBUO4kqJrLP-kq9I.png",
+            "_id": "56cb2895f383c2c798ade4c7"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.136011400000029,
+          46.1979083
+        ]
+      }
+    },
+    {
+      "_id": "56cb2939f383c2c798ade4c8",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande à Sécheron",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même de Sécheron",
+        "manager": "",
+        "number": "7",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Avenue Blanc",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1202",
+        "images": [
+          {
+            "imageDisplayName": "dici-meme_logo_slogan_prod_jaune.png",
+            "imageName": "xCWqow54IGyjCWMxIAtpij7G.png",
+            "_id": "56cb2939f383c2c798ade4c9"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.147006154060364,
+          46.219030231822266
+        ]
+      }
+    },
+    {
+      "_id": "56cb29c3f383c2c798ade4ca",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Chêne-Bourg",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable, en rémunérant les producteurs à leur juste valeur ? Commandez sur notre site internet et venez récupérer votre commande à Chêne-Bourg.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même de Chêne-Bourg",
+        "manager": "",
+        "number": "4",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Avenue de Bel-Air",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1225",
+        "images": [
+          {
+            "imageDisplayName": "dici-meme_logo_slogan_prod_jaune.png",
+            "imageName": "ir9FHn3sHGAtMS_I5QVC_fw_.png",
+            "_id": "56cb29c3f383c2c798ade4cb"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1933308000000125,
+          46.19592850000001
+        ]
+      }
+    },
+    {
+      "_id": "56cb2c35f383c2c798ade4cc",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Genève",
+        "comment": "Envie de produits frais, du terroir suisse, à prix abordable ? Commandez sur notre site internet et venez récupérer votre commande aux Eaux Vives. Ou achetez simplement et directement sur place.",
+        "country": "Suisse",
+        "email": "info@dici-meme.ch",
+        "gardenname": "Marché D'ici-Même des Eaux Vives",
+        "manager": "",
+        "number": "92",
+        "organism": "D'ici-Même",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue des Eaux-Vives",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.dici-meme.ch",
+        "zip": "1207",
+        "images": [
+          {
+            "imageDisplayName": "eaux-vives ardoise.png",
+            "imageName": "BDQEtuHGlyakEMDa78nRboqL.png",
+            "_id": "56cb2c35f383c2c798ade4cd"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.160489200000029,
+          46.2053603
+        ]
+      }
+    },
+    {
+      "_id": "56cb7adff383c2c798ade4ce",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Plantées",
+        "number": "66",
+        "city": "Sézegnin-Athenaz",
+        "state": "GE",
+        "zip": "1285",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Les Jardins de Cocagne",
+        "status": "done",
+        "comment": "Les Jardins de Cocagne, fondés en 1978, livrent chaque jeudi, 420 cornets de légumes bio. Ceux-ci sont alors disponibles aux 43 points de distributions répartis sur le canton de Genève.",
+        "organism": "Coopérative maraichère",
+        "manager": "Claude Mudry",
+        "email": "cocagne@cocagne.ch",
+        "tel": "+41 (0)22 733 9804",
+        "website": "http://www.cocagne.ch/",
+        "images": [
+          {
+            "imageDisplayName": "logoJDCocagne_600.jpg",
+            "imageName": "ZvXgaGcOKsA6NslKvWdmwixe.jpg",
+            "_id": "56cb7adff383c2c798ade4cf"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.002649799999972,
+          46.1445689
+        ]
+      }
+    },
+    {
+      "_id": "56ce37ef011cdd8ec9c52c45",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Ecublens",
+        "comment": "un ptit potager en permaculture qui grandit à son rythme. Des permateliers \"hôtel à insectes\", \"nichoirs\" ... sont en train de mûrir. contactez- nous pour participer ou donner un atelier.",
+        "country": "Suisse",
+        "email": "collectif.chillonda@gmail.com",
+        "gardenname": "le pôte agé de la MaiZon",
+        "manager": "la météo",
+        "number": "84",
+        "organism": "Chillonda",
+        "state": "VD",
+        "status": "done",
+        "street": "Avenue du Tir-Fédéral",
+        "subtype": "",
+        "tel": "",
+        "website": "http://www.chillonda.ch",
+        "zip": "1024",
+        "images": [
+          {
+            "imageDisplayName": "spirale.jpg",
+            "imageName": "JGDflCgABetFytx-XfXh1fXL.jpg",
+            "_id": "56ce37ef011cdd8ec9c52c46"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.567217111587524,
+          46.529459555212036
+        ]
+      }
+    },
+    {
+      "_id": "56e298a9064dd1c55f085c50",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Chêne-Bougeries",
+        "comment": "Un jardin potager en permaculture, qui suit les principes de la charte des jardin, qui souhaite être un appui pour la biodiversité en zone villa ",
+        "country": "Suisse",
+        "email": "lespiedsverts@bluewin.ch",
+        "gardenname": "Les pieds verts",
+        "manager": "Monica",
+        "number": "",
+        "organism": "les pieds verts",
+        "state": "GE",
+        "status": "in_progress",
+        "street": "avenue Marc Doret",
+        "subtype": "",
+        "tel": "079 744 86 49",
+        "website": "http://www.lespiedsverts.com",
+        "zip": "1224",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "ydlqD18AQhe36e0E2wWCE16j",
+            "_id": "56e298a9064dd1c55f085c51"
+          }
+        ],
+        "area": 800,
+        "classifications": [
+          "individual",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.19354248046875,
+          46.19931964112396
+        ]
+      }
+    },
+    {
+      "_id": "56e5a032fc864e8fc5eb7c83",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue des Buis",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Collectif \"les Pouces Verts\"",
+        "status": "done",
+        "comment": "jardins urbains cultivés par les habitants",
+        "organism": "collectif \"Les Pouces Verts\"",
+        "manager": "",
+        "email": "collectifpoucesverts@gmail.com",
+        "tel": "022 738 79 43",
+        "website": "https://www.facebook.com/Les-Pouces-Verts-collectif-jardins-urbains-879450345446969/",
+        "images": [
+          {
+            "imageDisplayName": "JardinBuisPrint15.jpg",
+            "imageName": "ygBS85CxymMvXup4jtO2HaYn.jpg",
+            "_id": "56e5a032fc864e8fc5eb7c84"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.149382591247559,
+          46.2142586867059
+        ]
+      }
+    },
+    {
+      "_id": "56e5a1fcfc864e8fc5eb7c85",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue de Berne",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Jardin du Temple",
+        "status": "done",
+        "comment": "Jardins urbains créé par les habitants",
+        "organism": "collectif \"Les Pouces Verts\"",
+        "manager": "Catherine",
+        "email": "collectifpoucesverts@gmail.com",
+        "tel": "022 731 04 47",
+        "website": "https://www.facebook.com/Les-Pouces-Verts-collectif-jardins-urbains-879450345446969/",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "7RlTR3xVqF7KnTajSXDmdh_E",
+            "_id": "56e5a1fcfc864e8fc5eb7c86"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.146517992019653,
+          46.21144493252809
+        ]
+      }
+    },
+    {
+      "_id": "56f165fffc864e8fc5eb7c9a",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Ouches",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1219",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "De la Cité-Jardin aux jardins dans la cité",
+        "status": "",
+        "comment": "Les bacs de l'aménagement urbain sont à disposition des habitants du quartier. L'idée est de valoriser les espaces de verdures du quartier, les préserver et les multiplier.... ",
+        "organism": "AHQC, Association des habitants-es du Quartier de la Concorde",
+        "manager": "S. Nagl",
+        "email": "info@ahqc.ch",
+        "tel": "",
+        "website": "http://www.ahqc.ch",
+        "images": [
+          {
+            "imageDisplayName": "2015_06_25.jpg",
+            "imageName": "k6aqWo9X8HPyls_BCdFEQ27z.jpg",
+            "_id": "56f165fffc864e8fc5eb7c9c"
+          },
+          {
+            "imageDisplayName": "I2Dhcv.jpeg",
+            "imageName": "ulLwPk2D0gE-lIFKiJMwdIlL.jpeg",
+            "_id": "56f165fffc864e8fc5eb7c9b"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.113660931587219,
+          46.208417572959625
+        ]
+      }
+    },
+    {
+      "_id": "57160e16fdcb42a8ec8eeb92",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue Fendt ",
+        "number": "1",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "micro-ferme aquaponique",
+        "status": "in_progress",
+        "comment": "Le but de ce projet est de promouvoir l’aquaponie en Suisse romande en installant une micro-ferme  aquaponique au coeur de Genève.",
+        "organism": "Exodes Urbains ",
+        "manager": "Fanny Bernard ",
+        "email": "fanny.bernard@gmail.com",
+        "tel": "078 723 09 04",
+        "website": "http://www.exodesurbains.com",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "aIsR2S7yNB1ti7tyTog0JGQl",
+            "_id": "57160e16fdcb42a8ec8eeb93"
+          }
+        ],
+        "area": 10,
+        "classifications": [
+          "aquaponics",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.140953749418259,
+          46.21048254354601
+        ]
+      }
+    },
+    {
+      "_id": "571a29e33e53b91ace95dc32",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Quai du Mont-Blanc",
+        "number": "19",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Le potager d'Il Vero",
+        "status": "done",
+        "comment": "Loin des quelques jardinières d’herbes\r\naromatiques, il s’agit là d’un véritable potager: 30\r\nmètres de plantation où l’on peut admirer plus de\r\n16 variétés de fruits et légumes de saison. Nous sommes\r\nle seul Hôtel Cinq Etoiles de la ville qui propose\r\nun tel dispositif. La symbolique qui y est rattachée\r\nest immense : nous misons au maximum sur les\r\nproduits locaux, frais et de qualité. ",
+        "organism": "",
+        "manager": "Chef Salvatore Marcello",
+        "email": "salvatore.marcello@kempinski.com",
+        "tel": "022 908 90 81",
+        "website": "https://www.kempinski.com/fr/geneva/grand-hotel-geneva/",
+        "images": [
+          {
+            "imageDisplayName": "kempinski_jardin_0001.jpg",
+            "imageName": "UHtVjbEdB398pnlWT0creGsN.jpg",
+            "_id": "571a29e33e53b91ace95dc36"
+          },
+          {
+            "imageDisplayName": "kempinski_jardin_0029.jpg",
+            "imageName": "5R6kyCxH1qUijBP3D5Frs_f7.jpg",
+            "_id": "571a29e33e53b91ace95dc35"
+          },
+          {
+            "imageDisplayName": "kempinski_jardin_0031.jpg",
+            "imageName": "uY68ctcbwRtE2beMqLT-a3Q7.jpg",
+            "_id": "571a29e33e53b91ace95dc34"
+          },
+          {
+            "imageDisplayName": "KempinskiGeneva 46.jpg",
+            "imageName": "YXB5Tr1lNembBYz-BcFU3yA7.jpg",
+            "_id": "571a29e33e53b91ace95dc33"
+          }
+        ],
+        "area": 160,
+        "classifications": [
+          "enterprise",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.150670051574707,
+          46.20998231734723
+        ]
+      }
+    },
+    {
+      "_id": "572324ca3e53b91ace95dc39",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Varembé",
+        "number": "",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher du CICG",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "VeLx5gPEIb7ANGq5OaKzEM3S",
+            "_id": "572324ca3e53b91ace95dc3a"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.136658191680908,
+          46.21938098248957
+        ]
+      }
+    },
+    {
+      "_id": "572325173e53b91ace95dc3b",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Saint Jean",
+        "number": "",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1201",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher de la Fédération des Entreprises Romandes",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "Pb2qi5xc8wQuFDqsomRcMRKq",
+            "_id": "572325173e53b91ace95dc3c"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.137688159942627,
+          46.205720465251694
+        ]
+      }
+    },
+    {
+      "_id": "572325cc3e53b91ace95dc3f",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin de la Vendée",
+        "number": "",
+        "city": "Lancy",
+        "state": "GE",
+        "zip": "1213",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Rucher des EMS de Lancy La Vendée",
+        "status": "done",
+        "comment": "",
+        "organism": "",
+        "manager": "",
+        "email": "nicolas.marsault@bees4you.ch",
+        "tel": "",
+        "website": "http://www.bees4you.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "8pv2GTOzq1W9B8SnQpQEsjAn",
+            "_id": "572325cc3e53b91ace95dc40"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.12263560295105,
+          46.18912282103596
+        ]
+      }
+    },
+    {
+      "_id": "57284e3de3f3c8738d874578",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Charles Giron / Avenue d'Aïre 1",
+        "number": "",
+        "city": "Geneva",
+        "state": "GE",
+        "zip": "1203",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Jardin de l'école des Charmilles",
+        "status": "done",
+        "comment": "",
+        "organism": "Ecole des Charmilles - Association des parents d'élèves Charmilles Charles Giron",
+        "manager": "",
+        "email": "ape.ccg@gmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "mppop.jpg",
+            "imageName": "jYFVHQio6evRlEByrGOCitGX.jpg",
+            "_id": "57284e3de3f3c8738d874579"
+          }
+        ],
+        "area": 40,
+        "classifications": [
+          "institution",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.125822067260742,
+          46.20719061883827
+        ]
+      }
+    },
+    {
+      "_id": "573876e7db5e97a25a9ec9fc",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Route de la Vallée",
+        "number": "6",
+        "city": "Rolle",
+        "state": "VD",
+        "zip": "1180",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "VitaVerDura",
+        "status": "done",
+        "comment": "Agriculteurs et artisans de la région vous proposent sur www.vitaverdura.ch un vaste choix d’aliments frais et sains livrés à votre porte : légumes et fruits de saison, viandes et produits laitiers, poissons du lac, tofu, pain, miel, confiture et bien plus encore. Ce véritable marché à la ferme à domicile vous libère simplement des déplacements liés à vos achats de nourriture régionale.",
+        "organism": "VitaVerDura",
+        "manager": "Jean-Marc Imhof & Joël Saurina",
+        "email": "info@vitaverdura.ch",
+        "tel": "021 320 01 30",
+        "website": "http://www.vitaverdura.ch",
+        "images": [
+          {
+            "imageDisplayName": "VitaVerDura - Image.png",
+            "imageName": "Ao1GqQl5votG4T6Bpjv6Mhj5.png",
+            "_id": "573876e7db5e97a25a9ec9fd"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "market",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3425445556640625,
+          46.46009254545998
+        ]
+      }
+    },
+    {
+      "_id": "575968235c620fdf7d64e014",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "De La Prairie",
+        "number": "4",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Bio di potager de hepia",
+        "status": "done",
+        "comment": "Le potager hepia comprend des cultures de petits fruits, de légumes et de fines herbes. Les variétés de fruits et de légumes sont majoritairement des variétés anciennes et souvent oubliées de la population suisse afin de promouvoir et conserver ce patrimoine et ainsi faire redécouvrir ces variétés à la population. Le potager est entretenu par des étudiants de la Junior Entreprise hepia.",
+        "organism": "Filière agronomie, Haute école dup aysage, de l'ingénierie et d'architecture de Genève",
+        "manager": "Sophie Rochefort",
+        "email": "sophie.rochefort@hesge.ch",
+        "tel": "022 546 68 07",
+        "website": "http://hepia.hesge.ch/",
+        "images": [
+          {
+            "imageDisplayName": "Photo potager.jpg",
+            "imageName": "18IKLLNcYIovTzsQ6rfKCnfC.jpg",
+            "_id": "575968235c620fdf7d64e015"
+          }
+        ],
+        "area": 136,
+        "classifications": [
+          "roof",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.135520935058594,
+          46.20883892607113
+        ]
+      }
+    },
+    {
+      "_id": "575db8215c620fdf7d64e019",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Route de Loëx",
+        "number": "75",
+        "city": "Confignon",
+        "state": "GE",
+        "zip": "1232",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Jardin et potager en permaculture",
+        "status": "done",
+        "comment": "Depuis 2014, nous gérons et cultivons ce jardin et potager en permaculture. La biodiversité est bienvenue et nous produisons ensemble de plus en plus de fruits et légumes sur notre terrain. Nos 6 poules sont heureuses, les enfants ont, entre autre, un espace sable naturel et leur \"coin légumes\".",
+        "organism": "Coopérative Equilibre, association des habitants \"Zinzolins\"",
+        "manager": "Le groupe jardin (Simone Kaspar de Pont)",
+        "email": "simone@simoqua.ch",
+        "tel": "--",
+        "website": "http://www.cooperative-equilibre.ch/",
+        "images": [
+          {
+            "imageDisplayName": "Potager_Zinzolins.jpg",
+            "imageName": "_6en4ZbgS9InmJcIfbCldngC.jpg",
+            "_id": "575db8215c620fdf7d64e01a"
+          }
+        ],
+        "area": 400,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0900092124938965,
+          46.18501533717237
+        ]
+      }
+    },
+    {
+      "_id": "575e694c5c620fdf7d64e01b",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Route de Loëx",
+        "number": "75",
+        "city": "Confignon",
+        "state": "GE",
+        "zip": "1232",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Jardin et potager en permaculture",
+        "status": "done",
+        "comment": "Depuis 2015, nos trois poules brunes et les trois poules de soie nous embellissent les journées! Ce poulailler réuni régulièrement les habitants et les voisins du quartier, c'est un vrai plaisir. ",
+        "organism": "Coopérative Equilibre, association des habitants \"Zinzolins\"",
+        "manager": "Le groupe poules (Simone Kaspar de Pont)",
+        "email": "simone@simoqua.ch",
+        "tel": "--",
+        "website": "http://www.cooperative-equilibre.ch/",
+        "images": [
+          {
+            "imageDisplayName": "DSCN5646.JPG",
+            "imageName": "d8MBDDLpq50loSrWGouQ3CQr.JPG",
+            "_id": "575e694c5c620fdf7d64e01c"
+          }
+        ],
+        "area": 400,
+        "classifications": [
+          "henhouse",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.090041399002075,
+          46.18511189999032
+        ]
+      }
+    },
+    {
+      "_id": "58064b7453a1b5a105235c44",
+      "__v": 0,
+      "type": "Feature",
+      "properties": {
+        "city": "Bernex",
+        "comment": "Jardin cultivé par une équipe avec le plus grand respect vers la terre.",
+        "country": "Suisse",
+        "email": "",
+        "gardenname": "Cultiver ensemble",
+        "manager": "",
+        "number": "",
+        "organism": "",
+        "state": "GE",
+        "status": "in_progress",
+        "street": " A préciser prochainement!",
+        "subtype": "",
+        "tel": "",
+        "website": "",
+        "zip": "1233",
+        "images": [
+          {
+            "imageDisplayName": "jardin_bernex.jpg",
+            "imageName": "m4rpxN3PjLVICwCxuZ_x7Pwk.jpg",
+            "_id": "58064b7453a1b5a105235c45"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.076388955116272,
+          46.17709289440035
+        ]
+      }
+    },
+    {
+      "_id": "580660ee53a1b5a105235c4c",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "rue Baulacre",
+        "number": "3",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Collectif Beaulieu",
+        "status": "done",
+        "comment": "\r\nSuite au déménagement du Service des Espaces Verts de la Ville de Genève en 2008, plusieurs associations créent le Collectif Beaulieu et présentent à la Ville un projet de pratique et de réflexion autour de l'agriculture de proximité et de la souveraineté alimentaire. Le but étant d'animer sur ce thème un espace situé au cœur de la ville, ouvert, polyvalent et convivial.",
+        "organism": "association Collectif Beaulieu",
+        "manager": "",
+        "email": "collectifbeaulieu@preenbulle.ch",
+        "tel": "",
+        "website": "http://preenbulle.ch/113/Beaulieu",
+        "images": [
+          {
+            "imageDisplayName": "1BrunchAutomne.jpg",
+            "imageName": "zol0EfsYaE3sUpl-WHiAUt5h.jpg",
+            "_id": "580660ee53a1b5a105235c54"
+          },
+          {
+            "imageDisplayName": "2plantons artichauxts 142 (800x533).jpg",
+            "imageName": "OCkkqiZ4ejYguJ8Ooh0dqSeo.jpg",
+            "_id": "580660ee53a1b5a105235c53"
+          },
+          {
+            "imageDisplayName": "3cuillette libre(800x532).jpg",
+            "imageName": "1h8eFHdJflZcYN-ZTkf2Sxz6.jpg",
+            "_id": "580660ee53a1b5a105235c52"
+          },
+          {
+            "imageDisplayName": "4abeilles beaulieu (800x600).jpg",
+            "imageName": "sLjOuMBlW5FiixyglOR-JQIq.jpg",
+            "_id": "580660ee53a1b5a105235c51"
+          },
+          {
+            "imageDisplayName": "5miel beaulieu (800x600).jpg",
+            "imageName": "3gPQJ-4BtPCFoerpb898CnJD.jpg",
+            "_id": "580660ee53a1b5a105235c50"
+          },
+          {
+            "imageDisplayName": "6poulailler(800x533).jpg",
+            "imageName": "P_EeqlYakh2vW80dkf57yq1G.jpg",
+            "_id": "580660ee53a1b5a105235c4f"
+          },
+          {
+            "imageDisplayName": "cuillettes (800x532).jpg",
+            "imageName": "mRdoboFZfAsYUvQAn9AZbseZ.jpg",
+            "_id": "580660ee53a1b5a105235c4e"
+          },
+          {
+            "imageDisplayName": "jardins (800x600).jpg",
+            "imageName": "kR-3LoMoK47WBVPrVMxv6l-w.jpg",
+            "_id": "580660ee53a1b5a105235c4d"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "farm",
+          "divided",
+          "hive",
+          "henhouse"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.138192415237427,
+          46.21455564443585
+        ]
+      }
+    },
+    {
+      "_id": "584999f386f2a4348c450b5c",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue Baulacre",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Balcon expérimentale mais vivant !",
+        "status": "done",
+        "comment": "1m carré pour les plantes aromatiques, 2 bacs surélevés pour les tomates, bettes, épinards et autres cultures de variétés anciennes Pro Specierara, ainsi qu'une multitude de plantes en pots: figuier, groseillers, piments et fougère! Un hôtel à insecte et un nichoir complète l'équilibre de notre beau balcon !",
+        "organism": "",
+        "manager": "",
+        "email": "chloe_zufferey@hotmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "I-GXN2DRXWDN60OXi8D1siqi",
+            "_id": "584999f386f2a4348c450b5d"
+          }
+        ],
+        "area": 4,
+        "classifications": [
+          "individual",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.139276027679443,
+          46.215572712492644
+        ]
+      }
+    },
+    {
+      "_id": "588534541a10a8c59cdac429",
+      "type": "Feature",
+      "__v": 0,
+      "properties": {
+        "street": "Rue Gustave-Moynier",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1202",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "Petit Bonheur",
+        "status": "done",
+        "comment": "Une petite bande de jardin le long d'un immeuble, un petit coin poétique qui fleurit en bas de chez soi pour se sentir directement en contact avec la terre et avec la beauté de \r\n\r\ncouleurs et formes de la nature. \r\n\r\n\r\n*Email : les jardiniers n'ayant pas d'adresse émail, utilisent info@genevecultive.ch comme adresse de référence.",
+        "organism": "",
+        "manager": "",
+        "email": "info@genevecultive.ch",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "Jardin -8.jpg",
+            "imageName": "57SiH4p5njAQIBQj4__mpEzx.jpg",
+            "_id": "588534541a10a8c59cdac430"
+          },
+          {
+            "imageDisplayName": "Jardin_14.jpg",
+            "imageName": "W3fd_yzSsFdLlEDvVj-uCVwV.jpg",
+            "_id": "588534541a10a8c59cdac42f"
+          },
+          {
+            "imageDisplayName": "Jardin_16.jpg",
+            "imageName": "CgnxFb1pVJjE6QAkLSYrBKJt.jpg",
+            "_id": "588534541a10a8c59cdac42e"
+          },
+          {
+            "imageDisplayName": "Jardin-1a.jpg",
+            "imageName": "7gbHz6613MM0H1CFJVuCMi3j.jpg",
+            "_id": "588534541a10a8c59cdac42d"
+          },
+          {
+            "imageDisplayName": "Jardin-3.jpg",
+            "imageName": "TkTjpLpPbgvtx6saEzwHleMl.jpg",
+            "_id": "588534541a10a8c59cdac42c"
+          },
+          {
+            "imageDisplayName": "Jardin-12.jpg",
+            "imageName": "-qSfRfeSNDzaYQJ51aeixnBg.jpg",
+            "_id": "588534541a10a8c59cdac42b"
+          },
+          {
+            "imageDisplayName": "Jarin-2.jpg",
+            "imageName": "6iAO-TUi8NE8DUxpZi-lvRpj.jpg",
+            "_id": "588534541a10a8c59cdac42a"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.149002388119698,
+          46.2197113170481
+        ]
+      }
+    },
+    {
+      "_id": "58d37477657510fa4484b197",
+      "type": "Feature",
+      "d": "2017-03-23T07:08:39.000Z",
+      "__v": 0,
+      "properties": {
+        "street": "Jacques Grosselin",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Poulailler des tours",
+        "status": "done",
+        "comment": "Poulailler urbain créé par des habitants du quartier réunis en association.",
+        "organism": "",
+        "manager": "Fabienne Witz",
+        "email": "poulaillerdestours@yahoo.fr",
+        "tel": "076 693 53 70",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "eVttXWNRS-AO6YsLHkV-1lzC",
+            "_id": "58d37477657510fa4484b198"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "henhouse",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.136229038238525,
+          46.18265320926593
+        ]
+      }
+    },
+    {
+      "_id": "58dba532657510fa4484b19e",
+      "type": "Feature",
+      "d": "2017-03-29T12:14:42.000Z",
+      "__v": 0,
+      "properties": {
+        "street": "93-95 Av. D'Aire",
+        "number": "",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1203",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Carrés potagers des Jardins du Rhône",
+        "status": "in_progress",
+        "comment": "Utiliser les plates-bandes entre les parkings et les immeubles pour créer 6 carrés potagers individuels d'environ 2 m2. Demande d'autorisation en préparation. Décision par la Régie fin mai 2017.",
+        "organism": "collectif Carrés potagers des Jardins du Rhône",
+        "manager": "Christoph Meier",
+        "email": "meiermeier@bluewin.ch",
+        "tel": "+41 76 616 42 66",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "I5oEas3j9CKNlusCd9ns6-jV",
+            "_id": "58dba532657510fa4484b19f"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1141276359558105,
+          46.20413889246357
+        ]
+      }
+    },
+    {
+      "__v": 0,
+      "_id": "58f24db8575dbfb843626cf8",
+      "d": "2017-04-15T16:43:36.000Z",
+      "type": "Feature",
+      "properties": {
+        "city": "Meyrin",
+        "comment": "Sur une surface de 900m2, deux association se côtoient : la Parcelle Colorée et Les Incroyables Comestibles Meyrin. Tous les habitants de la commune peuvent s'annoncer pour collaborer à la culture du jardin communautaire. L'exploitation de cette parcelle a été validée par la Commune pour une durée de 3 ans.",
+        "country": "Switzerland",
+        "email": "contact@icmeyrin.ch",
+        "gardenname": "Les Incroyables Comestibles - Meyrin",
+        "manager": "Pascal Seeger",
+        "number": "",
+        "organism": "Incroyables Comestibles Meyrin",
+        "state": "GE",
+        "status": "done",
+        "street": "Rue de Livron",
+        "subtype": "",
+        "tel": "0788505806",
+        "website": "http://www.icmeyrin.ch",
+        "zip": "1217",
+        "images": [
+          {
+            "imageDisplayName": "image1.JPG",
+            "imageName": "FktS2H6QaDWjDLERUR40sPq9.JPG",
+            "_id": "58f24db8575dbfb843626cfb"
+          },
+          {
+            "imageDisplayName": "IMG_0989.jpg",
+            "imageName": "s-gFV4nkj22vppEc8Aa-8ZHQ.jpg",
+            "_id": "58f24db8575dbfb843626cfa"
+          },
+          {
+            "imageDisplayName": "IMG_0995.jpg",
+            "imageName": "DJek9cFbjxT5p0uyIcHazuld.jpg",
+            "_id": "58f24db8575dbfb843626cf9"
+          }
+        ],
+        "area": 450,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.079270988539065,
+          46.23233027905069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-04-15T17:41:30.000Z",
+      "_id": "58f25b4a575dbfb843626cfc",
+      "__v": 0,
+      "properties": {
+        "street": " Rue de Livron",
+        "number": "",
+        "city": "Meyrin",
+        "state": "GE",
+        "zip": "1271",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "La Parcelle",
+        "status": "done",
+        "comment": "\r\nSur une surface de 900m2, deux association se côtoient : la Parcelle Colorée et Les Incroyables Comestibles Meyrin. Tous les habitants de la commune peuvent s'annoncer pour collaborer à la culture du jardin communautaire. L'exploitation de cette parcelle a été validée par la Commune pour une durée de 3 ans.",
+        "organism": "Parcelle Colorée",
+        "manager": "Diana Neag",
+        "email": "contact@parcellecoloree.ch",
+        "tel": "076 302 01 55",
+        "website": "http://www.parcellecoloree.ch",
+        "images": [
+          {
+            "imageDisplayName": "IMG_1045.jpg",
+            "imageName": "enPYMjz91BGjC0fhO9g8IIRS.jpg",
+            "_id": "58f25b4a575dbfb843626cff"
+          },
+          {
+            "imageDisplayName": "IMG_1065.jpg",
+            "imageName": "uvo_j4NpkhX0nCYtLvTb2q8i.jpg",
+            "_id": "58f25b4a575dbfb843626cfe"
+          },
+          {
+            "imageDisplayName": "IMG_1071.jpg",
+            "imageName": "yoavmmOHf9Rq0GJhpGOmw_Yu.jpg",
+            "_id": "58f25b4a575dbfb843626cfd"
+          }
+        ],
+        "area": 450,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.07921332186379,
+          46.23230337603426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-04-17T19:02:12.000Z",
+      "_id": "58f511345bdcc330f609a322",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin de Carabot",
+        "number": "",
+        "city": "Bernex",
+        "state": "GE",
+        "zip": "1233",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potagers de Cressy",
+        "status": "done",
+        "comment": "L'association des potagers de Cressy est issue d'une démarche participative d'habitants du quartier et des mairies. Elle s'occupe d'une vingtaine de bacs potagers. Nous plantons dans la paille. Notre but est de cultiver des légumes de manière biologique, de partager nos connaissances et notre expérience et de créer des liens avec les habitants.",
+        "organism": "Association",
+        "manager": "Séverine Passaplan Gerber (Présidente)",
+        "email": "potagers.cressy@gmail.com",
+        "tel": "",
+        "website": "https://potagersdecressy.wordpress.com",
+        "images": [
+          {
+            "imageDisplayName": "IMG_3471.JPG",
+            "imageName": "yhWifPsqahOMe_eWH6o8ubKY.JPG",
+            "_id": "58f511345bdcc330f609a323"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "divided",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.087863445281982,
+          46.18217780018597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-04-18T11:37:52.000Z",
+      "_id": "58f5fa905bdcc330f609a324",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin des Toques",
+        "number": "",
+        "city": "Veigy-Foncenex",
+        "state": "Ge",
+        "zip": "74140",
+        "country": "France",
+        "subtype": "",
+        "gardenname": "Jardins du Nant",
+        "status": "done",
+        "comment": "Les jardins du Nant vous offrent la possibilité de développer plusieurs activités en relation avec la Nature. Potagers, taille des arbres, multiplication de végétaux, apiculture, atelier enfants, dessin et chant.",
+        "organism": "Les Jardins du Nant",
+        "manager": "Alain et Catherine Gilliand",
+        "email": "info@lesjardinsdunant.ch",
+        "tel": "079 719 63 03",
+        "website": "http://www.lesjardinsdunant.ch",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "UMh2r8NcbEsnveSzGSsVG5qb",
+            "_id": "58f5fa905bdcc330f609a325"
+          }
+        ],
+        "area": null,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.267335414886475,
+          46.248561525417614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-04-25T15:29:14.000Z",
+      "_id": "58ff6b4a5bdcc330f609a336",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin Marc-Charrot",
+        "number": "",
+        "city": "Plan-les-Ouates",
+        "state": "GE",
+        "zip": "1228",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Jardin d'Arare",
+        "status": "done",
+        "comment": "Jardin participatif et de techniques innovantes",
+        "organism": "",
+        "manager": "Pierre-Louis Savigny",
+        "email": "savigny@infomaniak.ch",
+        "tel": "0787759373",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "nHdFWtvztIgwRR454xDa2CYu",
+            "_id": "58ff6b4a5bdcc330f609a337"
+          }
+        ],
+        "area": 80000,
+        "classifications": [
+          "producer",
+          "divided",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.103007197380066,
+          46.16046431024459
+        ]
+      }
+    },
+    {
+      "__v": 0,
+      "_id": "5900c21e5bdcc330f609a33c",
+      "d": "2017-04-26T15:51:58.000Z",
+      "type": "Feature",
+      "properties": {
+        "city": "Carouge",
+        "comment": "Nomad’s Land est un dispositif de jardins nomades qui prend place sur des terrains inexploités, des interstices, pour une durée déterminée. Il met à profit cet espace temps pour imaginer et construire un lieu pour et avec les habitants du quartier, en collaboration avec des professionnels. \r\n\r\n",
+        "country": "Suisse",
+        "email": "jardin@largescalestudios.com",
+        "gardenname": "Nomad's Land",
+        "manager": "",
+        "number": "16",
+        "organism": "Largescalestudios",
+        "state": "GE",
+        "status": "in_progress",
+        "street": "rue des Moraines",
+        "subtype": "",
+        "tel": "",
+        "website": "https://www.facebook.com/Nomads-Land-1848503132105259/?fref=ts",
+        "zip": "1227",
+        "images": [
+          {
+            "imageDisplayName": "Nomad's Land.jpg",
+            "imageName": "Sfyoy10k0DPAzcwTOUEOjwHL.jpg",
+            "_id": "5900c21e5bdcc330f609a33d"
+          }
+        ],
+        "area": 2500,
+        "classifications": [
+          "divided",
+          "share",
+          "vertical",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.14361047744751,
+          46.18241921937314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-05-07T11:27:17.000Z",
+      "_id": "590f0495ea22e138afad4fea",
+      "__v": 0,
+      "properties": {
+        "street": "Chemin du Château-Bloch 1",
+        "number": "",
+        "city": "Vernier",
+        "state": "GE",
+        "zip": "1219",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Miel de quartier Libellule",
+        "status": "in_progress",
+        "comment": "En association avec la maison de quartier des libellules, l'association Apidae, met en place deux ruches qui permettrons de pouvoir réaliser un projet miel de quartier. Tous les résidents du quartier pourront installer chez eux des kits fleuris pour concevoir ainsi un véritable miel de quartier. Durant toute la saison apicole, diverses animations auront lieu.",
+        "organism": "Apidae",
+        "manager": "cedric periat",
+        "email": "contact@apidae.ch",
+        "tel": "0774383140",
+        "website": "http://www.apidae.ch",
+        "images": [
+          {
+            "imageDisplayName": "13243832_554340744735979_3967277722575993706_o.jpg",
+            "imageName": "q-KshmITFm-ZjKlNPniTm6Cf.jpg",
+            "_id": "590f0495ea22e138afad4feb"
+          }
+        ],
+        "area": 5,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1064136028289795,
+          46.20594772169959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-05-07T11:46:13.000Z",
+      "_id": "590f0905ea22e138afad4fec",
+      "__v": 0,
+      "properties": {
+        "street": "Route des Chevaliers-de-Malte ",
+        "number": "16",
+        "city": "Plan-les-Ouates",
+        "state": "GE",
+        "zip": "1228",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Rucher de Plan les Ouates",
+        "status": "done",
+        "comment": "En partenariat avec la ville de Plan les Ouates, l'association Apidae a installé un rucher écologique composé de ruches de type warré. Tout au long de l'année, l'association Apidae concevra des activités pour faire découvrir aux habitants de plan les Ouates, l'intérêt de la sauvegarde des pollinisateurs. \r\n",
+        "organism": "Apidae",
+        "manager": "Periat cédric",
+        "email": "contact@apidae.ch",
+        "tel": "0774383140",
+        "website": "http://www.apidae.ch",
+        "images": [
+          {
+            "imageDisplayName": "13873035_584354858401234_1502148633424113405_n.jpg",
+            "imageName": "EWf7EphKzI6p6eACo09c2eYl.jpg",
+            "_id": "590f0905ea22e138afad4fed"
+          }
+        ],
+        "area": 2,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.11920103430748,
+          46.166726896864326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-06-14T18:06:48.000Z",
+      "_id": "59417b3896c3d670a34655a2",
+      "__v": 0,
+      "properties": {
+        "street": "ch. de la Mousse",
+        "number": "23",
+        "city": "Chêne-Bourg",
+        "state": "GE",
+        "zip": "1225",
+        "country": "Switzerland",
+        "subtype": "",
+        "gardenname": "jardin de la mousse",
+        "status": "in_progress",
+        "comment": "Jardin cultivé pour le plaisir. Zone villa dense mais riche petits milieux propices aux oiseaux, insects, hérissons, il y a aussi parfois un renard qui vient manger les poules des voisins.",
+        "organism": "",
+        "manager": "Camille Christe, Christophe Rossier",
+        "email": "cam_christe@hotmail.com",
+        "tel": "",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "IMG_1375.JPG",
+            "imageName": "af6tdBiJ7LmbE8BLq_T33RI0.JPG",
+            "_id": "59417b3896c3d670a34655a3"
+          }
+        ],
+        "area": 12,
+        "classifications": [
+          "individual",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.197651624679565,
+          46.19743712228881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-06-29T17:09:12.000Z",
+      "_id": "5955343862fad3b975839b40",
+      "__v": 0,
+      "properties": {
+        "street": "Rue du Village-Suisse",
+        "number": "5",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1205",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Projet miel de quartier à l'école du Mail",
+        "status": "in_progress",
+        "comment": "L'école du Mail, la maison de quartier de la jonction et l'association Apidae ont installé dans le cadre des projets \"miel de quartier\" un rucher destiné à sensibiliser les enfants de l'école et les jeunes du quartier à la cause des abeilles. Tout au long de l'année le rucher sera entretenu par un collectif d'habitant et des animations auront lieu avec la maison de quartier. ",
+        "organism": "Association Apidae",
+        "manager": "Cédric périat",
+        "email": "contact@apidae.ch",
+        "tel": "0774383140",
+        "website": "http://www.apidae.ch",
+        "images": [
+          {
+            "imageDisplayName": "mail.jpg",
+            "imageName": "K7B25Qz0RAYDOyJ0BiZUZaU2.jpg",
+            "_id": "5955343862fad3b975839b41"
+          }
+        ],
+        "area": 8,
+        "classifications": [
+          "hive",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.135821342468262,
+          46.200164340151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-08-08T07:20:03.000Z",
+      "_id": "59896623a32b12e16c60283a",
+      "__v": 0,
+      "properties": {
+        "street": "Rue de Villereuse",
+        "number": "10",
+        "city": "Genève",
+        "state": "GE",
+        "zip": "1207 ",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Bitume enchanté",
+        "status": "done",
+        "comment": "Grâce à une poignée de bénévoles motivés, l'espace bitumineux à l'entrée du bureau du WWF - section de Genève a été transformé en un espace plus verdoyant.\r\nDes plantes locales, mellifères, certaines espèces anciennes et rares, contribuent ainsi à améliorer la biodiversité en ville ainsi que la qualité de vie des usagers du quartier.",
+        "organism": "WWF Genève",
+        "manager": "",
+        "email": "pandaclub@wwf-ge.ch",
+        "tel": "+41227004222",
+        "website": "http://www.wwf-ge.ch",
+        "images": [
+          {
+            "imageDisplayName": "csm_WWF_Geneve_2017.jpg",
+            "imageName": "_paddlHBtJjwn0C-yoq2KrW1.jpg",
+            "_id": "59896623a32b12e16c60283b"
+          }
+        ],
+        "area": 5,
+        "classifications": [
+          "share",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.158070266246796,
+          46.20044837888431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-09-04T12:52:34.000Z",
+      "_id": "59ad4c92a32b12e16c602846",
+      "__v": 0,
+      "properties": {
+        "street": "Montfalcon",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potagers Urbains entre Voisins",
+        "status": "done",
+        "comment": "18 bacs hors sols de 1m3",
+        "organism": "Carottes Rouges",
+        "manager": "Cédric JELK",
+        "email": "cjelk@netplus.ch",
+        "tel": "0788749977",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "BDsuX-f7O46xBbcPXfo-2cn6",
+            "_id": "59ad4c92a32b12e16c602847"
+          }
+        ],
+        "area": 20,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.136816442012787,
+          46.185971672987044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-09-04T13:00:03.000Z",
+      "_id": "59ad4e53a32b12e16c602848",
+      "__v": 0,
+      "properties": {
+        "street": "Avenue de la Praille",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potagers Urbains entre Voisins",
+        "status": "done",
+        "comment": "12 bacs hors sols de 1m3",
+        "organism": "Carottes Rouges",
+        "manager": "Cédric JELK",
+        "email": "cjelk@netplus.ch",
+        "tel": "0788749977",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "Eul58LNjw7WALe7blOmdUQfv",
+            "_id": "59ad4e53a32b12e16c602849"
+          }
+        ],
+        "area": 15,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.133287996053696,
+          46.18686578550082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-09-04T13:03:14.000Z",
+      "_id": "59ad4f12a32b12e16c60284a",
+      "__v": 0,
+      "properties": {
+        "street": "Montfalcon",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potagers Urbains entre Voisins",
+        "status": "done",
+        "comment": "8 bac hors sol de 1m3",
+        "organism": "Carottes Rouges",
+        "manager": "Cédric JELK",
+        "email": "cjelk@netplus.ch",
+        "tel": "0788749977",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "Aq5F0wpwckfjzdCY39X9P5dv",
+            "_id": "59ad4f12a32b12e16c60284b"
+          }
+        ],
+        "area": 10,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.137800812721252,
+          46.18650461407625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "d": "2017-09-04T13:06:17.000Z",
+      "_id": "59ad4fc9a32b12e16c60284c",
+      "__v": 0,
+      "properties": {
+        "street": "Vigne Rouge",
+        "number": "",
+        "city": "Carouge",
+        "state": "GE",
+        "zip": "1227",
+        "country": "Suisse",
+        "subtype": "",
+        "gardenname": "Potagers Urbains entre Voisins",
+        "status": "done",
+        "comment": "10 bacs hors sol de 1m3",
+        "organism": "Carottes Rouges",
+        "manager": "Cédric JELK",
+        "email": "cjelk@netplus.ch",
+        "tel": "0788749977",
+        "website": "",
+        "images": [
+          {
+            "imageDisplayName": "",
+            "imageName": "NiYQtZIAUFXpHAtXkQAqBalB",
+            "_id": "59ad4fc9a32b12e16c60284d"
+          }
+        ],
+        "area": 12,
+        "classifications": [
+          "divided",
+          "",
+          "",
+          ""
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.137146353721619,
+          46.17701117549373
+        ]
+      }
+    }
+  ]
+}

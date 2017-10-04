@@ -1,0 +1,45 @@
+/* CSS for the font-name + font-size plugin */
+.wysiwyg-plugin-list {
+    max-height: 16em;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.wysiwyg-plugin-list a,
+.wysiwyg-plugin-list a:link,
+.wysiwyg-plugin-list a:visited {
+    display: block;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.wysiwyg-plugin-list a:hover {
+    color: HighlightText;
+    background-color: Highlight;
+}
+/* CSS for the smiley plugin */
+.wysiwyg-plugin-smilies {
+    padding: 10px;
+    text-align: center;
+    white-space: normal;
+}
+.wysiwyg-plugin-smilies img {
+    display: -moz-inline-stack; /* inline-block: http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/ */
+    display: inline-block;
+    display: inline;
+}
+.fake-bootstrap.wysiwyg-container.wysiwyg-active {
+    border-color: #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(163, 113, 167, 0.6);
+}
+.wysiwyg-wrapper {
+    font-size: 10px;
+}
+.wysiwyg-editor,
+.wysiwyg-placeholder {
+    font-size: 1.6em;
+}
+.wysiwyg-editor li, .wysiwyg-editor p {
+    font-size: 1em;
+}

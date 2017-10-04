@@ -1,0 +1,57 @@
+<%
+var menuLinks = [
+{id: 'we_are', label: 'Nous sommes', svg: '../public/images/menu/barre_1nous.svg', http:'/nous-sommes'},
+{id: 'goals', label: 'But et Objectifs', svg: '../public/images/menu/barre_2but.svg', http:'/buts'},
+{id: 'map', label: 'Carte', svg: '../public/images/menu/barre_3carte.svg', http:'/map'},
+{id: 'classification', label: 'Classification', svg: '../public/images/menu/barre_4classification.svg', http:'/classification'},
+{id: 'consulting', label: 'Spécialistes', svg: '../public/images/menu/barre_5experts.svg', http:'/experts'},
+{id: 'news', label: 'Nouvelles', svg: '../public/images/menu/barre_6nouvelles.svg', http:'/nouvelles'},
+{id: 'forum', label: 'Forum', svg: '../public/images/menu/barre_7forum.svg', http:'/forum'},
+{id: 'numbers', label: 'En Chiffres', svg: '../public/images/menu/barre_8chiffres.svg', http:'/chiffres'},
+{id: 'cultivons-nous', label: 'Cultivons-nous', svg: '../public/images/menu/barre_11cultivons.svg', http:'/galerie'},
+{id: 'sponsor', label: 'Devenez membre', svg: '../public/images/menu/barre_10soutenez.svg', http:'/soutenez-nous'},
+];
+%>
+
+<div class="menu-logo">
+    <a href="/">
+        <% include ../public/images/logo.svg%>
+    </a>
+</div>
+
+<div class="menu">
+
+
+    <div class="mobile-logo vertical-center">
+        <a href="/">
+            <% include ../public/images/logo_inlinea.svg%>
+        </a>
+    </div>
+
+    <input type="checkbox" id="menu-button">
+    <div class="menu-links">
+
+        <ul>
+
+            <% for(var i=0; i<menuLinks.length; i++) {%>
+                <li id=<%=menuLinks[i].id%>  <% if (selected === menuLinks[i].id) { %> class="selected" <% } %>  >
+                    <% if (selected != menuLinks[i].id) { %> <a href=<%=menuLinks[i].http%>> <% } %>
+                        <%- include(menuLinks[i].svg) %>
+                        <span><%=menuLinks[i].label%></span>
+                        <% if (selected != menuLinks[i].id) { %> </a> <% } %>
+                </li>
+                <% if (i < menuLinks.length-1) { %> <span class="separator">|</span> <% } %>
+            <% } %>
+        </ul>
+
+    </div>
+
+    <label for="menu-button" class="mobile-menu-button">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+
+</div>
+
+<div class="menu-spacer"></div>
