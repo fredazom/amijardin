@@ -11,7 +11,7 @@ var fs = require('fs'),
     Q = require('../public/javascripts/q.js');
 
 var Config = function() {
-    var self = this, env = null, node_env = process.env.NODE_ENV || 'development';
+    var self = this, env = null, node_env = process.env.NODE_ENV ? 'production' : 'development';
 
     self.getConfig = function() {
         var deferred = Q.defer();
@@ -21,8 +21,7 @@ var Config = function() {
                 // var path = process.env.NODE_ENV !== 'development'?'path_in_server':'/home/fredy/projects/amijardindata/env/';
                 // env = JSON.parse(fs.readFileSync(path+'env.json'), 'utf8');
                 dbStorage.ConfigDAOPromise.then(function(configDAO) {
-                    configDAO.findByEnv(process.env.NODE_ENV !== 'development'?process.env.NODE_ENV:'development').then(function(envir){
-                        console.log('ENV FROM DB');
+                    configDAO.findByEnv(node_env).then(function(envir){
                         deferred.resolve(envir);
                     }).catch(function(err){console.log(err);});
                 });

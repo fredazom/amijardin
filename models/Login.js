@@ -17,8 +17,6 @@ var Login = function () {
 
     configObject.getConfig().then(function(config){
         self.config = config;
-        self.private_key = fs.readFileSync(KEY_PATH + config.pkpath);
-        self.public_key = fs.readFileSync(KEY_PATH + config.pubkpath);
         self.pwdEmailMap = {};
         self.pwdEmailMap[config.marpwd] = {email:"marisa.saladin@gmx.ch", username:"Marisa"};
         self.pwdEmailMap[config.letpwd] = {email:"letiziacaniglia77@gmail.com", username:"Letizia"};
@@ -27,13 +25,22 @@ var Login = function () {
     }).fail(function(error){
         throw new Error('Error getting config : ' + error);
     });
-    
+
+    function loadCert() {
+        self.private_key = fs.readFileSync(KEY_PATH + this.config.pkpath);
+        self.public_key = fs.readFileSync(KEY_PATH + this.config.pubkpath);
+    }
+
     self.authorizeAdmin = function(data){
         
-        if (self.pwdEmailMap === null || self.private_key === null || self.config === null) {
+        if (self.pwdEmailMap === null  || self.config === null ) {
             throw new Error('config has not been loaded yet in Login.js');
         }
-        
+
+        if (self.private_key === null) {
+            loadCert();
+        }
+
         var deferred = Q.defer();
 
         if(self.pwdEmailMap[data.l]) {
@@ -60,7 +67,7 @@ var Login = function () {
     self.verify = function(token){
 
         if (self.public_key === null) {
-            throw new Error('config has not been loaded yet in Login.js');
+            loadCert();
         }
         
         var deferred = Q.defer();

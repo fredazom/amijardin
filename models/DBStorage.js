@@ -8,12 +8,11 @@ var EventEmitter = require('events').EventEmitter,
     NouvelleDAO = require('./nouvelleDAO'),
     mongoose = require('mongoose'), URL_DB_CONNECTION = 'mongodb://localhost:27017/genevecultive';
 
-if (typeof process.env.OPENSHIFT_NODEJS_IP != 'undefined') {
-    URL_DB_CONNECTION = 'mongodb://'+process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
-        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
-        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
-        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
-        process.env.OPENSHIFT_APP_NAME;
+if (typeof process.env.MONGODB_USER != 'undefined') {
+    URL_DB_CONNECTION = 'mongodb://'+process.env.MONGODB_USER + ":" +
+        process.env.MONGODB_PASSWORD + "@" +
+        process.env.MONGODB_DATABASE + ':' +
+        '27017/amijardin';
     console.log("URL AT OPENSHIFT :"+URL_DB_CONNECTION);
 } else {
     console.log("$OPENSHIFT_MONGODB_DB_HOST does not exist");
