@@ -11,7 +11,7 @@ var EventEmitter = require('events').EventEmitter,
 if (typeof process.env.MONGODB_USER != 'undefined') {
     URL_DB_CONNECTION = 'mongodb://'+process.env.MONGODB_USER + ":" +
         process.env.MONGODB_PASSWORD + "@" +
-        process.env.MONGODB_DATABASE + ':' +
+        process.env.MONGODB_SERVICE_HOST + ':' +
         '27017/amijardin';
     console.log("URL AT OPENSHIFT :"+URL_DB_CONNECTION);
 } else {
