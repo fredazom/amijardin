@@ -119,4 +119,9 @@ function sendInternalErrorResponse(res) {
     res.end('Oops, there was a problem!\n');
 }
 
+app.get('/pagecount', function (req, res) {
+    res.send('{ pageCount: simulating}');
+});
+
+
 module.exports = app;
