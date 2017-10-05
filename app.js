@@ -64,6 +64,10 @@ app.get('/aperos-decouvertes-jardins-urbains-geneve-troinex', pageByUrl);
 app.get('/aperos-decouvertes-jardins-urbains-geneve-pieds-verts', pageByUrl);
 app.use('/login', login);
 
+app.get('/pagecount', function (req, res) {
+    res.send('{ pageCount: simulating}');
+});
+
 fileStorage.on("finish", function(){
     fileStorage.currentRes.send(fileStorage.currentReq.body);
 });
@@ -118,10 +122,5 @@ function sendInternalErrorResponse(res) {
     res.setHeader('content-type', 'text/plain');
     res.end('Oops, there was a problem!\n');
 }
-
-app.get('/pagecount', function (req, res) {
-    res.send('{ pageCount: simulating}');
-});
-
 
 module.exports = app;
