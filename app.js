@@ -44,6 +44,9 @@ app.use('/map', map);
 //app.use('/gvaBounderies', gvaBounderies);
 app.use('/gardens', gardens);
 //app.get('/:page', pagesHtml);
+app.get('/pagecount', function (req, res) {
+    res.send('{ pageCount: simulating}');
+});
 app.get('/nous-sommes', pageByUrl);
 app.get('/buts', pageByUrl);
 app.get('/classification', pageByUrl);
@@ -64,9 +67,6 @@ app.get('/aperos-decouvertes-jardins-urbains-geneve-troinex', pageByUrl);
 app.get('/aperos-decouvertes-jardins-urbains-geneve-pieds-verts', pageByUrl);
 app.use('/login', login);
 
-app.get('/pagecount', function (req, res) {
-    res.send('{ pageCount: simulating}');
-});
 
 fileStorage.on("finish", function(){
     fileStorage.currentRes.send(fileStorage.currentReq.body);
