@@ -2,28 +2,7 @@
   "name": "OpenShift-Sample-App",
   "version": "1.0.0",
   "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
-  },
-  "homepage": "http://www.openshift.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
+  "main": "bin/www",
   "dependencies": {
     "express": "~4.12.4",
     "body-parser": "~1.12.4",
@@ -37,14 +16,29 @@
     "sanitize-html": "~1.11.3",
     "nodemailer": "~2.1.0",
     "jsonwebtoken": "~5.7.0",
-    "multiparty": "~4.1.2"
+    "multiparty": "~4.1.2",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   },
-  "devDependencies": {},
-  "bundleDependencies": [],
-
-  "private": true,
+  "engine": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
   "scripts": {
     "start": "node bin/www"
   },
-  "main": "bin/www"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredazom/amijardin.git"
+  },
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url": "http://www.openshift.com/"
+  },
+  "homepage": "https://github.com/fredazom/amijardin",
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true
 }
