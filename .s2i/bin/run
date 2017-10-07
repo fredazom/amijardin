@@ -1,1 +1,1 @@
-ln -sf $OPENSHIFT_DATA_DIR/upload $OPENSHIFT_REPO_DIR/public/images/upload
+ln -sf /opt/app-root/src/data/upload /opt/app-root/src/public/images/upload
