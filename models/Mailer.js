@@ -1,6 +1,6 @@
 var nodemailer = require('nodemailer'),
     config = require('../conf/config'),
-    DOMAIN = (typeof process.env.NODE_ENV === 'production')?'www.genevecultive.ch':'localhost:3000',
+    DOMAIN = (process.env.NODE_ENV === 'production')?'www.genevecultive.ch':'localhost:8080',
     interpolate = function(argsArray, template) {
         for(var i = 0; i<argsArray.length; i++) {
             template = template.replace(new RegExp("{@"+i+"}", 'g'), argsArray[i]);
