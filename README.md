@@ -5,3 +5,4 @@ ensure env variables NODE_ENV, OPENSHIFT_DATA_DIR (/opt/app-root/src/data) and O
 TODO
 log size
 4096 db size
+set APPLICATION_DOMAIN
