@@ -27,8 +27,8 @@ var Login = function () {
     });
 
     function loadCert() {
-        self.private_key = fs.readFileSync(KEY_PATH + this.config.pkpath);
-        self.public_key = fs.readFileSync(KEY_PATH + this.config.pubkpath);
+        self.private_key = fs.readFileSync(KEY_PATH + self.config.pkpath);
+        self.public_key = fs.readFileSync(KEY_PATH + self.config.pubkpath);
     }
 
     self.authorizeAdmin = function(data){
