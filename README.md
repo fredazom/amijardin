@@ -1,3 +1,6 @@
+restore db as explained in
+https://docs.openshift.com/online/dev_guide/migrating_applications/database_applications.html#dev-guide-migrating-database-applications-mongodb
+
 load images into /opt/app-root/src/data/upload
 oc rsync ~/amijardinimagescopy/restore <pod>:/opt/app-root/src/data
 
