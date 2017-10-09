@@ -65,6 +65,7 @@ app.get('/alternatiba-geneve-cultive', pageByUrl);
 app.get('/aperos-decouvertes-jardins-urbains-geneve', pageByUrl);
 app.get('/aperos-decouvertes-jardins-urbains-geneve-troinex', pageByUrl);
 app.get('/aperos-decouvertes-jardins-urbains-geneve-pieds-verts', pageByUrl);
+app.get('/aperos-decouvertes-ferme-lignon', pageByUrl);
 app.use('/login', login);
 
 

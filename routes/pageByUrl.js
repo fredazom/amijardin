@@ -64,4 +64,8 @@ router.get('/aperos-decouvertes-jardins-urbains-geneve-pieds-verts', function (r
     res.render('aperos-decouvertes-pieds-verts');
 });
 
+router.get('/aperos-decouvertes-ferme-lignon', function (req, res) {
+    res.render('aperos-decouvertes-ferme-lignon');
+});
+
 module.exports = router;

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="robots" CONTENT="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <% if (process.env.NODE_ENV === 'production') { %>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/build/communprod.css">
+    <% } else { %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <% }%>
+    <title>Apéros-découvertes dans des jardins urbains et péri-urbains, fermes urbaines de Genève</title>
+    <style>
+        .column-center > div > p {
+            text-align: center;
+        }
+        #apero-decouverte .st0{display:inline;fill:#E5F3F4;}
+        #apero-decouverte .st1{fill:none;stroke:#939393;stroke-width:0.3647;}
+        #apero-decouverte .st2{fill:none;stroke:#939393;stroke-width:0.4808;}
+        #apero-decouverte .st3{fill:none;stroke:#939393;stroke-width:0.4992;}
+        #apero-decouverte .st4{fill:#7C6949;}
+        #apero-decouverte .st5{fill:#B0CE23;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st6{fill:none;stroke:#D3E9EA;stroke-width:3;stroke-dasharray:2.6741,0.8914;}
+        #apero-decouverte .st7{display:inline;fill:#FFFFFF;stroke:#D3E9EA;}
+        #apero-decouverte .st8{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.621;}
+        #apero-decouverte .st9{display:inline;fill:#B1CE1C;}
+        #apero-decouverte .st10{fill:none;stroke:#B1CE1C;stroke-width:60;stroke-linejoin:round;stroke-dasharray:3.0606,3.0606;}
+        #apero-decouverte .st11{fill:#E5F3F4;}
+        #apero-decouverte .st12{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.5845;}
+        #apero-decouverte .st13{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6116;}
+        #apero-decouverte .st14{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6121;}
+        #apero-decouverte .st15{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6262;}
+        #apero-decouverte .st16{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6461;}
+        #apero-decouverte .st17{fill:#F7EEA4;stroke:#F7D61F;stroke-width:0.6555;}
+        #apero-decouverte .st18{fill:#B0CE23;}
+        #apero-decouverte .st19{fill:#B1CE1C;}
+        #apero-decouverte .st20{fill:#85488C;}
+        #apero-decouverte .st21{fill:none;stroke:#91A613;stroke-width:0.9857;}
+        #apero-decouverte .st22{fill:none;stroke:#CCE5E2;stroke-width:0.6173;stroke-dasharray:1.6857,1.6857;}
+        #apero-decouverte .st23{fill:#FCD243;stroke:#FFFFFF;stroke-width:0.4521;}
+        #apero-decouverte .st24{fill:none;stroke:#B0CE23;stroke-width:1.3584;}
+        #apero-decouverte .st25{fill:none;stroke:#B0CE23;stroke-width:1.6913;}
+        #apero-decouverte .st26{fill:none;stroke:#D3E9EA;}
+        #apero-decouverte .st27{display:inline;fill:none;stroke:#D3E9EA;stroke-width:1.0017;}
+        #apero-decouverte .st28{display:inline;fill:none;stroke:#D3E9EA;}
+        #apero-decouverte .st29{display:inline;fill:none;stroke:#FFFFFF;stroke-width:1.2063;stroke-linecap:round;}
+        #apero-decouverte .st30{fill:#91A613;}
+        #apero-decouverte .st31{display:none;fill:#7A8818;}
+        #apero-decouverte .st32{fill:none;stroke:#909090;stroke-width:0.4928;stroke-miterlimit:10;}
+        #apero-decouverte .st33{fill:#FAEC18;}
+        #apero-decouverte .st34{fill:#FCD243;}
+        #apero-decouverte .st35{fill:#FD0011;}
+        #apero-decouverte .st36{fill:#FF1300;}
+        #apero-decouverte .st37{fill:none;stroke:#CCE5E2;stroke-dasharray:5,5;}
+        #apero-decouverte .st38{fill:#FFFFFF;}
+        #apero-decouverte .st39{fill:none;}
+        #apero-decouverte .st40{fill:#FF1300;stroke:#FFFFFF;stroke-width:0.4928;}
+        #apero-decouverte .st41{fill:none;stroke:#D3E9EA;stroke-width:3;stroke-dasharray:1.0468,1.0468;}
+        #apero-decouverte .st42{display:inline;}
+        #apero-decouverte .st43{fill:#D1E51E;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st44{fill:none;stroke:#939393;stroke-width:0.484;}
+        #apero-decouverte .st45{display:inline;fill:#D3E9EA;}
+        #apero-decouverte .st46{fill:#FFFFFF;stroke:#939393;stroke-width:0.4992;}
+        #apero-decouverte .st47{fill:none;stroke:#D3E9EA;stroke-width:2.3237;stroke-dasharray:1.2163,1.8245;}
+        #apero-decouverte .st48{display:inline;fill:none;stroke:#D3E9EA;stroke-width:1.006;}
+        #apero-decouverte .st49{fill:#A371A7;stroke:#FFFFFF;stroke-width:0.4521;}
+        #apero-decouverte .st50{fill:#A371A7;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte .st51{display:inline;fill:#A1D3D6;}
+        #apero-decouverte .st52{fill:#D3D3D3;}
+        #apero-decouverte .st53{fill:#D3E9EA;}
+        #apero-decouverte .st54{fill:#91A613;stroke:#FFFFFF;stroke-width:0.4019;}
+        #apero-decouverte .st55{fill:#91A613;stroke:#FFFFFF;stroke-width:0.4928;}
+        #apero-decouverte .st56{fill:#D6B215;}
+        #apero-decouverte .st57{fill:none;stroke:#F7D61F;stroke-width:0.6116;}
+        #apero-decouverte .st58{fill:none;stroke:#F7D61F;stroke-width:0.6121;}
+        #apero-decouverte .st59{fill:none;stroke:#F7D61F;stroke-width:0.6262;}
+        #apero-decouverte .st60{fill:none;stroke:#F7D61F;stroke-width:0.6461;}
+        #apero-decouverte .st61{fill:none;stroke:#F7D61F;stroke-width:0.6555;}
+        #apero-decouverte .st62{fill:none;stroke:#D3E9EA;stroke-width:3;}
+        #apero-decouverte .st63{display:none;}
+        #apero-decouverte .st64{fill:#FFFFFF;stroke:#91A613;stroke-width:0.3374;}
+        #apero-decouverte .st65{fill:#FFFFFF;stroke:#91A613;stroke-width:0.4635;}
+        #apero-decouverte .st66{fill:#A371A7;}
+        #apero-decouverte .st67{fill:#777777;}
+        #apero-decouverte .st68{fill:none;stroke:#000000;stroke-width:0.2669;}
+        #apero-decouverte .st69{fill:none;stroke:#000000;stroke-width:0.7917;}
+        #apero-decouverte .st70{fill:none;stroke:#B1CE1C;stroke-width:20;stroke-linejoin:round;stroke-dasharray:3.0606,3.0606;}
+        #apero-decouverte .st71{fill:none;stroke:#B0CE23;stroke-width:0.4521;}
+        #apero-decouverte .st72{fill:none;stroke:#B0CE23;stroke-width:0.6539;}
+        #apero-decouverte .st73{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.4019;}
+        #apero-decouverte .st74{fill:#F6F9DE;stroke:#FFFFFF;stroke-width:0.6555;}
+        #apero-decouverte .st75{fill:#7A8818;stroke:#FFFFFF;stroke-width:0.6614;}
+        #apero-decouverte > svg {
+            width: 100%;
+        }
+        .column-center > div.left > p {
+            text-align: left;
+        }
+        .separator {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+<%var selected = "none";%>
+
+<% include header.ejs %>
+
+<div class="content-container">
+    <div class="column-right">
+        <div id="calendarhook"></div>
+    </div><div class="column-left">
+</div><div class="column-center">
+
+
+    <h1 style="color: #41b7b3;">Apéros-découvertes dans des jardins urbains et péri-urbains, fermes urbaines de Genève</h1>
+
+    <div style="text-align: center">
+
+        <p>En ce début d’automne, <b>Genève cultive</b> vous convie à un</p>
+        <p><b>Apéro-découvertes à la Ferme le samedi 21 octobre</b>,</p>
+        <p>Le principe des Apéros-découvertes jardins urbains et péri-urbains, fermes urbaines de Genève : un samedi de 11h à 13h, autour d’un apéritif garni, les jardiniers ou fermiers vous dévoilent leurs jardins ou fermes et quelques-uns de leurs secrets.</p>
+        <span id="apero-decouverte"><%- include ../public/images/carte_aperos-decouvertes.svg %></span>
+    </div>
+
+    <div class="left">
+        <p><b>Prochain Apéro-découverte :</b></p>
+        <p><b>Où ?</b> Ferme du Lignon</p>
+        <p><a href="https://www.google.com/maps/search/51+B+route+du+bois+des+fr%C3%A8res+1219/@46.2064051,6.0940156,17z/data=!3m1!4b1" target="_blank">51 B route du bois des frères 1219 le Lignon</a>  - <b>Bus 7, 9 et 23  arrêt "Cité Lignon"</b>.</p>
+        <p>Partir à droite en sortant du bus (ou à gauche en descendant la rampe du parking) et prendre le passage souterrain sur votre gauche, suivre la route qui traverse le passage, la route ensuite fait un premier virage à gauche et ensuite à droite, vous longerez une grande serre et l'entrée de la cour de la ferme se trouve peu après sur la droite.</p>
+        <p>Pour l'accès en voiture : Parking de la ferme sur place. Veuillez emprunter notre chemin d'accès qui se trouve sur la route du bois des frères en face du garage Toyota/Kia/Mitsubishi et pas la route passant sous les bâtiments du Lignon que la plupart des GPS indiquent généralement.</p>
+        <p><b>Quand ?</b> 21 octobre 2017 de 11h à 13h.</p>
+        <p><b>Qui ?</b> Ouvert à tous, min 10 personnes, max 20 personnes sur inscription</p>
+        <p><b>Thème :</b> Notre ferme urbaine est un vestige du domaine agricole qui se trouvait là bien avant la construction de la cité du Lignon dans les années 60.<br/>
+            Aujourd'hui, c'est une petite oasis de verdure entre la ville et la campagne. En activité depuis 2014 après plusieurs années de gros travaux et de rénovation menés par nos soins suite à son rachat. Nous avons souhaité créer une ferme polyvalente avec plusieurs activités complémentaires qui intègre à la fois une agriculture de proximité, respectueuse de l'environnement et des activités événementiels pour faire vivre le lieu et recevoir un large public.  Nous collaborons également avec les associations du quartier du Lignon  durant l'année.<br/>
+            Notre ferme aujourd'hui c'est:</p>
+
+        <ul>
+            <li>1'000 poules qui produisent des oeufs plein air,</li>
+            <li>des vaches et leurs veaux, des chèvres, des ânes, des oies et des canards, un chien et un chat qui gambadent dans nos prés,</li>
+            <li>des jardins maraîchers (3000m2 depuis 2017) cultivés sous forme de planches permanentes dans l’esprit de la permaculture et sans utilisation de produits chimiques,</li>
+            <li>la gestion de tous les déchets végétaux sur le terrain,</li>
+            <li>un magasin à la ferme pour la vente de nos produits et d'autres produits locaux,</li>
+            <li>des espaces chaleureux dans l'ancienne grange rénovée pour des mariages, séminaires, cours de cuisine, brunch du 1er août,</li>
+            <li>une équipe de choc sans qui nous ne pourrions pas mener à bien toutes ces activités et la multitude de projets que nous avons encore en tête.</li>
+        </ul>
+
+        <p>Claude et Stéphanie seront heureux de vous accueillir le samedi 21 octobre autour d’un apéritif et de produits de la ferme à déguster.</p>
+
+        <p class="separator" style="text-align: center">--------------------------------</p>
+
+        <p>Le but de ces <b>Apéros-découvertes</b> est de visiter un jardin en découvrant ses secrets et sa personnalité, accompagnés par les jardiniers  !</p>
+
+        <p>Les <b>Apéros-découvertes</b> se dérouleront  de 11h à 12h ensuite, de 12h à 13h : <b>apéro garni</b> agrémenté de quelques légumes des jardins (quand ce sera possible), des herbes (même et surtout les « mauvaises » !) et les questions que le public posera aux jardiniers.</p>
+
+        <p class="separator" style="text-align: center;"><b>POUR VOUS INSCRIRE, ENVOYEZ UN MAIL info@genevecultive.ch JUSQU'AU 17 OCTOBRE EN INDIQUANT VOS COORDONNÉES ET NO DE TÉLÉPHONE !</b></p>
+
+        <p><b>Le prix de l’Apéro-découverte</b> : membres de Genève cultive 7.- / non-membres 12.-</p>
+
+        <p class="separator" style="text-align: center">--------------------------------</p>
+
+        <p>Dans la perspective de vous rencontrer très bientôt, nous adressons à tous nos meilleures salutations.</p>
+
+        <p><b>L'équipe de Genève cultive</b></p>
+
+    </div>
+
+</div>
+
+
+    <div class="bottom">
+        <div class="column-right">
+
+        </div>
+        <div class="column-left">
+
+        </div>
+        <div class="column-center">
+
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom">
+    <div class="column-right">
+
+    </div>
+    <div class="column-left">
+
+    </div>
+    <div class="column-center">
+
+    </div>
+</div>
+
+
+
+<div class="licence">
+    <span class="mail">hc.evitluceveneg@ofni</span>
+    <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+        <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ch/80x15.png" />
+    </a>
+</div>
+</body>
+</html>

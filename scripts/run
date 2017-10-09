@@ -1,1 +1,0 @@
-ln -sf /opt/app-root/src/data/upload /opt/app-root/src/public/images/upload
