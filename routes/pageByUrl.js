@@ -32,7 +32,7 @@ router.get('/soutenez-nous', function (req, res) {
     res.render('soutenez-nous');
 });
 
-router.get('/galerie', function (req, res) {
+router.get('/cultivons-nous', function (req, res) {
     res.render('galerie');
 });
 

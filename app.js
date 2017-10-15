@@ -57,7 +57,7 @@ app.use('/forum', forum);
 app.get('/chiffres', pageByUrl);
 app.get('/contact', pageByUrl);
 app.get('/soutenez-nous', pageByUrl);
-app.get('/galerie', pageByUrl);
+app.get('/cultivons-nous', pageByUrl);
 app.get('/premiere-rencontre-geneve-cultive', pageByUrl);
 app.get('/deuxieme-rencontre-geneve-cultive', pageByUrl);
 app.get('/troisieme-rencontre-geneve-cultive', pageByUrl);
