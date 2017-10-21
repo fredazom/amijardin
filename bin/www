@@ -19,7 +19,7 @@ if (cluster.isMaster) {
 
   cluster.on('disconnect', function(worker) {
     console.log('disconnecting a worker after error; ready to fork!');
-    cluster.fork();
+    // cluster.fork(); stop forking since we use now forever
   });
 } else {
   console.log("forking a node");
