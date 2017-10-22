@@ -17,7 +17,8 @@ execute: ln -sf /opt/app-root/src/data/upload /opt/app-root/src/public/images/up
 set DNS
 
 **********
-get images, previous tar -cxvf of images, then create directory images, put tar.gz ther and execute:
+BEFORE DEPLOYING A NEW VERSION:
+get images, previous tar -cxvf of images, then create directory images, put tar.gz there and execute:
 
 oc rsync nodejs-mongo-persistent-12-g8mwg:/opt/app-root/src/data/images ~/amijardinimagescopy/
 
