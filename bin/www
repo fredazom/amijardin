@@ -16,13 +16,14 @@ app.set('ip', process.env.IP  || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0');
 
 if (cluster.isMaster) {
   cluster.fork();
+  console.log("forking a node");
 
   cluster.on('disconnect', function(worker) {
     console.log('disconnecting a worker after error; ready to fork!');
     // cluster.fork(); stop forking since we use now forever
   });
 } else {
-  console.log("forking a node");
+  console.log("creating server for forked a node");
   var server;
   var serverDomain = domain.create();
 
