@@ -5,11 +5,19 @@
     <META NAME="robots" CONTENT="index, follow">
     <meta name="viewport" content="width:device-width, initial-scale=1.0">
     <% if (process.env.NODE_ENV === 'production') { %>
-        <link rel="stylesheet" type="text/css" href="/stylesheets/build/communprod.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/cultivonsnousprod.css">
+    <script src="/javascripts/build/cultivonsnousprod.js"></script>
     <% } else { %>
     <link rel="stylesheet" type="text/css" href="/stylesheets/commun.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/maintemplate.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/carrousel.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/cultivonsnous.css">
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/carrousel.js"></script>
+    <script src="/javascripts/cultivonsnous/menu.js"></script>
+    <script src="/javascripts/cultivonsnous/main.js"></script>
     <% }%>
     <title>Apéros-découvertes dans des jardins urbains et péri-urbains, fermes urbaines de Genève</title>
     <style>
@@ -118,54 +126,81 @@
 
     <h1 style="color: #41b7b3;">Apéros-découvertes dans des jardins urbains et péri-urbains, fermes urbaines de Genève</h1>
 
-    <div style="text-align: center">
+    <input type="radio" id="info-link" name="tabs" checked/>
+    <input type="radio" id="images-link" name="tabs"/>
+    <ul class="page_menu">
+        <li><label for="info-link">Info</label></li>
+        <li><label for="images-link">En images</label></li>
+    </ul>
 
-        <p>En ce début d’automne, <b>Genève cultive</b> vous convie à un</p>
-        <p><b>Apéro-découvertes à la Ferme le samedi 21 octobre</b>,</p>
-        <p>Le principe des Apéros-découvertes jardins urbains et péri-urbains, fermes urbaines de Genève : un samedi de 11h à 13h, autour d’un apéritif garni, les jardiniers ou fermiers vous dévoilent leurs jardins ou fermes et quelques-uns de leurs secrets.</p>
-        <span id="apero-decouverte"><%- include ../public/images/carte_aperos-decouvertes.svg %></span>
+    <div id="info-tab" class="page_menu_tab">
+
+        <div style="text-align: center">
+
+            <p>En ce début d’automne, <b>Genève cultive</b> vous convie à un</p>
+            <p><b>Apéro-découvertes à la Ferme le samedi 21 octobre</b>,</p>
+            <p>Le principe des Apéros-découvertes jardins urbains et péri-urbains, fermes urbaines de Genève : un samedi de 11h à 13h, autour d’un apéritif garni, les jardiniers ou fermiers vous dévoilent leurs jardins ou fermes et quelques-uns de leurs secrets.</p>
+            <span id="apero-decouverte"><%- include ../public/images/carte_aperos-decouvertes.svg %></span>
+        </div>
+
+        <div class="left">
+            <p><b>Prochain Apéro-découverte :</b></p>
+            <p><b>Où ?</b> Ferme du Lignon</p>
+            <p><a href="https://www.google.com/maps/search/51+B+route+du+bois+des+fr%C3%A8res+1219/@46.2064051,6.0940156,17z/data=!3m1!4b1" target="_blank">51 B route du bois des frères 1219 le Lignon</a>  - <b>Bus 7, 9 et 23  arrêt "Cité Lignon"</b>.</p>
+            <p>Partir à droite en sortant du bus (ou à gauche en descendant la rampe du parking) et prendre le passage souterrain sur votre gauche, suivre la route qui traverse le passage, la route ensuite fait un premier virage à gauche et ensuite à droite, vous longerez une grande serre et l'entrée de la cour de la ferme se trouve peu après sur la droite.</p>
+            <p>Pour l'accès en voiture : Parking de la ferme sur place. Veuillez emprunter notre chemin d'accès qui se trouve sur la route du bois des frères en face du garage Toyota/Kia/Mitsubishi et pas la route passant sous les bâtiments du Lignon que la plupart des GPS indiquent généralement.</p>
+            <p><b>Quand ?</b> 21 octobre 2017 de 11h à 13h.</p>
+            <p><b>Qui ?</b> Ouvert à tous, min 10 personnes, max 20 personnes sur inscription</p>
+            <p><b>Thème :</b> Notre ferme urbaine est un vestige du domaine agricole qui se trouvait là bien avant la construction de la cité du Lignon dans les années 60.<br/>
+                Aujourd'hui, c'est une petite oasis de verdure entre la ville et la campagne. En activité depuis 2014 après plusieurs années de gros travaux et de rénovation menés par nos soins suite à son rachat. Nous avons souhaité créer une ferme polyvalente avec plusieurs activités complémentaires qui intègre à la fois une agriculture de proximité, respectueuse de l'environnement et des activités événementiels pour faire vivre le lieu et recevoir un large public.  Nous collaborons également avec les associations du quartier du Lignon  durant l'année.<br/>
+                Notre ferme aujourd'hui c'est:</p>
+
+            <ul>
+                <li>1'000 poules qui produisent des oeufs plein air,</li>
+                <li>des vaches et leurs veaux, des chèvres, des ânes, des oies et des canards, un chien et un chat qui gambadent dans nos prés,</li>
+                <li>des jardins maraîchers (3000m2 depuis 2017) cultivés sous forme de planches permanentes dans l’esprit de la permaculture et sans utilisation de produits chimiques,</li>
+                <li>la gestion de tous les déchets végétaux sur le terrain,</li>
+                <li>un magasin à la ferme pour la vente de nos produits et d'autres produits locaux,</li>
+                <li>des espaces chaleureux dans l'ancienne grange rénovée pour des mariages, séminaires, cours de cuisine, brunch du 1er août,</li>
+                <li>une équipe de choc sans qui nous ne pourrions pas mener à bien toutes ces activités et la multitude de projets que nous avons encore en tête.</li>
+            </ul>
+
+            <p>Claude et Stéphanie seront heureux de vous accueillir le samedi 21 octobre autour d’un apéritif et de produits de la ferme à déguster.</p>
+
+            <p class="separator" style="text-align: center">--------------------------------</p>
+
+            <p>Le but de ces <b>Apéros-découvertes</b> est de visiter un jardin en découvrant ses secrets et sa personnalité, accompagnés par les jardiniers  !</p>
+
+            <p>Les <b>Apéros-découvertes</b> se dérouleront  de 11h à 12h ensuite, de 12h à 13h : <b>apéro garni</b> agrémenté de quelques légumes des jardins (quand ce sera possible), des herbes (même et surtout les « mauvaises » !) et les questions que le public posera aux jardiniers.</p>
+
+            <p class="separator" style="text-align: center;"><b>POUR VOUS INSCRIRE, ENVOYEZ UN MAIL info@genevecultive.ch JUSQU'AU 17 OCTOBRE EN INDIQUANT VOS COORDONNÉES ET NO DE TÉLÉPHONE !</b></p>
+
+            <p><b>Le prix de l’Apéro-découverte</b> : membres de Genève cultive 7.- / non-membres 12.-</p>
+
+            <p class="separator" style="text-align: center">--------------------------------</p>
+
+            <p>Dans la perspective de vous rencontrer très bientôt, nous adressons à tous nos meilleures salutations.</p>
+
+            <p><b>L'équipe de Genève cultive</b></p>
+
+        </div>
+
     </div>
 
-    <div class="left">
-        <p><b>Prochain Apéro-découverte :</b></p>
-        <p><b>Où ?</b> Ferme du Lignon</p>
-        <p><a href="https://www.google.com/maps/search/51+B+route+du+bois+des+fr%C3%A8res+1219/@46.2064051,6.0940156,17z/data=!3m1!4b1" target="_blank">51 B route du bois des frères 1219 le Lignon</a>  - <b>Bus 7, 9 et 23  arrêt "Cité Lignon"</b>.</p>
-        <p>Partir à droite en sortant du bus (ou à gauche en descendant la rampe du parking) et prendre le passage souterrain sur votre gauche, suivre la route qui traverse le passage, la route ensuite fait un premier virage à gauche et ensuite à droite, vous longerez une grande serre et l'entrée de la cour de la ferme se trouve peu après sur la droite.</p>
-        <p>Pour l'accès en voiture : Parking de la ferme sur place. Veuillez emprunter notre chemin d'accès qui se trouve sur la route du bois des frères en face du garage Toyota/Kia/Mitsubishi et pas la route passant sous les bâtiments du Lignon que la plupart des GPS indiquent généralement.</p>
-        <p><b>Quand ?</b> 21 octobre 2017 de 11h à 13h.</p>
-        <p><b>Qui ?</b> Ouvert à tous, min 10 personnes, max 20 personnes sur inscription</p>
-        <p><b>Thème :</b> Notre ferme urbaine est un vestige du domaine agricole qui se trouvait là bien avant la construction de la cité du Lignon dans les années 60.<br/>
-            Aujourd'hui, c'est une petite oasis de verdure entre la ville et la campagne. En activité depuis 2014 après plusieurs années de gros travaux et de rénovation menés par nos soins suite à son rachat. Nous avons souhaité créer une ferme polyvalente avec plusieurs activités complémentaires qui intègre à la fois une agriculture de proximité, respectueuse de l'environnement et des activités événementiels pour faire vivre le lieu et recevoir un large public.  Nous collaborons également avec les associations du quartier du Lignon  durant l'année.<br/>
-            Notre ferme aujourd'hui c'est:</p>
+    <div id="images-tab" class="page_menu_tab">
+        <div class="content">
+            <div class="image-container">
+                <img src="http://mczdekhm.preview.infomaniak.website/wp-content/uploads/2017/06/20170527_113103-e1496823834343.jpg"/>
+                <span>Letizia</span>
+            </div>
+        </div>
+    </div>
 
-        <ul>
-            <li>1'000 poules qui produisent des oeufs plein air,</li>
-            <li>des vaches et leurs veaux, des chèvres, des ânes, des oies et des canards, un chien et un chat qui gambadent dans nos prés,</li>
-            <li>des jardins maraîchers (3000m2 depuis 2017) cultivés sous forme de planches permanentes dans l’esprit de la permaculture et sans utilisation de produits chimiques,</li>
-            <li>la gestion de tous les déchets végétaux sur le terrain,</li>
-            <li>un magasin à la ferme pour la vente de nos produits et d'autres produits locaux,</li>
-            <li>des espaces chaleureux dans l'ancienne grange rénovée pour des mariages, séminaires, cours de cuisine, brunch du 1er août,</li>
-            <li>une équipe de choc sans qui nous ne pourrions pas mener à bien toutes ces activités et la multitude de projets que nous avons encore en tête.</li>
-        </ul>
-
-        <p>Claude et Stéphanie seront heureux de vous accueillir le samedi 21 octobre autour d’un apéritif et de produits de la ferme à déguster.</p>
-
-        <p class="separator" style="text-align: center">--------------------------------</p>
-
-        <p>Le but de ces <b>Apéros-découvertes</b> est de visiter un jardin en découvrant ses secrets et sa personnalité, accompagnés par les jardiniers  !</p>
-
-        <p>Les <b>Apéros-découvertes</b> se dérouleront  de 11h à 12h ensuite, de 12h à 13h : <b>apéro garni</b> agrémenté de quelques légumes des jardins (quand ce sera possible), des herbes (même et surtout les « mauvaises » !) et les questions que le public posera aux jardiniers.</p>
-
-        <p class="separator" style="text-align: center;"><b>POUR VOUS INSCRIRE, ENVOYEZ UN MAIL info@genevecultive.ch JUSQU'AU 17 OCTOBRE EN INDIQUANT VOS COORDONNÉES ET NO DE TÉLÉPHONE !</b></p>
-
-        <p><b>Le prix de l’Apéro-découverte</b> : membres de Genève cultive 7.- / non-membres 12.-</p>
-
-        <p class="separator" style="text-align: center">--------------------------------</p>
-
-        <p>Dans la perspective de vous rencontrer très bientôt, nous adressons à tous nos meilleures salutations.</p>
-
-        <p><b>L'équipe de Genève cultive</b></p>
-
+    <div id="carrousel" class="overlay">
+        <div class="content"></div>
+        <div class="close">x</div>
+        <div class="previous vertical-center next-previous"><span><</span></div>
+        <div class="next vertical-center next-previous"><span>></span></div>
     </div>
 
 </div>
