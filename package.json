@@ -27,7 +27,8 @@
     "npm": ">= 1.0.0"
   },
   "scripts": {
-    "start": "forever start bin/www",
+    "start": "node bin/www",
+    "foreverstart": "forever start bin/www",
     "stopall": "forever stopall",
     "restartall": "forever restartall",
     "list": "forever list",
