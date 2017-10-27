@@ -1,9 +1,7 @@
-#!/usr/bin/env node
 var app = require('../app');
 var debug = require('debug')('amijardin:server');
 var http = require('http');
 var domain = require('domain');
-var cluster = require('cluster');
 
 
 /**
@@ -14,37 +12,25 @@ var port = normalizePort(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT |
 app.set('port', port);
 app.set('ip', process.env.IP  || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0');
 
-if (cluster.isMaster) {
-  cluster.fork();
-  console.log("forking a node");
+var server;
+var serverDomain = domain.create();
 
-  cluster.on('disconnect', function(worker) {
-    console.log('disconnecting a worker after error; ready to fork!');
-    cluster.fork(); //stop forking since we use now forever
-  });
-} else {
-  console.log("creating server for forked a node");
-  var server;
-  var serverDomain = domain.create();
+serverDomain.on('error', function(error){
+  console.log("error caught at serverDomain level: ", error.stack);
 
-  serverDomain.on('error', function(error){
-    console.log("error caught at serverDomain level: ", error.stack);
+  try {
+    var killtimer = setTimeout(function() {
+      debug('exiting the process NOW, after disconnecting worker and waiting 5 sec to finish all pending calls!');
+      process.exit(1);
+    }, 5000);
+    killtimer.unref();
+    unmountServer(server);
+  } catch (er2) {
+    console.error('Error sending 500!', er2.stack);
+  }
+});
 
-    try {
-      var killtimer = setTimeout(function() {
-        debug('exiting the process NOW, after disconnecting worker and waiting 5 sec to finish all pending calls!');
-        process.exit(1);
-      }, 5000);
-      killtimer.unref();
-      unmountServer(server);
-      cluster.worker.disconnect();
-    } catch (er2) {
-      console.error('Error sending 500!', er2.stack);
-    }
-  });
-
-  serverDomain.run(server = createServerAndLaunch);
-}
+serverDomain.run(server = createServerAndLaunch);
 
 function createServerAndLaunch() {
   server = http.createServer(app);
