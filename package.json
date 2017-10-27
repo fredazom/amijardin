@@ -27,7 +27,10 @@
     "npm": ">= 1.0.0"
   },
   "scripts": {
-    "start": "node bin/www",
+    "start": "forever start bin/www",
+    "stopall": "forever stopall",
+    "stopall": "forever restartall",
+    "list": "forever list",
     "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
   },
   "repository": {
